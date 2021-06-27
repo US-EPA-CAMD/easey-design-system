@@ -120,7 +120,7 @@ export const Header = (props) => {
       }
       <USWDSHeader basic={true} className="margin-bottom-neg-1">
         <a
-          href={props.logoSrc}
+          href={props.logoUrl}
           target="_blank"
           rel="noopener noreferrer"
           title="EPA Home page"
