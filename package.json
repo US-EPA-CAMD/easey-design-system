@@ -1,10 +1,10 @@
 {
   "name": "@us-epa-camd/easey-design-system",
   "description": "design system & component library",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",  
   "private": false,
-  "files": [ "dist", "README.md" ],
+  "files": [ "dist/**/*", "README.md" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/US-EPA-CAMD/easey-design-system"
@@ -33,7 +33,9 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf dist",
-    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore *.stories.js",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "eslintConfig": {
     "extends": "react-app",
