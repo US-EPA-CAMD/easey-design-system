@@ -1,10 +1,13 @@
 {
   "name": "@us-epa-camd/easey-design-system",
   "description": "design system & component library",
-  "version": "0.0.1",
-  "main": "dist/index.js",  
+  "version": "0.0.2",
+  "main": "dist/index.js",
   "private": false,
-  "files": [ "dist/**/*", "README.md" ],
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/US-EPA-CAMD/easey-design-system"
@@ -25,7 +28,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "uswds": "^2.11.1"
-  },  
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
