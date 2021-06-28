@@ -22,19 +22,23 @@ export const Header = (props) => {
     })
   );
 
-  const menuClickHandler = () => {
-    const menuButton = document.querySelector('div.usa-navbar button.usa-button');
-    const navClose = document.querySelector('button.usa-nav__close');
+  const menuButtonClickedHandler = () => {
+    setMenuExpanded(true);
 
-    if (menuExpanded) {
+    setTimeout(() => {
+      const navClose = document.querySelector('button.usa-nav__close');
       navClose.focus();
-    }
-    else {
-      menuButton.focus();
-    }
-
-    setMenuExpanded((previous) => !previous);
+    });
   }
+
+  const menuClosedHandler = () => {
+    setMenuExpanded(false);
+
+    setTimeout(() => {
+      const menuButton = document.querySelector('div.usa-navbar button.usa-button');
+      menuButton.focus();
+    });
+  }  
 
   const searchHandler = (event) => {
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
@@ -135,7 +139,7 @@ export const Header = (props) => {
           <div className="usa-navbar">
             <NavMenuButton
               label="Menu"
-              onClick={() => menuClickHandler()}
+              onClick={() => menuButtonClickedHandler()}
               className="display-block usa-button"
               aria-haspopup="true"
               aria-expanded={menuExpanded}
@@ -145,7 +149,7 @@ export const Header = (props) => {
             key="primaryNav"
             items={menuItems}
             mobileExpanded={menuExpanded}
-            onToggleMobileNav={() => menuClickHandler()}
+            onToggleMobileNav={() => menuClosedHandler()}
           >
             <Search
               key="search-epa"
