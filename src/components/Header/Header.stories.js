@@ -100,6 +100,24 @@ Default.args = {
           name: 'Jobs and Internships',
         },
       ],
+    },
+    {
+      link: 'https://www.epa.gov/aboutepa',
+      name: 'EPA Footer',
+      menuItems: [
+        {
+          link: 'https://www.epa.gov/accessibility',
+          name: 'Accessibility',
+        },
+        {
+          link: 'https://www.epa.gov/privacy',
+          name: 'Privacy',
+        },
+        {
+          link: 'https://www.epa.gov/privacy/privacy-and-security-notice',
+          name: 'Privacy and Security Notice',
+        },
+      ],
     },    
   ],
 };
