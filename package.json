@@ -1,7 +1,7 @@
 {
   "name": "@us-epa-camd/easey-design-system",
   "description": "design system & component library",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "private": false,
   "files": [
