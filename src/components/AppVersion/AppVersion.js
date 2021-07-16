@@ -1,10 +1,16 @@
 import React from 'react';
 
+import './AppVersion.scss';
+
 const AppVersion = props => {
     const { published_version } = props.appVersion;
 
     return (
-        <div>Version {published_version}</div>
+        <div className="app-version-container">
+            <p>
+                {published_version}
+            </p>
+        </div>
     );
 };
 
