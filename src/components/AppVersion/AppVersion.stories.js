@@ -3,17 +3,14 @@ import React from 'react';
 import AppVersion from './AppVersion';
 
 export default {
-    component: AppVersion,
     title: 'AppVersion',
+    component: AppVersion,
 };
 
 const Template = args => <AppVersion {...args} />;
 
 export const Default = Template.bind({});
-
 Default.args = {
-    appVersion: {
-        title: 'App Version Component',
-        published_version: 'v0.0.98 published Tues 13 2021'
-    }
+  version: 'v0.0.98',
+  publishDate: 'Tues 13 2021',
 };
