@@ -14,7 +14,6 @@ export const Default = Template.bind({});
 Default.args = {
     appVersion: {
         title: 'App Version Component',
-        published_version: 'v0.0.0'
+        published_version: 'v0.0.98 published Tues 13 2021'
     }
 };
-
