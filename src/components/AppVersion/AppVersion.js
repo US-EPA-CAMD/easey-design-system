@@ -1,17 +1,24 @@
-import React from 'react';
+import React from "react";
+import PropTypes from 'prop-types';
 
 import './AppVersion.scss';
 
-const AppVersion = props => {
-    const { published_version } = props.appVersion;
+export const AppVersion = ({
+  version,
+  publishDate,
+}) => {
+  return (
+    <div className="app-version-container">
+      <p>
+        {`${version} published ${publishDate}`}
+      </p>
+    </div>
+  );
+};
 
-    return (
-        <div className="app-version-container">
-            <p>
-                {published_version}
-            </p>
-        </div>
-    );
+AppVersion.propTypes = {
+  version: PropTypes.string.isRequired,
+  publishDate: PropTypes.string.isRequired,
 };
 
 export default AppVersion;

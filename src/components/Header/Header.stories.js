@@ -5,24 +5,6 @@ import { Header } from './Header';
 export default {
   title: 'Header',
   component: Header,
-  argTypes: {
-    logoSrc: 'string',
-    logoUrl: 'string',
-    searchUrl: 'string',
-    environment: 'string',
-    menuItems: [
-      {
-        link: 'string',
-        name: 'string',
-        menuItems: [
-          {
-            link: 'string',
-            name: 'string',
-          },
-        ],
-      },
-    ],
-  },
 }
 
 const Template = (args) => <Header {...args} />;

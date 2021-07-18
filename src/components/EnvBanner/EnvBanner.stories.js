@@ -5,9 +5,6 @@ import { EnvBanner } from './EnvBanner';
 export default {
   title: 'EnvBanner',
   component: EnvBanner,
-  argTypes: {
-    label: 'string',
-  },
 }
 
 const Template = (args) => <EnvBanner {...args} />;
