@@ -109,16 +109,16 @@
   }
 
   .usa-nav__primary button[aria-expanded="false"] {
-    background-image: url("/images/icons/plus.svg"),
-      linear-gradient(transparent, transparent) !important;
+    // background-image: url("/images/icons/plus.svg"),
+    //   linear-gradient(transparent, transparent) !important;
     background-size: 0.6em !important;
     position: relative;
     left: 0.5em !important;
   }
 
   .usa-nav__primary button[aria-expanded="true"] {
-    background-image: url("/images/icons/minus.svg"),
-      linear-gradient(transparent, transparent) !important;
+    // background-image: url("/images/icons/minus.svg"),
+    //   linear-gradient(transparent, transparent) !important;
     position: relative;
     left: 0.5em !important;
   }
