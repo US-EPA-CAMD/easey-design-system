@@ -2,19 +2,42 @@
   "name": "@us-epa-camd/easey-design-system",
   "homepage": "http://us-epa-camd.github.io/easey-design-system",
   "description": "design system & component library",
-  "version": "0.0.6",
-  "main": "dist/index.js",
-  "private": false,
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "module": "lib/index.es.js",
   "files": [
-    "dist/**/*",
-    "README.md"
+    "lib/**/*",
+    "README.md",
+    "CHANGELOG.md",
+    "package.json",
+    "package-lock.json",
+    "!lib/**/*.stories.*"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/US-EPA-CAMD/easey-design-system"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "scripts": {
+    "commit": "cz",
+    "build": "rollup -c",
+    "test": "react-scripts test --coverage --watchAll=false --testResultsProcessor=jest-sonar-reporter",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "@trussworks/react-uswds": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "uswds": "^2.12.0"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.1",
@@ -22,39 +45,45 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/node-logger": "^6.3.4",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.7",
     "@trussworks/react-uswds": "^2.0.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
     "babel-loader": "^8.2.2",
-    "node-sass": "^6.0.1",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "gh-pages": "^3.2.3",
+    "jest-sonar-reporter": "^2.0.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "rollup": "^2.45.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.1",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.1.0",
+    "semantic-release": "^17.4.4",
+    "typescript": "^4.1.2",
     "uswds": "^2.12.0"
-  },
-  "peerDependencies": {
-    "@material-ui/core": "^4.12.1",
-    "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@trussworks/react-uswds": "^2.0.0",
-    "babel-loader": "^8.2.2",
-    "node-sass": "^6.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "uswds": "^2.12.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll=false --testResultsProcessor=jest-sonar-reporter",
-    "clean": "rimraf dist",
-    "compile": "npm run clean && cross-env NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore *.stories.js",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -84,20 +113,6 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@babel/preset-react": "^7.14.5",
-    "@storybook/addon-actions": "^6.3.4",
-    "@storybook/addon-essentials": "^6.3.4",
-    "@storybook/addon-links": "^6.3.4",
-    "@storybook/node-logger": "^6.3.4",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.4",
-    "cross-env": "^7.0.3",
-    "gh-pages": "^3.2.3",
-    "jest-sonar-reporter": "^2.0.0"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
@@ -106,5 +121,49 @@
       "!src/index.js",
       "!src/setupTests.js"
     ]
+  },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "package-lock.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

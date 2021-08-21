@@ -1,13 +1,19 @@
-import React from 'react';
-
-import AccordionMenu from './AccordionMenu';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import { AccordionMenu, AccordionMenuProps } from './AccordionMenu';
 
 export default {
-  title: 'AccordionMenu',
+  title: 'Components/Accordion Menu',
   component: AccordionMenu,
-}
+  parameters: {
+    docs: {
+      description: {
+        component: `### EASEY Design System Accordion Menu component`,
+      },
+    },
+  },
+} as Meta;
 
-const Template = (args) => <AccordionMenu {...args} />;
+const Template: Story<AccordionMenuProps> = (args) => <AccordionMenu {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

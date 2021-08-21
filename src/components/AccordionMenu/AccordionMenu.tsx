@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import PropTypes from 'prop-types';
+import { useState } from "react";
 import classnames from 'classnames';
 import {
   KeyboardArrowDownSharp,
@@ -8,10 +7,25 @@ import {
 
 import './AccordionMenu.scss';
 
+export interface AccordionMenuItem {
+  id: string;
+  label: string;
+  href?: string;
+  comingSoon?: string;  
+  current: boolean;
+  expanded?: boolean;
+  subItems?: AccordionMenuItem[];
+}
+
+export interface AccordionMenuProps {
+  items: AccordionMenuItem[];
+  isSubnav: boolean;  
+}
+
 export const AccordionMenu = ({
   items,
   isSubnav = false,
-}) => {
+}: AccordionMenuProps): JSX.Element => {
   const [menuItems, setMenuItems] = useState(items);
 
   const classes = classnames({
@@ -19,7 +33,7 @@ export const AccordionMenu = ({
     'usa-sidenav__sublist': isSubnav,
   })
 
-  const onClickHandler = (index) => {
+  const onClickHandler = (index: number) => {
     const newItems = [...menuItems];
     const item = newItems[index];
     item.expanded = !item.expanded;
@@ -30,14 +44,14 @@ export const AccordionMenu = ({
     <div className="easey-accordion-menu">
       <ul className={classes} data-testid="sidenav">
         {
-          menuItems.map((item, i) => (
+          menuItems.map((item, index) => (
             <li key={`sidenav_item_${item.id}`}
               className="usa-sidenav__item"
               aria-expanded={item.expanded}
             >
               <a href={item.href}
                 className={item.current ? "usa-current" : ""}
-                onClick={() => onClickHandler(i)}
+                onClick={() => onClickHandler(index)}
               >
                 {item.label}
                 {
@@ -75,27 +89,5 @@ export const AccordionMenu = ({
     </div>
   )
 }
-
-AccordionMenu.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      href: PropTypes.string,
-      current: PropTypes.bool,
-      expanded: PropTypes.bool,
-      comingSoon: PropTypes.string,
-      subItems: PropTypes.arrayOf(
-        PropTypes.exact({
-          id: PropTypes.string.isRequired,
-          label: PropTypes.string.isRequired,
-          href: PropTypes.string,
-          current: PropTypes.bool,
-        })
-      ),
-    })
-  ).isRequired,
-  isSubnav: PropTypes.bool,
-};
 
 export default AccordionMenu;
