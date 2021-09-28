@@ -1,30 +1,59 @@
-import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import typescript from "@rollup/plugin-typescript";
+import fs from 'fs';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import typescript from '@rollup/plugin-typescript';
 import postcss from "rollup-plugin-postcss";
 
-import packageJson from "./package.json";
+const extensionList = ['.js', '.ts', '.jsx', '.tsx'];
+
+const getFiles = (entry, extensions = [], excludeExtensions = []) => {
+  let fileNames = [];
+  const dirs = fs.readdirSync(entry);
+
+  dirs.forEach((dir) => {
+    const path = `${entry}/${dir}`;
+
+    if (fs.lstatSync(path).isDirectory()) {
+      fileNames = [
+        ...fileNames,
+        ...getFiles(path, extensions, excludeExtensions),
+      ];
+
+      return;
+    }
+
+    if (!excludeExtensions.some((exclude) => dir.endsWith(exclude))
+      && extensions.some((ext) => dir.endsWith(ext))
+    ) {
+      fileNames.push(path);
+    }
+  });
+
+  return fileNames;
+};
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  input: "./src/index.ts",
-  output: [{
-      file: packageJson.main,
-      format: "cjs",
-      sourcemap: true
-    },
-    {
-      file: packageJson.module,
-      format: "esm",
-      sourcemap: true
-    }
+  input: [
+    './src/components/index.ts',
+    ...getFiles('./src/components', extensionList),
   ],
+  output: {
+    dir: 'lib',
+    format: 'esm',
+    preserveModules: true,
+    preserveModulesRoot: 'src',
+    sourcemap: true,
+  },
   plugins: [
-    peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript(),
-    postcss()
-  ]
+    typescript({
+      tsconfig: './tsconfig.json',
+      declaration: true,
+      declarationDir: 'lib',
+    }),
+    postcss(),
+  ],
+  external: ['react', 'react-dom'],
 };

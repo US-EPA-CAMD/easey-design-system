@@ -37,7 +37,7 @@ export const Header = ({
     setMenuExpanded(true);
 
     setTimeout(() => {
-      const navClose = document.querySelector('button.usa-nav__close');
+      const navClose = document.querySelector('button.usa-nav__close') as HTMLInputElement;
       if (navClose) {
         navClose.focus();
       }
@@ -48,18 +48,19 @@ export const Header = ({
     setMenuExpanded(false);
 
     setTimeout(() => {
-      const menuButton = document.querySelector('div.usa-navbar button.usa-button');
+      const menuButton = document.querySelector('div.usa-navbar button.usa-button') as HTMLInputElement;
       if (menuButton) {
         menuButton.focus();
       }
     });
   }  
 
-  const searchHandler = (event: Event): boolean => {
+  const searchHandler = (event: React.FormEvent<HTMLFormElement>): boolean => {
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
     // *** and mitigate any character collision issues during http request with window.open
     if (event && event.target) {
-      const searchTerm = encodeURI(event.target.value.trim());
+      const target = event.target as HTMLInputElement;
+      const searchTerm = encodeURI(target.value.trim());
       window.open(
         `${searchUrl}/?querytext=${searchTerm}`,
         "_blank"
@@ -69,7 +70,7 @@ export const Header = ({
     return false;
   };
 
-  const menuTitleClickHandler = (event: Event) => {
+  const menuTitleClickHandler = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.stopPropagation();
   };
 
