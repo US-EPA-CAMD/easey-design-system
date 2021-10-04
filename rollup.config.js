@@ -25,6 +25,8 @@ const name = require('./package.json').main.replace(/\.js$/, '');
 // *** file extensions to be included in the bundle (used by file-gathering function)
 const extensionList = ['.js', '.ts', '.jsx', '.tsx'];
 
+// *** file to be designated as 'input file'; will be used as entrypoint for compilation,
+// *** and should be excluded from rest of bundle
 const inputFile = './src/components/index.ts';
 
 const getFiles = (entry, inputFile, extensions = [], excludeExtensions = []) => {
