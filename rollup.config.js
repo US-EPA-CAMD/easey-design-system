@@ -66,7 +66,7 @@ const bundle = (config) => ({
 
 // *** rollup config, consisting of 2 sub-bundles
 const rollupConfig = [
-  // * common javascript sub-bundle
+  // * ecmascript sub-bundle
   bundle({
     plugins: [esbuild(), resolve(), commonjs(), typescript(), postcss()],
     output: [
@@ -82,7 +82,7 @@ const rollupConfig = [
       },
     ],
   }),
-  // * ecmascript sub-bundle
+  // * typescript sub-bundle
   bundle({
     plugins: [dts(), resolve(), commonjs(), typescript(), postcss()],
     output: {
