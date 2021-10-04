@@ -6,6 +6,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "lib",
     "lib": [
       "dom",
       "dom.iterable",

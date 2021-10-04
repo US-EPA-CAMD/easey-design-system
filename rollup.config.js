@@ -68,17 +68,7 @@ const bundle = (config) => ({
 const rollupConfig = [
   // * common javascript sub-bundle
   bundle({
-    plugins: [
-      esbuild(),
-      resolve(),
-      commonjs(),
-      typescript({
-        tsconfig: './tsconfig.json',
-        declaration: true,
-        declarationDir: 'lib',
-      }),
-      postcss(),
-    ],
+    plugins: [esbuild(), resolve(), commonjs(), typescript(), postcss()],
     output: [
       {
         file: `${name}.js`,
@@ -94,17 +84,7 @@ const rollupConfig = [
   }),
   // * ecmascript sub-bundle
   bundle({
-    plugins: [
-      dts(),
-      resolve(),
-      commonjs(),
-      typescript({
-        tsconfig: './tsconfig.json',
-        declaration: true,
-        declarationDir: 'lib',
-      }),
-      postcss(),
-    ],
+    plugins: [dts(), resolve(), commonjs(), typescript(), postcss()],
     output: {
       file: `${name}.d.ts`,
       format: 'es',
