@@ -70,11 +70,13 @@ const rollupConfig = [
   bundle({
     plugins: [esbuild(), resolve(), commonjs(), typescript(), postcss()],
     output: [
+      // common javascript portion
       {
         file: `${name}.js`,
         format: 'cjs',
         sourcemap: true,
       },
+      // ecmascript portion
       {
         file: `${name}.mjs`,
         format: 'es',
