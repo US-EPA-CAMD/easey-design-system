@@ -84,7 +84,7 @@ const rollupConfig = [
       },
     ],
   }),
-  // * typescript sub-bundle
+  //  typescript sub-bundle
   bundle({
     plugins: [dts(), resolve(), commonjs(), typescript(), postcss()],
     output: {
