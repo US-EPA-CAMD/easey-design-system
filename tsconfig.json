@@ -6,8 +6,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "declaration": true,
-    "declarationDir": "lib",
+    "outDir": "dist",
+    "rootDir": "./",
     "lib": [
       "dom",
       "dom.iterable",
@@ -23,7 +23,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "./src/**/*.ts"
   ],
   "exclude": [
     "src/**/*.stories.tsx",

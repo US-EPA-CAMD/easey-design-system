@@ -1,8 +1,10 @@
+import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { Header, HeaderProps } from './Header';
+import { config } from '../../config';
 
 export default {
-  title: 'Components/Header',
+  title: `${config.appName} / App Version Banner`,
   component: Header,
   parameters: {
     docs: {

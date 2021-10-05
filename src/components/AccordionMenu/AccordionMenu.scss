@@ -1,3 +1,6 @@
+
+@import "../../additional-scss/variables";
+
 .easey-accordion-menu {
   .usa-sidenav {
     color: white;
@@ -19,7 +22,7 @@
   }
 
   .usa-sidenav__item {
-    border-top: 1px solid #FFFFFF1F;
+    border-top: 1px solid $epa-white;
   }
 
   .usa-sidenav__item:hover {
