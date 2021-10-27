@@ -2,7 +2,8 @@
   "name": "@us-epa-camd/easey-design-system",
   "homepage": "http://us-epa-camd.github.io/easey-design-system",
   "description": "design system & component library",
-  "version": "0.0.0",
+  "author": "EPA",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -18,10 +19,12 @@
     "url": "https://github.com/US-EPA-CAMD/easey-design-system"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
@@ -40,20 +43,18 @@
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "classnames": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
     "rollup": "^2.56.3",
     "rollup-plugin-dts": "^4.0.0",
-    "rollup-plugin-esbuild": "^4.5.0",
+    "rollup-plugin-esbuild": "^4.6.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.42.1",
     "tslib": "^2.3.1",
     "typescript": "^4.3.5",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "4.0.3",
     "uswds": "^2.10.3"
   },
   "scripts": {
@@ -92,5 +93,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "esbuild": "^0.13.9"
   }
 }
