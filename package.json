@@ -3,6 +3,10 @@
   "homepage": "http://us-epa-camd.github.io/easey-design-system",
   "description": "design system & component library",
   "author": "EPA",
+  "engines": {
+    "node": "16.10",
+    "yarn": "1.22.17"
+  },
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -43,6 +47,7 @@
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "classnames": "^2.3.1",
+    "esbuild": "^0.13.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -93,8 +98,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "dependencies": {
-    "esbuild": "^0.13.9"
   }
 }
