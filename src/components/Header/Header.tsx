@@ -1,15 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import {
-  Link,
-  Search,
-  GovBanner,
-  PrimaryNav,
-  NavMenuButton,
-  Header as USWDSHeader,
-} from "@trussworks/react-uswds";
+import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
 
-import EnvBanner from "../EnvBanner/EnvBanner";
+import EnvBanner from '../EnvBanner/EnvBanner';
 
 export interface MenuItem {
   name: string;
@@ -20,17 +13,11 @@ export interface HeaderProps {
   logoSrc: string;
   logoUrl: string;
   searchUrl: string;
-  environment?: string;  
+  environment?: string;
   menuItems: MenuItem[];
 }
 
-export const Header = ({
-  logoSrc,
-  logoUrl,
-  searchUrl,
-  environment,
-  menuItems
-}: HeaderProps): JSX.Element => {
+export const Header = ({ logoSrc, logoUrl, searchUrl, environment, menuItems }: HeaderProps): JSX.Element => {
   const [menuExpanded, setMenuExpanded] = useState(false);
 
   const menuButtonClickedHandler = () => {
@@ -42,7 +29,7 @@ export const Header = ({
         navClose.focus();
       }
     });
-  }
+  };
 
   const menuClosedHandler = () => {
     setMenuExpanded(false);
@@ -53,19 +40,19 @@ export const Header = ({
         menuButton.focus();
       }
     });
-  }  
+  };
 
   const searchHandler = (event: React.FormEvent<HTMLFormElement>): boolean => {
+    // *** override default html form behavior (i.e., prevent submission)
+    event.preventDefault();
+
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
     // *** and mitigate any character collision issues during http request with window.open
     if (event && event.target) {
       const target = event.target as HTMLInputElement;
       const searchTerm = encodeURI(target.value.trim());
-      window.open(
-        `${searchUrl}/?querytext=${searchTerm}`,
-        "_blank"
-      );
-      return true;      
+      window.open(`${searchUrl}/?querytext=${searchTerm}`, '_blank');
+      return true;
     }
     return false;
   };
@@ -74,7 +61,7 @@ export const Header = ({
     event.stopPropagation();
   };
 
-  const links = menuItems.map((item, index) => {
+  const links = menuItems.map((item) => {
     return (
       <>
         <Link
@@ -82,7 +69,7 @@ export const Header = ({
           href={item.href}
           target="_blank"
           rel="noopener noreferrer"
-          key={"header-menu-item-" + item.name}
+          key={'header-menu-item-' + item.name}
           onClick={(event) => menuTitleClickHandler(event)}
         >
           {item.name}
@@ -94,24 +81,11 @@ export const Header = ({
   return (
     <div className="header-container">
       <GovBanner className="padding-y-2px bg-base-lighter" />
-      <div className={`usa-overlay ${menuExpanded ? "is-visible" : ""}`} />
-      {
-        environment ?
-          <EnvBanner label={environment} />
-        : null
-      }
+      <div className={`usa-overlay ${menuExpanded ? 'is-visible' : ''}`} />
+      {environment ? <EnvBanner label={environment} /> : null}
       <USWDSHeader basic={true} className="margin-bottom-neg-1">
-        <a
-          href={logoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="EPA Home page"
-        >
-          <img
-            src={logoSrc}
-            className="margin-3"
-            alt="Official EPA Logo"
-          />
+        <a href={logoUrl} target="_blank" rel="noopener noreferrer" title="EPA Home page">
+          <img src={logoSrc} className="margin-3" alt="Official EPA Logo" />
         </a>
         <div className="usa-nav-container">
           <div className="usa-navbar">
@@ -135,7 +109,7 @@ export const Header = ({
               size="small"
               onSubmit={(event) => searchHandler(event)}
             />
-          </PrimaryNav>          
+          </PrimaryNav>
         </div>
       </USWDSHeader>
     </div>
