@@ -4,7 +4,7 @@ import { EnvBanner, EnvBannerProps } from './EnvBanner';
 import { config } from '../../config';
 
 export default {
-  title: `${config.appName} / App Version Banner`,
+  title: `${config.appName} / Environment Banner`,
   component: EnvBanner,
   parameters: {
     docs: {
