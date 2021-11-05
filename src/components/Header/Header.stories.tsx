@@ -4,7 +4,7 @@ import { Header, HeaderProps } from './Header';
 import { config } from '../../config';
 
 export default {
-  title: `${config.appName} / App Version Banner`,
+  title: `${config.appName} / Header`,
   component: Header,
   parameters: {
     docs: {
