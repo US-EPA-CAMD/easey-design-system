@@ -1,6 +1,6 @@
 import { Button, TextInput, Label, Radio, CharacterCount, Alert, Fieldset } from '@trussworks/react-uswds';
 
-import './ContactUs.scss';
+import '../easey-design-system.scss';
 
 export interface CommentTypeItem {
   id: number;
