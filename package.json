@@ -2,7 +2,7 @@
   "name": "@us-epa-camd/easey-design-system",
   "version": "0.0.0",
   "description": "design system & component library",
-  "homepage": "http://us-epa-camd.github.io/easey-design-system",  
+  "homepage": "https://us-epa-camd.github.io/easey-design-system",  
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
