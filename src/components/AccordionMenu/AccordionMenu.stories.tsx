@@ -1,8 +1,10 @@
+import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { AccordionMenu, AccordionMenuProps } from './AccordionMenu';
+import { config } from '../../config';
 
 export default {
-  title: 'Components/Accordion Menu',
+  title: `${config.appName} / Accordion Menu`,
   component: AccordionMenu,
   parameters: {
     docs: {
@@ -28,7 +30,7 @@ Default.args = {
           id: 'data-home',
           label: 'Data Home',
           href: 'https://easey-dev.app.cloud.gov/campd',
-          current: true,          
+          current: true,
         },
         {
           id: 'custom-data-download',
@@ -55,14 +57,16 @@ Default.args = {
       label: 'ANALYSIS',
       current: false,
       expanded: false,
-      comingSoon: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      comingSoon:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
     {
       id: 'visualization',
       label: 'VISUALIZATION',
       current: false,
       expanded: false,
-      comingSoon: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      comingSoon:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     },
   ],
 };

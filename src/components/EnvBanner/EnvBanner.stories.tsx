@@ -1,8 +1,10 @@
+import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { EnvBanner, EnvBannerProps } from './EnvBanner';
+import { config } from '../../config';
 
 export default {
-  title: 'Components/Env Banner',
+  title: `${config.appName} / App Version Banner`,
   component: EnvBanner,
   parameters: {
     docs: {

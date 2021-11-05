@@ -1,8 +1,10 @@
+import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { AppVersion, AppVersionProps } from './AppVersion';
+import { config } from '../../config';
 
 export default {
-  title: 'Components/App Version Banner',
+  title: `${config.appName} / App Version Banner`,
   component: AppVersion,
   parameters: {
     docs: {
