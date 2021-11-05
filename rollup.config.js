@@ -16,9 +16,6 @@ import commonjs from '@rollup/plugin-commonjs';
 /*** integrate with typescript ***/
 import typescript from '@rollup/plugin-typescript';
 
-/*** css manipulation with ecmascript ***/
-// import postcss from 'rollup-plugin-postcss';
-
 // *** save package.json locally to refer to its members
 const packageJson = require('./package.json');
 

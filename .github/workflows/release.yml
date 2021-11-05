@@ -46,6 +46,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build Storybook
+        run: yarn build-storybook
       - name: Deploy Storybook
         run: yarn deploy-storybook
-
