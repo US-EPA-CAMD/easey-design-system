@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { ContactUs } from './ContactUs';
+import { ContactUs, ContactUsProps } from './ContactUs';
 import { config } from '../../config';
 
 export default {
@@ -15,7 +15,30 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (args) => <ContactUs {...args} />;
+const Template: Story<ContactUsProps> = (args) => <ContactUs {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  commentTypes: [
+    {
+      id: 1,
+      comment: `Help using application`,
+    },
+    {
+      id: 2,
+      comment: `Report a bug`,
+    },
+    {
+      id: 3,
+      comment: `Data question`,
+    },
+    {
+      id: 4,
+      comment: `Suggested enhancement`,
+    },
+    {
+      id: 5,
+      comment: `Other`,
+    },
+  ],
+};
