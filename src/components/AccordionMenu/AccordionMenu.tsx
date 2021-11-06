@@ -1,4 +1,4 @@
-import { useState } from 'react';
+//import { useState } from 'react';
 import classnames from 'classnames';
 import { KeyboardArrowDownSharp, KeyboardArrowUpSharp } from '@material-ui/icons';
 
@@ -20,7 +20,8 @@ export interface AccordionMenuProps {
 }
 
 export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): JSX.Element => {
-  const [menuItems, setMenuItems] = useState(items);
+  const menuItems = items;
+  //const [menuItems, setMenuItems] = useState(items);
 
   const classes = classnames({
     'usa-sidenav': !isSubnav,
@@ -31,7 +32,7 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
     const newItems = [...menuItems];
     const item = newItems[index];
     item.expanded = !item.expanded;
-    setMenuItems([...newItems]);
+    //setMenuItems([...newItems]);
   };
 
   return (
@@ -59,5 +60,4 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
     </div>
   );
 };
-
 export default AccordionMenu;
