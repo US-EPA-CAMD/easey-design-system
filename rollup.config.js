@@ -27,6 +27,9 @@ const packageJson = require('./package.json');
 const bundle = (config) => ({
   ...config,
   input: 'src/components/index.ts',
+  external: {
+    includeDependencies: true,
+  },
 });
 
 // *** rollup config, consisting of 2 sub-bundles
@@ -40,6 +43,15 @@ const rollupConfig = [
       typescript({
         declaration: true,
         declarationDir: 'lib',
+        include: ['*.js+(|x)', '**/*.js+(|x)'],
+        exclude: [
+          'coverage',
+          'config',
+          'dist',
+          'node_modules/**',
+          '*.test.{js+(|x), ts+(|x)}',
+          '**/*.test.{js+(|x), ts+(|x)}',
+        ],
       }),
       bundleScss({ output: 'easey-design-system.scss' }),
     ],
@@ -68,6 +80,15 @@ const rollupConfig = [
       typescript({
         declaration: true,
         declarationDir: 'lib',
+        include: ['*.js+(|x)', '**/*.js+(|x)'],
+        exclude: [
+          'coverage',
+          'config',
+          'dist',
+          'node_modules/**',
+          '*.test.{js+(|x), ts+(|x)}',
+          '**/*.test.{js+(|x), ts+(|x)}',
+        ],
       }),
       bundleScss({ output: 'easey-design-system.scss' }),
     ],
