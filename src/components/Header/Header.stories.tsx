@@ -19,7 +19,6 @@ const Template: Story<HeaderProps> = (args) => <Header {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  logoSrc: '/images/EPALogo.svg',
   logoUrl: 'https://www.epa.gov',
   searchUrl: 'https://search.epa.gov/epasearch',
   menuItems: [

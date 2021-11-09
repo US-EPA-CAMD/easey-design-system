@@ -1,8 +1,10 @@
-//import { useState } from 'react';
+import { useState } from 'react';
 
 import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
 
 import EnvBanner from '../EnvBanner/EnvBanner';
+// @ts-ignore
+import epaLogo from './images/EPALogo.svg';
 
 export interface MenuItem {
   name: string;
@@ -17,12 +19,11 @@ export interface HeaderProps {
   menuItems: MenuItem[];
 }
 
-export const Header = ({ logoSrc, logoUrl, searchUrl, environment, menuItems }: HeaderProps) => {
-  const menuExpanded = false;
-  //const [menuExpanded, setMenuExpanded] = useState(false);
+export const Header = ({ logoSrc = epaLogo, logoUrl, searchUrl, environment, menuItems }: HeaderProps) => {
+  const [menuExpanded, setMenuExpanded] = useState(false);
 
   const menuButtonClickedHandler = () => {
-    //setMenuExpanded(true);
+    setMenuExpanded(true);
 
     setTimeout(() => {
       const navClose = document.querySelector('button.usa-nav__close') as HTMLInputElement;
@@ -33,7 +34,7 @@ export const Header = ({ logoSrc, logoUrl, searchUrl, environment, menuItems }: 
   };
 
   const menuClosedHandler = () => {
-    //setMenuExpanded(false);
+    setMenuExpanded(false);
 
     setTimeout(() => {
       const menuButton = document.querySelector('div.usa-navbar button.usa-button') as HTMLInputElement;
