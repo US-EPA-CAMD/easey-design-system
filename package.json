@@ -4,7 +4,7 @@
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
   "main": "lib/index.js",
-  "module": "lib/index.mjs",
+  "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
   "repository": {
