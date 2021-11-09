@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.1.0...v1.2.0) (2021-11-09)
+
+
+### Features
+
+* new config ([24289a0](https://github.com/US-EPA-CAMD/easey-design-system/commit/24289a01ac2740f020620a44bbd2bb7f5bcd4e42))
+* stuff ([e9275d7](https://github.com/US-EPA-CAMD/easey-design-system/commit/e9275d74f506b54ca89431c6f244813770f40b90))
+
 # [1.1.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.0.2...v1.1.0) (2021-11-09)
 
 
