@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.3.0...v1.4.0) (2021-11-09)
+
+
+### Features
+
+* different name for module ([c546839](https://github.com/US-EPA-CAMD/easey-design-system/commit/c546839cb8829630f5c9f1154d2126b834f99631))
+
 # [1.3.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.2.0...v1.3.0) (2021-11-09)
 
 
