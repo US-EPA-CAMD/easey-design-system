@@ -1,5 +1,5 @@
 export * from './AccordionMenu/AccordionMenu';
 export * from './AppVersion/AppVersion';
-export * from './ContactUs/ContactUs';
+export * from './ContactForm/ContactForm';
 export * from './EnvBanner/EnvBanner';
 export * from './Header/Header';
