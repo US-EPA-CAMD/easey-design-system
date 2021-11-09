@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.5.0...v1.6.0) (2021-11-09)
+
+
+### Features
+
+* epalogo included by default ([a84ab32](https://github.com/US-EPA-CAMD/easey-design-system/commit/a84ab32e29e08fb4c297e4e262edf77ef6f53a7b))
+
 # [1.5.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.4.0...v1.5.0) (2021-11-09)
 
 
