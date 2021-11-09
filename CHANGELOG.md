@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.4.0...v1.5.0) (2021-11-09)
+
+
+### Features
+
+* adding svg packager ([8fde37b](https://github.com/US-EPA-CAMD/easey-design-system/commit/8fde37b62e99e32bc9cf6a7bb6fa74ea464adc79))
+
 # [1.4.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.3.0...v1.4.0) (2021-11-09)
 
 
