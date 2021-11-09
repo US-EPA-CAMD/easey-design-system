@@ -1,13 +1,6 @@
 //import { useState } from 'react';
 
-import {
-  Link,
-  Search,
-  GovBanner,
-  PrimaryNav,
-  NavMenuButton,
-  Header as USWDSHeader
-} from '@trussworks/react-uswds';
+import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
 
 import EnvBanner from '../EnvBanner/EnvBanner';
 
@@ -24,13 +17,7 @@ export interface HeaderProps {
   menuItems: MenuItem[];
 }
 
-export const Header = ({
-  logoSrc,
-  logoUrl,
-  searchUrl,
-  environment,
-  menuItems
-}: HeaderProps) => {
+export default function Header({ logoSrc, logoUrl, searchUrl, environment, menuItems }: HeaderProps) {
   const menuExpanded = false;
   //const [menuExpanded, setMenuExpanded] = useState(false);
 
@@ -128,6 +115,4 @@ export const Header = ({
       </USWDSHeader>
     </div>
   );
-};
-
-export default Header;
+}

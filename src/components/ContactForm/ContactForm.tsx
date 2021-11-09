@@ -1,12 +1,4 @@
-import {
-  Button,
-  TextInput,
-  Label,
-  Radio,
-  CharacterCount,
-  Alert,
-  Fieldset
-} from '@trussworks/react-uswds';
+import { Button, TextInput, Label, Radio, CharacterCount, Alert, Fieldset } from '@trussworks/react-uswds';
 
 import '../easey-design-system.scss';
 
@@ -17,7 +9,7 @@ export interface Subject {
 
 export interface ContactFormProps {
   title?: string;
-  summary: string;  
+  summary: string;
   subjectsTitle?: string;
   subjects: Subject[];
   commentTitle?: string;
@@ -26,18 +18,17 @@ export interface ContactFormProps {
   submitStatusText?: string;
 }
 
-export const ContactForm = ({
-  title = "Contact Us",
+export default function ContactForm({
+  title = 'Contact Us',
   summary,
   subjects,
-  subjectsTitle = "Comment Types",
-  commentTitle  = "Comment",
+  subjectsTitle = 'Comment Types',
+  commentTitle = 'Comment',
   submited = false,
   submitStatus,
   submitStatusText,
   onSubmit,
-}: ContactFormProps & JSX.IntrinsicElements['button']) => {
-
+}: ContactFormProps & JSX.IntrinsicElements['button']) {
   return (
     <>
       <div className="grid-row margin-top-5">
@@ -49,12 +40,7 @@ export const ContactForm = ({
       </div>
       <div>
         <Label htmlFor="txtEmail">Email</Label>
-        <TextInput
-          className="modalUserInput"
-          id="txtEmail"
-          epa-testid="txtEmail"
-          name="txtEmail"
-          type="text" />
+        <TextInput className="modalUserInput" id="txtEmail" epa-testid="txtEmail" name="txtEmail" type="text" />
       </div>
       <div className="margin-top-2">
         <Fieldset legend={subjectsTitle}>
@@ -75,13 +61,7 @@ export const ContactForm = ({
         <Label htmlFor="txtComment" id="labelComment">
           {commentTitle}
         </Label>
-        <CharacterCount
-          isTextArea={true}
-          id="txtComment"
-          name="txtComment"
-          maxLength={500}
-          rows={3}
-        />
+        <CharacterCount isTextArea={true} id="txtComment" name="txtComment" maxLength={500} rows={3} />
       </div>
       <div className="margin-top-2">
         <Button
@@ -95,21 +75,19 @@ export const ContactForm = ({
           Submit
         </Button>
       </div>
-      { submited ?
-          <div className="margin-top-2">
-          { submitStatus ?
-              <Alert type="success" heading="Success">
-                {submitStatusText}
-              </Alert>
-            :
-              <Alert type="error" heading="Error">
-                {submitStatusText}
-              </Alert>
-          }
-          </div>
-        : null
-      }
+      {submited ? (
+        <div className="margin-top-2">
+          {submitStatus ? (
+            <Alert type="success" heading="Success">
+              {submitStatusText}
+            </Alert>
+          ) : (
+            <Alert type="error" heading="Error">
+              {submitStatusText}
+            </Alert>
+          )}
+        </div>
+      ) : null}
     </>
   );
 }
-export default ContactForm;

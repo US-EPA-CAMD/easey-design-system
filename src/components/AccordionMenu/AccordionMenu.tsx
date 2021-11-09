@@ -19,7 +19,7 @@ export interface AccordionMenuProps {
   isSubnav: boolean;
 }
 
-export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): JSX.Element => {
+export default function AccordionMenu({ items, isSubnav = false }: AccordionMenuProps): JSX.Element {
   const menuItems = items;
   //const [menuItems, setMenuItems] = useState(items);
 
@@ -59,5 +59,4 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
       </ul>
     </div>
   );
-};
-export default AccordionMenu;
+}
