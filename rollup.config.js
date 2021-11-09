@@ -34,9 +34,7 @@ const rollupConfig = [
   // * javascript sub-bundle
   bundle({
     plugins: [
-      resolve(),
       esbuild(),
-      commonjs(),
       typescript({
         declaration: true,
         declarationDir: 'lib',
@@ -50,6 +48,8 @@ const rollupConfig = [
           '**/*.test.{js+(|x), ts+(|x)}',
         ],
       }),
+      commonjs(),
+      resolve(),
       bundleScss({ output: 'easey-design-system.scss' }),
     ],
     output: [
@@ -71,9 +71,7 @@ const rollupConfig = [
   // * typescript sub-bundle
   bundle({
     plugins: [
-      resolve(),
       dts(),
-      commonjs(),
       typescript({
         declaration: true,
         declarationDir: 'lib',
@@ -87,6 +85,8 @@ const rollupConfig = [
           '**/*.test.{js+(|x), ts+(|x)}',
         ],
       }),
+      commonjs(),
+      resolve(),
       bundleScss({ output: 'easey-design-system.scss' }),
     ],
     output: {
