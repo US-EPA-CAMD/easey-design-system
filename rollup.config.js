@@ -16,8 +16,8 @@ import commonjs from '@rollup/plugin-commonjs';
 /*** integrate with typescript ***/
 import typescript from '@rollup/plugin-typescript';
 
-/*** css manipulation with ecmascript ***/
-// import postcss from 'rollup-plugin-postcss';
+import svgr from '@svgr/rollup';
+import url from '@rollup/plugin-url';
 
 // *** save package.json locally to refer to its members
 const packageJson = require('./package.json');
@@ -43,6 +43,8 @@ const rollupConfig = [
         declarationDir: 'lib',
       }),
       bundleScss({ output: 'easey-design-system.scss' }),
+      url(),
+      svgr(),
     ],
     output: [
       // common javascript (support for apps using old CJS standard)
@@ -71,6 +73,8 @@ const rollupConfig = [
         declarationDir: 'lib',
       }),
       bundleScss({ output: 'easey-design-system.scss' }),
+      url(),
+      svgr(),
     ],
     output: {
       file: packageJson.types,
