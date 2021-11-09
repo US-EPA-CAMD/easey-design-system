@@ -13,22 +13,22 @@ export interface ContactFormProps {
   subjectsTitle?: string;
   subjects: Subject[];
   commentTitle?: string;
-  submited: boolean;
+  submitted: boolean;
   submitStatus?: boolean;
   submitStatusText?: string;
 }
 
-export default function ContactForm({
+export const ContactForm = ({
   title = 'Contact Us',
   summary,
   subjects,
   subjectsTitle = 'Comment Types',
   commentTitle = 'Comment',
-  submited = false,
+  submitted = false,
   submitStatus,
   submitStatusText,
   onSubmit,
-}: ContactFormProps & JSX.IntrinsicElements['button']) {
+}: ContactFormProps & JSX.IntrinsicElements['button']) => {
   return (
     <>
       <div className="grid-row margin-top-5">
@@ -75,7 +75,7 @@ export default function ContactForm({
           Submit
         </Button>
       </div>
-      {submited ? (
+      {submitted ? (
         <div className="margin-top-2">
           {submitStatus ? (
             <Alert type="success" heading="Success">
@@ -90,4 +90,5 @@ export default function ContactForm({
       ) : null}
     </>
   );
-}
+};
+export default ContactForm;

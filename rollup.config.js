@@ -16,6 +16,9 @@ import commonjs from '@rollup/plugin-commonjs';
 /*** integrate with typescript ***/
 import typescript from '@rollup/plugin-typescript';
 
+/*** css manipulation with ecmascript ***/
+// import postcss from 'rollup-plugin-postcss';
+
 // *** save package.json locally to refer to its members
 const packageJson = require('./package.json');
 
@@ -24,9 +27,7 @@ const packageJson = require('./package.json');
 const bundle = (config) => ({
   ...config,
   input: 'src/components/index.ts',
-  external: {
-    includeDependencies: true,
-  },
+  external: ['react', 'react-dom'],
 });
 
 // *** rollup config, consisting of 2 sub-bundles
@@ -34,22 +35,13 @@ const rollupConfig = [
   // * javascript sub-bundle
   bundle({
     plugins: [
+      resolve(),
       esbuild(),
+      commonjs(),
       typescript({
         declaration: true,
         declarationDir: 'lib',
-        include: ['*.js+(|x)', '**/*.js+(|x)'],
-        exclude: [
-          'coverage',
-          'config',
-          'dist',
-          'node_modules/**',
-          '*.test.{js+(|x), ts+(|x)}',
-          '**/*.test.{js+(|x), ts+(|x)}',
-        ],
       }),
-      commonjs(),
-      resolve(),
       bundleScss({ output: 'easey-design-system.scss' }),
     ],
     output: [
@@ -71,22 +63,13 @@ const rollupConfig = [
   // * typescript sub-bundle
   bundle({
     plugins: [
+      resolve(),
       dts(),
+      commonjs(),
       typescript({
         declaration: true,
         declarationDir: 'lib',
-        include: ['*.js+(|x)', '**/*.js+(|x)'],
-        exclude: [
-          'coverage',
-          'config',
-          'dist',
-          'node_modules/**',
-          '*.test.{js+(|x), ts+(|x)}',
-          '**/*.test.{js+(|x), ts+(|x)}',
-        ],
       }),
-      commonjs(),
-      resolve(),
       bundleScss({ output: 'easey-design-system.scss' }),
     ],
     output: {

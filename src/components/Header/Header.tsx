@@ -17,7 +17,7 @@ export interface HeaderProps {
   menuItems: MenuItem[];
 }
 
-export default function Header({ logoSrc, logoUrl, searchUrl, environment, menuItems }: HeaderProps) {
+export const Header = ({ logoSrc, logoUrl, searchUrl, environment, menuItems }: HeaderProps) => {
   const menuExpanded = false;
   //const [menuExpanded, setMenuExpanded] = useState(false);
 
@@ -115,4 +115,6 @@ export default function Header({ logoSrc, logoUrl, searchUrl, environment, menuI
       </USWDSHeader>
     </div>
   );
-}
+};
+
+export default Header;

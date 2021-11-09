@@ -3,7 +3,7 @@ export interface AppVersionProps {
   publishDate: string;
 }
 
-export default function AppVersion({ version, publishDate }: AppVersionProps): JSX.Element {
+export const AppVersion = ({ version, publishDate }: AppVersionProps): JSX.Element => {
   return (
     <div className="display-flex flex-column bg-base-lightest">
       <div className="flex-align-self-end">
@@ -11,4 +11,6 @@ export default function AppVersion({ version, publishDate }: AppVersionProps): J
       </div>
     </div>
   );
-}
+};
+
+export default AppVersion;
