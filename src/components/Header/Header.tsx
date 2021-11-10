@@ -4,7 +4,7 @@ import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHead
 
 import EnvBanner from '../EnvBanner/EnvBanner';
 // @ts-ignore
-import epaLogo from './images/EPALogo.svg';
+import defaultEpaLogo from './images/EPALogo.svg';
 
 export interface MenuItem {
   name: string;
@@ -19,7 +19,44 @@ export interface HeaderProps {
   menuItems: MenuItem[];
 }
 
-export const Header = ({ logoSrc = epaLogo, logoUrl, searchUrl, environment, menuItems }: HeaderProps) => {
+const defaultArgs = {
+  logoUrl: 'https://www.epa.gov',
+  searchUrl: 'https://search.epa.gov/epasearch',
+  menuItems: [
+    {
+      name: 'Environmental Topics',
+      href: 'https://www.epa.gov/environmental-topics',
+    },
+    {
+      name: 'Laws and Regulations',
+      href: 'https://www.epa.gov/laws-regulations',
+    },
+    {
+      name: 'About EPA',
+      href: 'https://www.epa.gov/aboutepa',
+    },
+    {
+      name: 'Accessibility',
+      href: 'https://www.epa.gov/accessibility',
+    },
+    {
+      name: 'Privacy',
+      href: 'https://www.epa.gov/privacy',
+    },
+    {
+      name: 'Privacy and Security Notice',
+      href: 'https://www.epa.gov/privacy/privacy-and-security-notice',
+    },
+  ],
+};
+
+export const Header = ({
+  logoSrc = defaultEpaLogo,
+  logoUrl = defaultArgs.logoUrl,
+  searchUrl = defaultArgs.searchUrl,
+  menuItems = defaultArgs.menuItems,
+  environment,
+}: HeaderProps) => {
   const [menuExpanded, setMenuExpanded] = useState(false);
 
   const menuButtonClickedHandler = () => {
