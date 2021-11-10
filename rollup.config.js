@@ -45,7 +45,7 @@ const rollupConfig = [
       }),
       postcss({
         extract: false,
-        modules: true,
+        modules: false,
         use: ['sass'],
       }),
       url(),
@@ -56,14 +56,14 @@ const rollupConfig = [
       {
         file: packageJson.main,
         format: 'cjs',
-        sourcemap: true,
+        sourcemap: false,
         name: 'react-ts-lib',
       },
       // ecmascript (more modern ESM standard)
       {
         file: packageJson.module,
         format: 'esm',
-        sourcemap: true,
+        sourcemap: false,
       },
     ],
   }),
