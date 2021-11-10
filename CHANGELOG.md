@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.7.0...v1.8.0) (2021-11-10)
+
+
+### Features
+
+* restoring accidentally deleted portion of package.json ([bdf0acc](https://github.com/US-EPA-CAMD/easey-design-system/commit/bdf0accf9436fd81274fb1f6d1038de4b1302d27))
+* reworked/improved/optimized ([6ddf3eb](https://github.com/US-EPA-CAMD/easey-design-system/commit/6ddf3eb696c7a1212912141c585c1b2433ecbceb))
+
 # [1.7.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.6.0...v1.7.0) (2021-11-10)
 
 

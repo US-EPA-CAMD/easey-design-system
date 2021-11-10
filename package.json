@@ -1,6 +1,6 @@
 {
   "name": "@us-epa-camd/easey-design-system",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
   "main": "lib/index.js",
@@ -24,7 +24,6 @@
     "semantic-release": "semantic-release",
     "postbuild": "cp -r ./package.json ./lib",
     "postversion": "cp -r package.json .."
-
   },
   "peerDependencies": {
     "react": "^17.0.2",
