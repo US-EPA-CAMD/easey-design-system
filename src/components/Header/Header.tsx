@@ -87,9 +87,10 @@ export const Header = ({
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
     // *** and mitigate any character collision issues during http request with window.open
     if (event && event.target) {
-      const target = event.target as HTMLInputElement;
-      const searchTerm = encodeURI(target.value.trim());
+      // @ts-ignore
+      const searchTerm = document.querySelector('#search-field').value.trim() as string;
       window.open(`${searchUrl}/?querytext=${searchTerm}`, '_blank');
+
       return true;
     }
     return false;
@@ -118,7 +119,7 @@ export const Header = ({
 
   return (
     <div className="header-container">
-      <GovBanner className="padding-y-2px bg-base-lighter" />
+      <GovBanner className="padding-y-2px bg-base-lighter width-full" />
       <div className={`usa-overlay ${menuExpanded ? 'is-visible' : ''}`} />
       {environment && environment !== 'prod' ? <EnvBanner label={environment} /> : null}
       <USWDSHeader basic={true} className="margin-bottom-neg-1">
@@ -134,16 +135,14 @@ export const Header = ({
             <img src={logoSrc} className="margin-3" alt="Official EPA Logo" title="Official EPA Logo" />
           )}
         </a>
-        <div className="usa-nav-container width-full">
-          <div className="usa-navbar">
-            <NavMenuButton
-              label="Menu"
-              onClick={() => menuButtonClickedHandler()}
-              className="float-right usa-button"
-              aria-haspopup="true"
-              aria-expanded={menuExpanded}
-            />
-          </div>
+        <div className="usa-nav-container">
+          <NavMenuButton
+            label="Menu"
+            onClick={() => menuButtonClickedHandler()}
+            className="margin-2 float-right clearfix usa-button"
+            aria-haspopup="true"
+            aria-expanded={menuExpanded}
+          />
           <PrimaryNav
             key="primaryNav"
             items={links}
