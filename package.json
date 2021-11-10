@@ -18,16 +18,15 @@
     "commit": "cz",
     "build": "rollup -c",
     "test": "react-scripts test --coverage --watchAll=false --testResultsProcessor=jest-sonar-reporter",
-    "storybook": "start-storybook -p 6006 -s public",
+    "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "gh-pages -d storybook-static",
-    "semantic-release": "semantic-release",
-    "postbuild": "cp -r ./package.json ./lib",
-    "postversion": "cp -r package.json .."
+    "semantic-release": "semantic-release"
+
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "sass": "^1.42.1"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.0",

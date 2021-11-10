@@ -1,7 +1,5 @@
 import { Button, TextInput, Label, Radio, CharacterCount, Alert, Fieldset } from '@trussworks/react-uswds';
 
-import '../easey-design-system.scss';
-
 export interface Subject {
   id: number;
   value: string;

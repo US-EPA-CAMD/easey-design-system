@@ -2,7 +2,7 @@
 import classnames from 'classnames';
 import { KeyboardArrowDownSharp, KeyboardArrowUpSharp } from '@material-ui/icons';
 
-import '../easey-design-system.scss';
+import './AccordionMenu.scss';
 
 export interface AccordionMenuItem {
   id: string;

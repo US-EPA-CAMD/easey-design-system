@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
 
 import EnvBanner from '../EnvBanner/EnvBanner';
-// @ts-ignore
-import defaultEpaLogo from './images/EPALogo.svg';
 
 export interface MenuItem {
   name: string;
@@ -12,14 +10,15 @@ export interface MenuItem {
 }
 
 export interface HeaderProps {
-  logoSrc: string;
-  logoUrl: string;
-  searchUrl: string;
-  environment?: string;
-  menuItems: MenuItem[];
+  logoSrc?: string;
+  logoUrl?: string;
+  searchUrl?: string;
+  environment: string;
+  menuItems?: MenuItem[];
 }
 
 const defaultArgs = {
+  logoSrc: 'images/EPALogo.svg',
   logoUrl: 'https://www.epa.gov',
   searchUrl: 'https://search.epa.gov/epasearch',
   menuItems: [
@@ -51,7 +50,7 @@ const defaultArgs = {
 };
 
 export const Header = ({
-  logoSrc = defaultEpaLogo,
+  logoSrc = defaultArgs.logoSrc,
   logoUrl = defaultArgs.logoUrl,
   searchUrl = defaultArgs.searchUrl,
   menuItems = defaultArgs.menuItems,
@@ -121,10 +120,10 @@ export const Header = ({
     <div className="header-container">
       <GovBanner className="padding-y-2px bg-base-lighter" />
       <div className={`usa-overlay ${menuExpanded ? 'is-visible' : ''}`} />
-      {environment ? <EnvBanner label={environment} /> : null}
+      {environment && environment !== 'prod' ? <EnvBanner label={environment} /> : null}
       <USWDSHeader basic={true} className="margin-bottom-neg-1">
         <a href={logoUrl} target="_blank" rel="noopener noreferrer" title="EPA Home page">
-          <img src={logoSrc} className="margin-3" alt="Official EPA Logo" />
+          <img src={`${logoSrc}`} className="margin-3" alt="Official EPA Logo" />
         </a>
         <div className="usa-nav-container">
           <div className="usa-navbar">

@@ -1,3 +1,8 @@
 body {
   font-family: "Merriweather", Georgia, serif !important;
 }
+
+.flex-force-break {
+  flex-basis: 100%;
+  height: 0;
+}

@@ -5,7 +5,8 @@ import dts from 'rollup-plugin-dts';
 import esbuild from 'rollup-plugin-esbuild';
 
 /*** used to convert accompanying scss to css ***/
-import bundleScss from 'rollup-plugin-bundle-scss';
+//import bundleScss from 'rollup-plugin-bundle-scss';
+import postcss from 'rollup-plugin-postcss';
 
 /*** resolves node_module resolutions ***/
 import resolve from '@rollup/plugin-node-resolve';
@@ -42,7 +43,11 @@ const rollupConfig = [
         declaration: true,
         declarationDir: 'lib',
       }),
-      bundleScss({ output: 'easey-design-system.scss' }),
+      postcss({
+        extract: false,
+        modules: true,
+        use: ['sass'],
+      }),
       url(),
       svgr(),
     ],
@@ -72,7 +77,11 @@ const rollupConfig = [
         declaration: true,
         declarationDir: 'lib',
       }),
-      bundleScss({ output: 'easey-design-system.scss' }),
+      postcss({
+        extract: true,
+        modules: false,
+        use: ['sass'],
+      }),
       url(),
       svgr(),
     ],
