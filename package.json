@@ -21,7 +21,9 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "gh-pages -d storybook-static",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postbuild": "cp -r ./package.json ./lib",
+    "postversion": "cp -r package.json .."
   },
   "peerDependencies": {
     "react": "^17.0.2",
