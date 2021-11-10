@@ -1,3 +1,11 @@
+# [1.12.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.11.0...v1.12.0) (2021-11-10)
+
+
+### Features
+
+* header responsiveness fixed; menu search fixed; svgs more streamlines (reduced size) ([52930d6](https://github.com/US-EPA-CAMD/easey-design-system/commit/52930d695a6e59e7f8bf11b4a33918a14350a2ae))
+* svg base64 encoded for distribution ([3a67b5c](https://github.com/US-EPA-CAMD/easey-design-system/commit/3a67b5c70418161aee0f3f135257998c68c39313))
+
 # [1.11.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.10.0...v1.11.0) (2021-11-10)
 
 
