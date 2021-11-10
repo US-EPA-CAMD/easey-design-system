@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.8.0...v1.9.0) (2021-11-10)
+
+
+### Features
+
+* removing modules from css (overkill) ([84423d2](https://github.com/US-EPA-CAMD/easey-design-system/commit/84423d233348d78d2dddc42e6c81c2fe83366d72))
+
 # [1.8.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.7.0...v1.8.0) (2021-11-10)
 
 
