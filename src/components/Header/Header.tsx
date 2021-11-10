@@ -4,6 +4,8 @@ import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHead
 
 import EnvBanner from '../EnvBanner/EnvBanner';
 
+import { ReactSVG } from 'react-svg';
+
 export interface MenuItem {
   name: string;
   href: string;
@@ -122,15 +124,19 @@ export const Header = ({
       <div className={`usa-overlay ${menuExpanded ? 'is-visible' : ''}`} />
       {environment && environment !== 'prod' ? <EnvBanner label={environment} /> : null}
       <USWDSHeader basic={true} className="margin-bottom-neg-1">
-        <a href={logoUrl} target="_blank" rel="noopener noreferrer" title="EPA Home page">
-          <img src={`${logoSrc}`} className="margin-3" alt="Official EPA Logo" />
-        </a>
-        <div className="usa-nav-container">
+        <div className="usa-nav-container width-full">
+          <a href={logoUrl} target="_blank" rel="noopener noreferrer" title="EPA Home page">
+            <ReactSVG
+              src={defaultArgs.logoSrc}
+              className="display-inline position-relative top-neg-2 float-left clearfix"
+              alt="Official EPA Logo"
+            />
+          </a>
           <div className="usa-navbar">
             <NavMenuButton
               label="Menu"
               onClick={() => menuButtonClickedHandler()}
-              className="display-block usa-button"
+              className="float-right usa-button"
               aria-haspopup="true"
               aria-expanded={menuExpanded}
             />

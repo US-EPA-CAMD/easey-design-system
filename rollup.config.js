@@ -17,9 +17,6 @@ import commonjs from '@rollup/plugin-commonjs';
 /*** integrate with typescript ***/
 import typescript from '@rollup/plugin-typescript';
 
-import svgr from '@svgr/rollup';
-import url from '@rollup/plugin-url';
-
 // *** save package.json locally to refer to its members
 const packageJson = require('./package.json');
 
@@ -48,8 +45,6 @@ const rollupConfig = [
         modules: false,
         use: ['sass'],
       }),
-      url(),
-      svgr(),
     ],
     output: [
       // common javascript (support for apps using old CJS standard)
@@ -78,12 +73,10 @@ const rollupConfig = [
         declarationDir: 'lib',
       }),
       postcss({
-        extract: true,
+        extract: false,
         modules: false,
         use: ['sass'],
       }),
-      url(),
-      svgr(),
     ],
     output: {
       file: packageJson.types,
