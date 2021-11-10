@@ -1,3 +1,11 @@
+# [1.11.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.10.0...v1.11.0) (2021-11-10)
+
+
+### Features
+
+* restoring package.json copy commands ([bfe39d3](https://github.com/US-EPA-CAMD/easey-design-system/commit/bfe39d31c31b65bb206772d8c0672556fd5d88c6))
+* svgs inlined; config changed; optimized; individual css taken out; bundle compressed ([9130fc7](https://github.com/US-EPA-CAMD/easey-design-system/commit/9130fc75a8a1fcb88f20f7221cce53d92d0c4fe7))
+
 # [1.10.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.9.0...v1.10.0) (2021-11-10)
 
 
