@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.6.0...v1.7.0) (2021-11-10)
+
+
+### Features
+
+* defaults added to Header ([5be7bf8](https://github.com/US-EPA-CAMD/easey-design-system/commit/5be7bf805c42d03629b6476e1f92b13994a6a094))
+
 # [1.6.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.5.0...v1.6.0) (2021-11-09)
 
 
