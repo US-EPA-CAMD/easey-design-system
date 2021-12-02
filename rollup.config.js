@@ -5,7 +5,6 @@ import dts from 'rollup-plugin-dts';
 import esbuild from 'rollup-plugin-esbuild';
 
 /*** used to convert accompanying scss to css ***/
-//import bundleScss from 'rollup-plugin-bundle-scss';
 import postcss from 'rollup-plugin-postcss';
 
 /*** resolves node_module resolutions ***/
