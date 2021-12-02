@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.12.0...v1.13.0) (2021-12-02)
+
+
+### Features
+
+* **layout:** ability to override uswds styles at the global level ([ba8374b](https://github.com/US-EPA-CAMD/easey-design-system/commit/ba8374bac3d2759fe795121f978d333ba1f02ced))
+
 # [1.12.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.11.0...v1.12.0) (2021-11-10)
 
 
