@@ -75,6 +75,15 @@
     "typescript": "^4.3.5",
     "uswds": "^2.10.3"
   },
+  "resolutions": {
+    "ansi-regex": "^5.0.1",
+    "browserslist": "^4.16.5",
+    "glob-parent": "^5.1.2",
+    "immer": "^9.0.6",
+    "json-schema": "^0.4.0",    
+    "nth-check": "^2.0.1",
+    "trim": "^0.0.3"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
