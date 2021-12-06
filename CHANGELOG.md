@@ -1,3 +1,10 @@
+## [1.13.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.13.1...v1.13.2) (2021-12-06)
+
+
+### Bug Fixes
+
+* fixing deploy storybook ([4e0632d](https://github.com/US-EPA-CAMD/easey-design-system/commit/4e0632dcea8300ff1fc4c583ae69d7b1d9315d84))
+
 ## [1.13.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.13.0...v1.13.1) (2021-12-06)
 
 
