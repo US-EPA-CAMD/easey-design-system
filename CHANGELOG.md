@@ -1,3 +1,11 @@
+## [1.13.5](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.13.4...v1.13.5) (2021-12-06)
+
+
+### Bug Fixes
+
+* added README.md disclaimer, license & contribution ([7136d6e](https://github.com/US-EPA-CAMD/easey-design-system/commit/7136d6e6085ddf1e896e8709f4f08252bf226b79))
+* reordered license, contributing, and disclaimer text ([34a98bc](https://github.com/US-EPA-CAMD/easey-design-system/commit/34a98bcfd44bccfc189e12a181756c1e3a93f1c5))
+
 ## [1.13.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.13.3...v1.13.4) (2021-12-06)
 
 
