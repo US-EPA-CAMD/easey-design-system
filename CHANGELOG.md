@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.15.0...v1.16.0) (2021-12-08)
+
+
+### Features
+
+* getting rid of ts warnings ([3dec631](https://github.com/US-EPA-CAMD/easey-design-system/commit/3dec631193387f7dea60e336aaa06541d8f69da0))
+
 # [1.15.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.14.0...v1.15.0) (2021-12-08)
 
 
