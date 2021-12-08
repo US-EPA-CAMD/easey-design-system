@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.16.0...v1.17.0) (2021-12-08)
+
+
+### Features
+
+* **508:** 508 fixes ([7e10a5e](https://github.com/US-EPA-CAMD/easey-design-system/commit/7e10a5e7d57bc0d47f7b6663583cfa2e28229703))
+
 # [1.16.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.15.0...v1.16.0) (2021-12-08)
 
 
