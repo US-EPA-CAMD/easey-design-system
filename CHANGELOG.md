@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.13.5...v1.14.0) (2021-12-08)
+
+
+### Features
+
+* **508 fixes for header / menu:** header and right side nav made 508 compliant ([687ea0c](https://github.com/US-EPA-CAMD/easey-design-system/commit/687ea0c49bffc75c0f283958a2e2b6cebb9ee7f3))
+
 ## [1.13.5](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.13.4...v1.13.5) (2021-12-06)
 
 
