@@ -56,7 +56,7 @@ export const focusTrap = (selector: string, callback = () => {}) => {
   // *** element is in scope
   setTimeout(() => {
     (firstComponentFocusableElement as HTMLElement).focus();
-  }, 750);
+  });
 
   return {
     component,
