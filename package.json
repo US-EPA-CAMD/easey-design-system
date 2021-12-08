@@ -1,6 +1,6 @@
 {
   "name": "@us-epa-camd/easey-design-system",
-  "version": "1.13.0",
+  "version": "1.13.5",
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
   "main": "lib/index.js",
@@ -74,6 +74,15 @@
     "tslib": "^2.3.1",
     "typescript": "^4.3.5",
     "uswds": "^2.10.3"
+  },
+  "resolutions": {
+    "ansi-regex": "^5.0.1",
+    "browserslist": "^4.16.5",
+    "glob-parent": "^5.1.2",
+    "immer": "^9.0.6",
+    "json-schema": "^0.4.0",
+    "nth-check": "^2.0.1",
+    "trim": "^0.0.3"
   },
   "eslintConfig": {
     "extends": [
