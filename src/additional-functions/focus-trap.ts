@@ -12,6 +12,7 @@ export const focusTrap = (selector: string, callback = () => {}) => {
 
   // *** isolate component and its focusable content
   const component = document.querySelector(selector);
+
   // @ts-ignore
   const focusableComponentContent = component.querySelectorAll(componentFocusableElements);
 
@@ -21,7 +22,7 @@ export const focusTrap = (selector: string, callback = () => {}) => {
 
   // *** isolate last element to be focused inside component
   const lastComponentFocusableElement = focusableComponentContent
-    ? focusableComponentContent[focusableComponentContent?.length - 1]
+    ? focusableComponentContent[focusableComponentContent.length - 1]
     : null;
 
   // *** this function will be used to deal with key presses while the component is open
