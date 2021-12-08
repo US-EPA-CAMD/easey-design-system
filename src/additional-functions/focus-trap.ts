@@ -12,10 +12,12 @@ export const focusTrap = (selector: string, callback = () => {}) => {
 
   // *** isolate component and its focusable content
   const component = document.querySelector(selector);
-  const focusableComponentContent = component?.querySelectorAll(componentFocusableElements);
+  // @ts-ignore
+  const focusableComponentContent = component.querySelectorAll(componentFocusableElements);
 
   // *** isolate first element to be focused inside component
-  const firstComponentFocusableElement = component?.querySelectorAll(componentFocusableElements)[0];
+  // @ts-ignore
+  const firstComponentFocusableElement = component.querySelectorAll(componentFocusableElements)[0];
 
   // *** isolate last element to be focused inside component
   const lastComponentFocusableElement = focusableComponentContent
@@ -34,7 +36,7 @@ export const focusTrap = (selector: string, callback = () => {}) => {
       if (event.shiftKey) {
         // *** if focused on first focusable element, cycle back to last on next tab press
         if (document.activeElement === firstComponentFocusableElement) {
-          (lastComponentFocusableElement as HTMLElement)?.focus();
+          (lastComponentFocusableElement as HTMLElement).focus();
           event.preventDefault();
         }
       }
@@ -42,7 +44,7 @@ export const focusTrap = (selector: string, callback = () => {}) => {
       else {
         // *** if focused on last focusable element, cycle back to first on next tab press
         if (document.activeElement === lastComponentFocusableElement) {
-          (firstComponentFocusableElement as HTMLElement)?.focus();
+          (firstComponentFocusableElement as HTMLElement).focus();
           event.preventDefault();
         }
       }
@@ -52,7 +54,7 @@ export const focusTrap = (selector: string, callback = () => {}) => {
   // *** focus on the first element as soon as modal pops open and the first focusable
   // *** element is in scope
   setTimeout(() => {
-    (firstComponentFocusableElement as HTMLElement)?.focus();
+    (firstComponentFocusableElement as HTMLElement).focus();
   }, 750);
 
   return {

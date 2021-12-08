@@ -38,6 +38,7 @@ const rollupConfig = [
       typescript({
         declaration: true,
         declarationDir: 'lib',
+        tsconfig: './tsconfig.json',
       }),
       postcss({
         extract: false,
@@ -70,6 +71,7 @@ const rollupConfig = [
       typescript({
         declaration: true,
         declarationDir: 'lib',
+        tsconfig: './tsconfig.json',
       }),
       postcss({
         extract: false,
