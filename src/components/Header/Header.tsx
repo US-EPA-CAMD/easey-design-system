@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import _ from 'lodash';
 
 import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
+import { focusTrap } from '../../additional-functions/focus-trap';
 
 import EnvBanner from '../EnvBanner/EnvBanner';
 
@@ -58,26 +59,35 @@ export const Header = ({
 }: HeaderProps) => {
   const [menuExpanded, setMenuExpanded] = useState(false);
 
-  const menuButtonClickedHandler = () => {
-    setMenuExpanded(true);
+  const toggleRightSideNav = () => {
+    if (!menuExpanded) {
+      // *** move search box to the top
+      document
+        .querySelector('#navRightSide')
+        ?.insertBefore(
+          document.querySelector('#navRightSide form') as Node,
+          document.querySelector('#navRightSide')?.childNodes[0] as Node,
+        );
 
-    setTimeout(() => {
-      const navClose = document.querySelector('button.usa-nav__close') as HTMLInputElement;
-      if (navClose) {
-        navClose.focus();
-      }
-    });
-  };
+      // *** move 'Close' button to the top
+      document
+        .querySelector('#navRightSide')
+        ?.insertBefore(
+          document.querySelector('#navRightSide .usa-nav__close') as Node,
+          document.querySelector('#navRightSide')?.childNodes[0] as Node,
+        );
+    }
 
-  const menuClosedHandler = () => {
-    setMenuExpanded(false);
+    const { handleKeyPress, firstComponentFocusableElement } = focusTrap('#navRightSide', () => setMenuExpanded(false));
 
-    setTimeout(() => {
-      const menuButton = document.querySelector('div.usa-navbar button.usa-button') as HTMLInputElement;
-      if (menuButton) {
-        menuButton.focus();
-      }
-    });
+    // *** FOCUS TRAP
+    if (!menuExpanded) {
+      document.addEventListener('keydown', handleKeyPress);
+    } else if (menuExpanded) {
+      document.removeEventListener('keydown', handleKeyPress);
+    }
+
+    setMenuExpanded((prvExpanded) => !prvExpanded);
   };
 
   const searchHandler = (event: React.FormEvent<HTMLFormElement>): boolean => {
@@ -87,8 +97,7 @@ export const Header = ({
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
     // *** and mitigate any character collision issues during http request with window.open
     if (event && event.target) {
-      // @ts-ignore
-      const searchTerm = document.querySelector('#search-field').value.trim() as string;
+      const searchTerm = (document.querySelector('#search-field') as HTMLInputElement)?.value.trim() as string;
       window.open(`${searchUrl}/?querytext=${searchTerm}`, '_blank');
 
       return true;
@@ -138,16 +147,17 @@ export const Header = ({
         <div className="usa-nav-container">
           <NavMenuButton
             label="Menu"
-            onClick={() => menuButtonClickedHandler()}
+            onClick={() => toggleRightSideNav()}
             className="margin-2 float-right clearfix usa-button"
             aria-haspopup="true"
             aria-expanded={menuExpanded}
           />
           <PrimaryNav
-            key="primaryNav"
             items={links}
             mobileExpanded={menuExpanded}
-            onToggleMobileNav={() => menuClosedHandler()}
+            onToggleMobileNav={() => toggleRightSideNav()}
+            key="primaryNav"
+            id="navRightSide"
           >
             <Search
               key="search-epa"
