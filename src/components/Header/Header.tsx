@@ -62,20 +62,20 @@ export const Header = ({
   const toggleRightSideNav = () => {
     if (!menuExpanded) {
       // *** move search box to the top
-      document
-        .querySelector('#navRightSide')
-        ?.insertBefore(
-          document.querySelector('#navRightSide form') as Node,
-          document.querySelector('#navRightSide')?.childNodes[0] as Node,
-        );
+      // @ts-ignore
+      document.querySelector('#navRightSide').insertBefore(
+        document.querySelector('#navRightSide form') as Node,
+        // @ts-ignore
+        document.querySelector('#navRightSide').childNodes[0] as Node,
+      );
 
       // *** move 'Close' button to the top
-      document
-        .querySelector('#navRightSide')
-        ?.insertBefore(
-          document.querySelector('#navRightSide .usa-nav__close') as Node,
-          document.querySelector('#navRightSide')?.childNodes[0] as Node,
-        );
+      // @ts-ignore
+      document.querySelector('#navRightSide').insertBefore(
+        document.querySelector('#navRightSide .usa-nav__close') as Node,
+        // @ts-ignore
+        document.querySelector('#navRightSide').childNodes[0] as Node,
+      );
     }
 
     const { handleKeyPress, firstComponentFocusableElement } = focusTrap('#navRightSide', () => setMenuExpanded(false));
@@ -97,7 +97,7 @@ export const Header = ({
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
     // *** and mitigate any character collision issues during http request with window.open
     if (event && event.target) {
-      const searchTerm = (document.querySelector('#search-field') as HTMLInputElement)?.value.trim() as string;
+      const searchTerm = (document.querySelector('#search-field') as HTMLInputElement).value.trim() as string;
       window.open(`${searchUrl}/?querytext=${searchTerm}`, '_blank');
 
       return true;
