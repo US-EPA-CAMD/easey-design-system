@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.18.1...v1.19.0) (2021-12-13)
+
+
+### Features
+
+* **global fonts:** global fonts ([0669640](https://github.com/US-EPA-CAMD/easey-design-system/commit/06696408283d8af4a2f7ff4e09fb0aa51a287815))
+
 ## [1.18.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.18.0...v1.18.1) (2021-12-13)
 
 
