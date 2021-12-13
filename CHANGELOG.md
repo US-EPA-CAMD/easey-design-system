@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.18.0...v1.18.1) (2021-12-13)
+
+
+### Bug Fixes
+
+* **contactform:** added aria-live to alerts in ContactForm ([c96a865](https://github.com/US-EPA-CAMD/easey-design-system/commit/c96a86576d0b422c3d3b52324d3ef3cd109ed38d)), closes [#2353](https://github.com/US-EPA-CAMD/easey-design-system/issues/2353)
+
 # [1.18.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.17.0...v1.18.0) (2021-12-08)
 
 
