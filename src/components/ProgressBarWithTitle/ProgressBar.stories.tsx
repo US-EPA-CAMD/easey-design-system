@@ -23,3 +23,10 @@ Halfway.args = {
   lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
   percentage: 20
 };
+
+export const Full = Template.bind({});
+Full.args = {
+  title: 'Emission Submission Progress',
+  lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
+  percentage: 100
+};
