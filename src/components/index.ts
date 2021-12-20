@@ -7,4 +7,4 @@ export * from './AppVersion/AppVersion';
 export * from './ContactForm/ContactForm';
 export * from './EnvBanner/EnvBanner';
 export * from './Header/Header';
-export * from './ProgressBarWithTitle/ProgressBarWithTitle';
+export * from './TitledProgressBar/TitledProgressBar';
