@@ -166,5 +166,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@ramonak/react-progress-bar": "^4.2.0"
   }
 }
