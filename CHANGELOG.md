@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.0...v1.20.1) (2021-12-21)
+
+
+### Bug Fixes
+
+* fixed flex width ([6ace82f](https://github.com/US-EPA-CAMD/easey-design-system/commit/6ace82fecc4c656aa0083b12b1d1a138cf7a480e))
+
 # [1.20.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.19.0...v1.20.0) (2021-12-20)
 
 
