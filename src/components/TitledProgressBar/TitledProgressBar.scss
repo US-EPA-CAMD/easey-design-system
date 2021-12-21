@@ -1,56 +1,55 @@
-@import "../../additional-scss/easey-design-styles";
+@import '../../additional-scss/easey-design-styles';
 
 .easey-progress-bar {
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
 
-    display: flex;
-    flex-wrap: wrap-reverse;
+  .barContainer {
+    width: 100%;
+    outline: 3px solid #005ea2;
+    border-radius: 3px;
+    background-color: white;
+  }
 
-    .barContainer{
-        width: 100%;
-        outline: 3px solid #005ea2;
-        border-radius: 3px;
-        background-color: white;
+  .title {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  .mainTitleText {
+    font-size: 1rem;
+  }
+
+  .subTitleText {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 640px) {
+    .wrapper {
+      flex: 100%;
     }
 
-    .title{
-        padding-left: 15px;
-        padding-top: 10px;
+    .title {
+      flex: 100%;
     }
 
-    .mainTitleText{
-        font-size: 1rem;
+    .mainTitleText {
+      text-align: right;
     }
 
-    .subTitleText{
-        font-size: .8rem;
+    .subTitleText {
+      text-align: right;
+    }
+  }
+
+  @media only screen and (min-width: 641px) {
+    .wrapper {
+      flex: 50%;
     }
 
-    @media only screen and (min-width: 300px) and (max-width: 640px){
-        .wrapper {
-          flex: 100%
-        }
-
-        .title{
-          flex: 100%
-        }
-
-        .mainTitleText{
-            text-align: right;
-        }
-
-        .subTitleText{
-            text-align: right;
-        }
+    .title {
+      flex: 50%;
     }
-
-    @media only screen and (min-width: 641px) {
-        .wrapper {
-          flex: 50%
-        }
-
-        .title{
-          flex: 50%
-        }
-    }
-    
+  }
 }
