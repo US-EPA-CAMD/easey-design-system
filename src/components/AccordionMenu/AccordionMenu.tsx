@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import { KeyboardArrowDownSharp, KeyboardArrowUpSharp } from '@material-ui/icons';
 
 import './AccordionMenu.scss';
+import { useState } from 'react';
 
 export interface AccordionMenuItem {
   id: string;
@@ -20,8 +21,8 @@ export interface AccordionMenuProps {
 }
 
 export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): JSX.Element => {
-  const menuItems = items;
-  //const [menuItems, setMenuItems] = useState(items);
+  //const menuItems = items;
+  const [menuItems, setMenuItems] = useState(items);
 
   const classes = classnames({
     'usa-sidenav': !isSubnav,
@@ -32,7 +33,7 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
     const newItems = [...menuItems];
     const item = newItems[index];
     item.expanded = !item.expanded;
-    //setMenuItems([...newItems]);
+    setMenuItems([...newItems]);
   };
 
   return (
