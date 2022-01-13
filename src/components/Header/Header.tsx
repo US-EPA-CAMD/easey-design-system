@@ -85,6 +85,7 @@ export const Header = ({
       document.addEventListener('keydown', handleKeyPress);
     } else if (menuExpanded) {
       document.removeEventListener('keydown', handleKeyPress);
+      document.getElementById('main-header-menu')?.focus();
     }
 
     setMenuExpanded((prvExpanded) => !prvExpanded);
@@ -147,6 +148,7 @@ export const Header = ({
         <div className="usa-nav-container">
           <NavMenuButton
             label="Menu"
+            id = "main-header-menu"
             onClick={() => toggleRightSideNav()}
             className="margin-2 float-right clearfix usa-button"
             aria-haspopup="true"
