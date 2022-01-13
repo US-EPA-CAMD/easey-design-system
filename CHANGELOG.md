@@ -1,3 +1,10 @@
+## [1.20.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.2...v1.20.3) (2022-01-13)
+
+
+### Bug Fixes
+
+* **header component:** modify header component to focus on menu button when close (x) is activated ([f2489cd](https://github.com/US-EPA-CAMD/easey-design-system/commit/f2489cd2df733d747c45b85b4768873d6e441576))
+
 ## [1.20.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.1...v1.20.2) (2022-01-04)
 
 
