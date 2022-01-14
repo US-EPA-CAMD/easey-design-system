@@ -87,7 +87,6 @@ export const Header = ({
       document.removeEventListener('keydown', handleKeyPress);
       const mainMenuButton = document.getElementById('main-header-menu');
       mainMenuButton && mainMenuButton.focus();
-
     }
 
     setMenuExpanded((prvExpanded) => !prvExpanded);
