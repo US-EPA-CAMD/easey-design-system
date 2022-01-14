@@ -1,3 +1,11 @@
+## [1.20.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.3...v1.20.4) (2022-01-14)
+
+
+### Bug Fixes
+
+* **header component:** replace the optional changing and fix formatting ([cc8f0dd](https://github.com/US-EPA-CAMD/easey-design-system/commit/cc8f0dd18389d52668ebe9216e08c08e76b5b298))
+* **header component:** replacing the optional chaining ([89ecf81](https://github.com/US-EPA-CAMD/easey-design-system/commit/89ecf81e8f7d84a0037156f7a3561e72c4e94fa4))
+
 ## [1.20.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.2...v1.20.3) (2022-01-13)
 
 
