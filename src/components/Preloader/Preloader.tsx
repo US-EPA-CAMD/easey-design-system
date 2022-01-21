@@ -8,7 +8,7 @@ export interface PreloaderProps {
   displayWarning?: boolean;
 }
 
-const Preloader = ({ initialAnimationOn = true, displayWarning = false }: PreloaderProps) => {
+export const Preloader = ({ initialAnimationOn = true, displayWarning = false }: PreloaderProps) => {
   const [animationOn, setAnimationOn] = useState(initialAnimationOn);
 
   return (
