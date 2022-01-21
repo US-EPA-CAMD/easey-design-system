@@ -15,14 +15,14 @@ export default {
       },
     },
   },
-
 } as Meta;
 
 const Template: Story<ContactFormProps> = (args) => <ContactForm {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla massa in lectus volutpat scelerisque. Craseu leo vel lacus tincidunt molestie. Vestibulum faucibus enim sit amet pretium laoreet.",
+  summary:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla massa in lectus volutpat scelerisque. Craseu leo vel lacus tincidunt molestie. Vestibulum faucibus enim sit amet pretium laoreet.',
   subjects: [
     {
       id: 1,
@@ -49,24 +49,24 @@ Default.args = {
 
 export const Custom = Template.bind({});
 Custom.args = {
-  ...Default.args,  
-  title: "Contact Form",
-  subjectsTitle: "Pick a subject...",
-  commentTitle: "Message",
+  ...Default.args,
+  title: 'Contact Form',
+  subjectsTitle: 'Pick a subject...',
+  commentTitle: 'Message',
 };
 
 export const Success = Template.bind({});
 Success.args = {
   ...Default.args,
-  submited: true,
+  submitted: true,
   submitStatus: true,
-  submitStatusText: "Thank you, your form has been submitted and an email confirmation will be sent to you shortly.",
-}
+  submitStatusText: 'Thank you, your form has been submitted and an email confirmation will be sent to you shortly.',
+};
 
 export const Error = Template.bind({});
 Error.args = {
   ...Default.args,
-  submited: true,
+  submitted: true,
   submitStatus: false,
-  submitStatusText: "An error occurred while submitting your comment. Please try again later!",
-}
+  submitStatusText: 'An error occurred while submitting your comment. Please try again later!',
+};
