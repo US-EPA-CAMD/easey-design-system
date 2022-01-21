@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.4...v1.21.0) (2022-01-21)
+
+
+### Features
+
+* **preloader:** preloader implemented ([1491d3f](https://github.com/US-EPA-CAMD/easey-design-system/commit/1491d3fea04f10b68e8bc7f886194672802fb52f))
+
 ## [1.20.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.20.3...v1.20.4) (2022-01-14)
 
 
