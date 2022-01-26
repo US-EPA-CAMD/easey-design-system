@@ -4,12 +4,12 @@ import { config } from '../../config';
 import { WhatIsNewBox, WhatIsNewBoxProps } from './WhatIsNewBox';
 
 export default {
-  title: `${config.appName} / What Is New Box`,
+  title: `${config.appName} / What's New Box`,
   component: WhatIsNewBox,
   parameters: {
     docs: {
       description: {
-        component: `### EASEY Design System What Is New Box component`,
+        component: `### EASEY Design System What's New Box component`,
       },
     },
   },
