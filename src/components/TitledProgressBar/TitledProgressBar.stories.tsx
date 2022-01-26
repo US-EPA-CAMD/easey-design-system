@@ -17,23 +17,30 @@ export default {
 
 const Template: Story<TitledProgressBarProps> = (args) => <TitledProgressBar {...args} />;
 
+export const Zero = Template.bind({});
+Zero.args = {
+  title: 'Emission Submission Progress',
+  lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
+  percentage: 0,
+};
+
 export const Twenty = Template.bind({});
 Twenty.args = {
   title: 'Emission Submission Progress',
   lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 20
+  percentage: 20,
 };
 
 export const Fifty = Template.bind({});
 Fifty.args = {
   title: 'Emission Submission Progress',
   lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 50
+  percentage: 50,
 };
 
 export const OneHundred = Template.bind({});
 OneHundred.args = {
   title: 'Emission Submission Progress',
   lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 100
+  percentage: 100,
 };
