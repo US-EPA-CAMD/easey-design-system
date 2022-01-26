@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.24.0...v1.25.0) (2022-01-26)
+
+
+### Features
+
+* **what is new box:** added a What's New Box component ([320c477](https://github.com/US-EPA-CAMD/easey-design-system/commit/320c477a88486f20320635058c1316a29bc632a9))
+
 # [1.24.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.23.0...v1.24.0) (2022-01-26)
 
 
