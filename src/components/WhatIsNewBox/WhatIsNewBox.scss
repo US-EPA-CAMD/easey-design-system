@@ -1,0 +1,11 @@
+@import '../../additional-scss/easey-design-styles';
+
+.whatIsNewBox {
+  .title {
+    background-color: $epa-green;
+  }
+  .box {
+    border-color: $epa-green;
+    border-bottom-width: thick;
+  }
+}
