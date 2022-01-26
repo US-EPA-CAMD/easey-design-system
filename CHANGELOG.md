@@ -1,3 +1,10 @@
+## [1.25.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.25.0...v1.25.1) (2022-01-26)
+
+
+### Bug Fixes
+
+* made custom progress bar implementation ([9f258f4](https://github.com/US-EPA-CAMD/easey-design-system/commit/9f258f43e7096aa6c364bb4914f917bd59f3932b))
+
 # [1.25.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.24.0...v1.25.0) (2022-01-26)
 
 
