@@ -9,3 +9,5 @@ export * from './EnvBanner/EnvBanner';
 export * from './Header/Header';
 export * from './Preloader/Preloader';
 export * from './TitledProgressBar/TitledProgressBar';
+export * from './WhatIsNewBox/WhatIsNewBox'; 
+
