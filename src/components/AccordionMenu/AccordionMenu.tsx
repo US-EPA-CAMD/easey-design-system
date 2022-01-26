@@ -46,8 +46,8 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
               className={item.current ? 'usa-current' : ''}
               tabIndex={0}
               onClick={() => onClickHandler(index)}
-              onKeyDown={(e) => {
-                if (e.keyCode === 13) {
+              onKeyDown={(event) => {
+                if (event.keyCode === 13) {
                   return onClickHandler(index);
                 } else {
                   return;
