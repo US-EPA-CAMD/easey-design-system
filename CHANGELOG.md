@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.23.0...v1.24.0) (2022-01-26)
+
+
+### Features
+
+* **accordion menu:** change accordion menu to be tabbable and responsive to enter key ([9ec1da2](https://github.com/US-EPA-CAMD/easey-design-system/commit/9ec1da2e44c2921035ed83e454f77da29ff08bdc))
+
 # [1.23.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.22.0...v1.23.0) (2022-01-21)
 
 

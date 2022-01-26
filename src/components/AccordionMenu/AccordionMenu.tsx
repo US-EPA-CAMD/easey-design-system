@@ -41,7 +41,19 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
       <ul className={classes} data-testid="sidenav">
         {menuItems.map((item, index) => (
           <li key={`sidenav_item_${item.id}`} className="usa-sidenav__item" aria-expanded={item.expanded}>
-            <a href={item.href} className={item.current ? 'usa-current' : ''} onClick={() => onClickHandler(index)}>
+            <a
+              href={item.href}
+              className={item.current ? 'usa-current' : ''}
+              tabIndex={0}
+              onClick={() => onClickHandler(index)}
+              onKeyDown={(event) => {
+                if (event.keyCode === 13) {
+                  return onClickHandler(index);
+                } else {
+                  return;
+                }
+              }}
+            >
               {item.label}
               {!isSubnav && item.expanded ? <KeyboardArrowUpSharp className="float-right" /> : null}
               {!isSubnav && !item.expanded ? <KeyboardArrowDownSharp className="float-right" /> : null}
