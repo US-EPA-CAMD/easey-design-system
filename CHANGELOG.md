@@ -1,3 +1,10 @@
+## [1.25.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.25.1...v1.25.2) (2022-01-27)
+
+
+### Bug Fixes
+
+* **what's new box:** adding what's new box export to index.ts ([d006cc5](https://github.com/US-EPA-CAMD/easey-design-system/commit/d006cc59ca7a6fc6ec521a242dfa3345d6febb67))
+
 ## [1.25.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.25.0...v1.25.1) (2022-01-26)
 
 
