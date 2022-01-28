@@ -1,3 +1,10 @@
+## [1.26.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.26.0...v1.26.1) (2022-01-28)
+
+
+### Bug Fixes
+
+* **what is new box:** allowed title to be specified ([6e7bff2](https://github.com/US-EPA-CAMD/easey-design-system/commit/6e7bff29616b88c5904a00e564d680c8e63347ee))
+
 # [1.26.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.25.2...v1.26.0) (2022-01-28)
 
 
