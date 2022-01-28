@@ -19,5 +19,6 @@ const Template: Story<WhatIsNewBoxProps> = (args) => <WhatIsNewBox {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
+  title: `What's New?`,
   text: 'View the Tutorials for data & quick start guides on using CAMPDs new features',
 };
