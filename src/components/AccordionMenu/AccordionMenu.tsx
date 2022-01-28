@@ -40,10 +40,11 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
     <div className="easey-accordion-menu">
       <ul className={classes} data-testid="sidenav">
         {menuItems.map((item, index) => (
-          <li key={`sidenav_item_${item.id}`} className="usa-sidenav__item" aria-expanded={item.expanded}>
+          <li key={`sidenav_item_${item.id}`} className="usa-sidenav__item">
             <a
               href={item.href}
               className={item.current ? 'usa-current' : ''}
+              aria-expanded={item.expanded}
               tabIndex={0}
               onClick={() => onClickHandler(index)}
               onKeyDown={(event) => {
