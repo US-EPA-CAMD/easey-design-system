@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.25.2...v1.26.0) (2022-01-28)
+
+
+### Features
+
+* **accordion menu:** move aria expanded information from list to achor tag ([7d994ee](https://github.com/US-EPA-CAMD/easey-design-system/commit/7d994ee9fb114569a87a608fef872f2850abd552)), closes [#2504](https://github.com/US-EPA-CAMD/easey-design-system/issues/2504)
+
 ## [1.25.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.25.1...v1.25.2) (2022-01-27)
 
 
