@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Button } from '@trussworks/react-uswds';
 import { loadingSpinner } from '../../base64/loading-spinner';
 import { staticLoadingSpinner } from '../../base64/static-loading-spinner';
@@ -11,15 +11,15 @@ export interface PreloaderProps {
 export const Preloader = ({ initialAnimationOn = true, displayWarning = false }: PreloaderProps) => {
   const [animationOn, setAnimationOn] = useState(initialAnimationOn);
 
-  const refStopButton = useRef<HTMLButtonElement>(null);
-
   const handleStopAnimation = () => {
     setAnimationOn(false);
-
-    if (refStopButton.current) {
-      refStopButton.current.focus();
-    }
   };
+
+  useEffect(() => {
+    if (document.querySelectorAll('#btnStopAnimation')) {
+      (document.querySelector('#btnStopAnimation') as HTMLElement)?.focus();
+    }
+  }, []);
 
   return (
     <div className="text-center" aria-live="polite">
@@ -33,7 +33,7 @@ export const Preloader = ({ initialAnimationOn = true, displayWarning = false }:
       {animationOn ? (
         <div className="text-center">
           <Button
-            ref={refStopButton}
+            id="btnStopAnimation"
             type="button"
             onClick={() => handleStopAnimation()}
             title="Click to stop the animation"
