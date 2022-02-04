@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.28.0...v1.29.0) (2022-02-04)
+
+
+### Features
+
+* **component:** typescript fix ([8b8459c](https://github.com/US-EPA-CAMD/easey-design-system/commit/8b8459c6779403b36695c9401f3400aa451013c2))
+
 # [1.28.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.27.0...v1.28.0) (2022-02-04)
 
 
