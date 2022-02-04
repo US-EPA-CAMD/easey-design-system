@@ -1,3 +1,10 @@
+# [1.28.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.27.0...v1.28.0) (2022-02-04)
+
+
+### Features
+
+* **component:** stop animation button made to take focus ([7ec25f7](https://github.com/US-EPA-CAMD/easey-design-system/commit/7ec25f7dda0611aa0c292c4807dfc76a06a4a697))
+
 # [1.27.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.26.1...v1.27.0) (2022-01-31)
 
 
