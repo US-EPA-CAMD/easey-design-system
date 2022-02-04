@@ -17,7 +17,7 @@ export const Preloader = ({ initialAnimationOn = true, displayWarning = false }:
 
   useEffect(() => {
     if (document.querySelectorAll('#btnStopAnimation')) {
-      (document.querySelector('#btnStopAnimation') as HTMLElement)?.focus();
+      (document.querySelector('#btnStopAnimation') as HTMLElement).focus();
     }
   }, []);
 
