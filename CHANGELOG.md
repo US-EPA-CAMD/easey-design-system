@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.29.0...v1.29.1) (2022-02-07)
+
+
+### Bug Fixes
+
+* fixed the percentage to be shown relative by pixel instead of percent ([7c8238f](https://github.com/US-EPA-CAMD/easey-design-system/commit/7c8238fa144e4962e245d480daf63697da427031))
+
 # [1.29.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.28.0...v1.29.0) (2022-02-04)
 
 
