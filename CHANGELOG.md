@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.30.0...v1.31.0) (2022-02-17)
+
+
+### Features
+
+* **contactus:** aria-required="true" added where pertains ([b4b6e9b](https://github.com/US-EPA-CAMD/easey-design-system/commit/b4b6e9b1e2a13c2550e224bddb7756346e527bc7))
+
 # [1.30.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.29.1...v1.30.0) (2022-02-17)
 
 
