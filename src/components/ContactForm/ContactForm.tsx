@@ -38,10 +38,17 @@ export const ContactForm = ({
       </div>
       <div>
         <Label htmlFor="txtEmail">* Email</Label>
-        <TextInput className="modalUserInput" id="txtEmail" epa-testid="txtEmail" name="txtEmail" type="text" />
+        <TextInput
+          aria-required="true"
+          className="modalUserInput"
+          id="txtEmail"
+          epa-testid="txtEmail"
+          name="txtEmail"
+          type="text"
+        />
       </div>
       <div className="margin-top-2">
-        <Fieldset legend={`* ${subjectsTitle}`}>
+        <Fieldset legend={`* ${subjectsTitle}`} aria-required="true">
           {subjects.map((item) => {
             return (
               <Radio
@@ -59,7 +66,14 @@ export const ContactForm = ({
         <Label htmlFor="txtComment" id="labelComment">
           * {commentTitle}
         </Label>
-        <CharacterCount isTextArea={true} id="txtComment" name="txtComment" maxLength={500} rows={3} />
+        <CharacterCount
+          aria-required="true"
+          isTextArea={true}
+          id="txtComment"
+          name="txtComment"
+          maxLength={500}
+          rows={3}
+        />
       </div>
       <div className="margin-top-2">
         <Button
@@ -89,4 +103,5 @@ export const ContactForm = ({
     </>
   );
 };
+
 export default ContactForm;
