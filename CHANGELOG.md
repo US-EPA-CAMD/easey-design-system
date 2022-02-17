@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.29.1...v1.30.0) (2022-02-17)
+
+
+### Features
+
+* **contactus:** description changed; asterisks added ([d7d4772](https://github.com/US-EPA-CAMD/easey-design-system/commit/d7d4772abb48dddd1f30a01c381f77474873794c))
+
 ## [1.29.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.29.0...v1.29.1) (2022-02-07)
 
 
