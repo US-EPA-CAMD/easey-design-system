@@ -34,14 +34,14 @@ export const ContactForm = ({
         <div className="flex-force-break" />
         <p>{summary}</p>
         <div className="flex-force-break" />
-        <p className="text-italic margin-y-2">All fields are required</p>
+        <p className="text-italic margin-y-2">Required fields are marked with an asterisk (*)</p>
       </div>
       <div>
-        <Label htmlFor="txtEmail">Email</Label>
+        <Label htmlFor="txtEmail">* Email</Label>
         <TextInput className="modalUserInput" id="txtEmail" epa-testid="txtEmail" name="txtEmail" type="text" />
       </div>
       <div className="margin-top-2">
-        <Fieldset legend={subjectsTitle}>
+        <Fieldset legend={`* ${subjectsTitle}`}>
           {subjects.map((item) => {
             return (
               <Radio
@@ -57,7 +57,7 @@ export const ContactForm = ({
       </div>
       <div className="margin-top-2">
         <Label htmlFor="txtComment" id="labelComment">
-          {commentTitle}
+          * {commentTitle}
         </Label>
         <CharacterCount isTextArea={true} id="txtComment" name="txtComment" maxLength={500} rows={3} />
       </div>
