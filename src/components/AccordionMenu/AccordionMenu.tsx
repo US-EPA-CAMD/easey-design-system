@@ -9,6 +9,7 @@ export interface AccordionMenuItem {
   id: string;
   label: string;
   href?: string;
+  target?: string;
   comingSoon?: string;
   current: boolean;
   expanded?: boolean;
@@ -46,6 +47,7 @@ export const AccordionMenu = ({ items, isSubnav = false }: AccordionMenuProps): 
               className={item.current ? 'usa-current' : ''}
               aria-expanded={item.expanded}
               tabIndex={0}
+              target={item.target? item.target: '_self'}
               onClick={() => onClickHandler(index)}
               onKeyDown={(event) => {
                 if (event.keyCode === 13) {
