@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.31.0...v1.32.0) (2022-05-11)
+
+
+### Features
+
+* **accordion menu:** allow links to be opened in a new tab ([0516122](https://github.com/US-EPA-CAMD/easey-design-system/commit/05161225f033cbdaab56069a9f454057eac25c6f)), closes [#3480](https://github.com/US-EPA-CAMD/easey-design-system/issues/3480)
+
 # [1.31.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.30.0...v1.31.0) (2022-02-17)
 
 
