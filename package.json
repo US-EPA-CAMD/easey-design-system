@@ -48,7 +48,8 @@
     "sockjs": "^0.3.20",
     "trim": "^0.0.3",
     "uswds": "2.13.0",
-    "yargs-parser": "^13.1.2"
+    "yargs-parser": "^13.1.2",
+    "minimist": "^1.2.6"
   },  
   "peerDependencies": {
     "react": "^17.0.2",
