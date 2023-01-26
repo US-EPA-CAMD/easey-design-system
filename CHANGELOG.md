@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.32.0...v1.33.0) (2023-01-26)
+
+
+### Features
+
+* **preloader:** return focus when the preloader unmounts ([3ff30b8](https://github.com/US-EPA-CAMD/easey-design-system/commit/3ff30b8795e796a4ac98641a6119a7710328dda9))
+
 # [1.32.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.31.0...v1.32.0) (2022-05-11)
 
 
