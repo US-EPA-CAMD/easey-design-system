@@ -6,20 +6,28 @@ import { staticLoadingSpinner } from '../../base64/static-loading-spinner';
 export interface PreloaderProps {
   initialAnimationOn?: boolean;
   displayWarning?: boolean;
+  returnFocus?: boolean;
 }
 
-export const Preloader = ({ initialAnimationOn = true, displayWarning = false }: PreloaderProps) => {
+export const Preloader = ({ initialAnimationOn = true, displayWarning = false , returnFocus = true}: PreloaderProps) => {
   const [animationOn, setAnimationOn] = useState(initialAnimationOn);
+  const prevFocusedElementRef = useRef<HTMLElement | null>(null);
 
   const handleStopAnimation = () => {
     setAnimationOn(false);
   };
 
   useEffect(() => {
+    prevFocusedElementRef.current = document.activeElement as HTMLElement;
     if (document.querySelectorAll('#btnStopAnimation')) {
       (document.querySelector('#btnStopAnimation') as HTMLElement).focus();
     }
-  }, []);
+    return () => {
+      if (returnFocus && prevFocusedElementRef.current) {
+          prevFocusedElementRef.current.focus();
+      }
+  }
+  }, [returnFocus]);
 
   return (
     <div className="text-center" aria-live="polite">
