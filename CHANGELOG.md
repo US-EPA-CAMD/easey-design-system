@@ -1,3 +1,10 @@
+## [1.33.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.33.0...v1.33.1) (2023-02-08)
+
+
+### Bug Fixes
+
+* **header:** add search icon to search button on header component ([61fe5d1](https://github.com/US-EPA-CAMD/easey-design-system/commit/61fe5d1ae69c754948cd99da6d9cb1e5032ef43d)), closes [fix#2593](https://github.com/fix/issues/2593)
+
 # [1.33.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.32.0...v1.33.0) (2023-01-26)
 
 
