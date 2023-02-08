@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import _ from 'lodash';
 
 import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
 import { focusTrap } from '../../additional-functions/focus-trap';
+import './Header.scss';
 
 import EnvBanner from '../EnvBanner/EnvBanner';
 
