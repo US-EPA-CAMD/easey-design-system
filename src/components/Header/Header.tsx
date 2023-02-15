@@ -165,7 +165,7 @@ export const Header = ({
           >
             <Search
               key="search-epa"
-              placeholder="Search EPA.gov"
+              label="Search EPA.gov"
               size="small"
               onSubmit={(event) => searchHandler(event)}
             />
