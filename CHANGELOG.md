@@ -1,3 +1,10 @@
+## [1.33.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.33.1...v1.33.2) (2023-02-15)
+
+
+### Bug Fixes
+
+* **header:** add label and remove placeholder on search bar ([232eb15](https://github.com/US-EPA-CAMD/easey-design-system/commit/232eb153d7d15bfb2091476208710ddd82e3fda3))
+
 ## [1.33.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.33.0...v1.33.1) (2023-02-08)
 
 
