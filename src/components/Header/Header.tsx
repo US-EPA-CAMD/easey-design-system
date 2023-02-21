@@ -51,6 +51,14 @@ const defaultArgs = {
   ],
 };
 
+const removeEmptyNavItems = () => {
+  const navItems = Array.from(document.querySelectorAll('.usa-nav__primary-item'));
+  navItems.forEach((el) => {
+    if (!el.hasChildNodes()) {
+      el.remove();
+    }
+  });
+};
 export const Header = ({
   logoSrc,
   logoUrl = defaultArgs.logoUrl,
@@ -64,8 +72,14 @@ export const Header = ({
     if (!menuExpanded) {
       // *** move search box to the top
       // @ts-ignore
-      document.querySelector('#navRightSide').insertBefore(
+      const rightSideNav = document.querySelector('#navRightSide') as Node;
+      rightSideNav.insertBefore(
         document.querySelector('#navRightSide form') as Node,
+        // @ts-ignore
+        document.querySelector('#navRightSide').childNodes[0] as Node,
+      );
+      rightSideNav.insertBefore(
+        document.querySelector('#header123') as Node,
         // @ts-ignore
         document.querySelector('#navRightSide').childNodes[0] as Node,
       );
@@ -77,9 +91,10 @@ export const Header = ({
         // @ts-ignore
         document.querySelector('#navRightSide').childNodes[0] as Node,
       );
+      removeEmptyNavItems();
     }
 
-    const { handleKeyPress, firstComponentFocusableElement } = focusTrap('#navRightSide', () => setMenuExpanded(false));
+    const { handleKeyPress } = focusTrap('#navRightSide', () => setMenuExpanded(false));
 
     // *** FOCUS TRAP
     if (!menuExpanded) {
@@ -150,26 +165,28 @@ export const Header = ({
         <div className="usa-nav-container">
           <NavMenuButton
             label="Menu"
-            id = "main-header-menu"
+            id="main-header-menu"
             onClick={() => toggleRightSideNav()}
             className="margin-2 float-right clearfix usa-button"
             aria-haspopup="true"
             aria-expanded={menuExpanded}
           />
           <PrimaryNav
-            items={links}
+            items={[
+              <h3 id="header123">Search EPA.gov</h3>,
+              <Search
+                key="search-epa"
+                label="Search EPA.gov"
+                size="small"
+                onSubmit={(event) => searchHandler(event)}
+              />,
+              ...links,
+            ]}
             mobileExpanded={menuExpanded}
             onToggleMobileNav={() => toggleRightSideNav()}
             key="primaryNav"
             id="navRightSide"
-          >
-            <Search
-              key="search-epa"
-              label="Search EPA.gov"
-              size="small"
-              onSubmit={(event) => searchHandler(event)}
-            />
-          </PrimaryNav>
+          ></PrimaryNav>
         </div>
       </USWDSHeader>
     </div>
