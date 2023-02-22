@@ -1,3 +1,10 @@
+# [1.34.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.33.2...v1.34.0) (2023-02-22)
+
+
+### Features
+
+* **header:** add visible description of input ([81005b3](https://github.com/US-EPA-CAMD/easey-design-system/commit/81005b33d3623a5acd0b077df86e583533c7ed40))
+
 ## [1.33.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.33.1...v1.33.2) (2023-02-15)
 
 
