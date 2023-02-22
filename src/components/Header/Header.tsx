@@ -79,7 +79,7 @@ export const Header = ({
         document.querySelector('#navRightSide').childNodes[0] as Node,
       );
       rightSideNav.insertBefore(
-        document.querySelector('#header123') as Node,
+        document.querySelector('#inputDescription') as Node,
         // @ts-ignore
         document.querySelector('#navRightSide').childNodes[0] as Node,
       );
@@ -173,7 +173,7 @@ export const Header = ({
           />
           <PrimaryNav
             items={[
-              <h3 id="header123">Search EPA.gov</h3>,
+              <h3 id="inputDescription">Search EPA.gov</h3>,
               <Search
                 key="search-epa"
                 label="Search EPA.gov"
