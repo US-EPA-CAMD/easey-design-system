@@ -51,14 +51,6 @@ const defaultArgs = {
   ],
 };
 
-const removeEmptyNavItems = () => {
-  const navItems = Array.from(document.querySelectorAll('.usa-nav__primary-item'));
-  navItems.forEach((el) => {
-    if (!el.hasChildNodes()) {
-      el.remove();
-    }
-  });
-};
 export const Header = ({
   logoSrc,
   logoUrl = defaultArgs.logoUrl,
@@ -91,7 +83,6 @@ export const Header = ({
         // @ts-ignore
         document.querySelector('#navRightSide').childNodes[0] as Node,
       );
-      removeEmptyNavItems();
     }
 
     const { handleKeyPress } = focusTrap('#navRightSide', () => setMenuExpanded(false));
@@ -172,21 +163,15 @@ export const Header = ({
             aria-expanded={menuExpanded}
           />
           <PrimaryNav
-            items={[
-              <h3 id="inputDescription">Search EPA.gov</h3>,
-              <Search
-                key="search-epa"
-                label="Search EPA.gov"
-                size="small"
-                onSubmit={(event) => searchHandler(event)}
-              />,
-              ...links,
-            ]}
+            items={[...links]}
             mobileExpanded={menuExpanded}
             onToggleMobileNav={() => toggleRightSideNav()}
             key="primaryNav"
             id="navRightSide"
-          ></PrimaryNav>
+          >
+            <h3 id="inputDescription">Search EPA.gov</h3>
+            <Search key="search-epa" label="Search EPA.gov" size="small" onSubmit={(event) => searchHandler(event)} />
+          </PrimaryNav>
         </div>
       </USWDSHeader>
     </div>
