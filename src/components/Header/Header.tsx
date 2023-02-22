@@ -104,7 +104,7 @@ export const Header = ({
     event.preventDefault();
 
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
-    // *** and mitigate any character collision issues during http request with window.open
+    // *** and mitigate any character collision issues during http request with window.open 
     if (event && event.target) {
       const searchTerm = (document.querySelector('#search-field') as HTMLInputElement).value.trim() as string;
       window.open(`${searchUrl}/?querytext=${searchTerm}`, '_blank');
