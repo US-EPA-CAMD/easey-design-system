@@ -1,3 +1,10 @@
+## [1.34.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.0...v1.34.1) (2023-02-23)
+
+
+### Bug Fixes
+
+* **header:** move description of input on header to the left ([35ecb6f](https://github.com/US-EPA-CAMD/easey-design-system/commit/35ecb6f9efbab63320f7e2c4174868ad3a65b899))
+
 # [1.34.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.33.2...v1.34.0) (2023-02-22)
 
 
