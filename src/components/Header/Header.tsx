@@ -104,7 +104,7 @@ export const Header = ({
     event.preventDefault();
 
     // *** URI encode the component after trimming to get rid of leading/trailing spaces
-    // *** and mitigate any character collision issues during http request with window.open 
+    // *** and mitigate any character collision issues during http request with window.open
     if (event && event.target) {
       const searchTerm = (document.querySelector('#search-field') as HTMLInputElement).value.trim() as string;
       window.open(`${searchUrl}/?querytext=${searchTerm}`, '_blank');
@@ -169,7 +169,9 @@ export const Header = ({
             key="primaryNav"
             id="navRightSide"
           >
-            <h3 id="inputDescription">Search EPA.gov</h3>
+            <h3 id="inputDescription" className="width-full text-left margin-y-1">
+              Search EPA.gov
+            </h3>
             <Search key="search-epa" label="Search EPA.gov" size="small" onSubmit={(event) => searchHandler(event)} />
           </PrimaryNav>
         </div>
