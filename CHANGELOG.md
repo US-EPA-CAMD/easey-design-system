@@ -1,3 +1,10 @@
+## [1.34.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.2...v1.34.3) (2023-02-27)
+
+
+### Bug Fixes
+
+* **header:** remove optional chaining causing build to fail ([b40784c](https://github.com/US-EPA-CAMD/easey-design-system/commit/b40784cfd7727fef716f161e90c597007de3234b))
+
 ## [1.34.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.1...v1.34.2) (2023-02-27)
 
 
