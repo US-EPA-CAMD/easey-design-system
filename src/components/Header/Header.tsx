@@ -53,7 +53,7 @@ const defaultArgs = {
 
 const updateLabel = () => {
   const container = document.querySelector<HTMLDivElement>('.usa-nav-container');
-  const label = container?.querySelector<HTMLLabelElement>('label[data-testid="label"][for="search-field"]');
+  const label = container? container.querySelector<HTMLLabelElement>('label[data-testid="label"][for="search-field"]') : null;
 
   if (container && label) {
     label.classList.replace('usa-sr-only', 'usa-label-big');
