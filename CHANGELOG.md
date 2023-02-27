@@ -1,3 +1,10 @@
+## [1.34.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.3...v1.34.4) (2023-02-27)
+
+
+### Bug Fixes
+
+* **header:** fix styling ([ce7075c](https://github.com/US-EPA-CAMD/easey-design-system/commit/ce7075c18b07f589c6c435601c94e33760d7dcf1))
+
 ## [1.34.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.2...v1.34.3) (2023-02-27)
 
 
