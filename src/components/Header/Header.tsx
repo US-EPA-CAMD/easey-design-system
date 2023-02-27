@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import _ from 'lodash';
 
 import { Link, Search, GovBanner, PrimaryNav, NavMenuButton, Header as USWDSHeader } from '@trussworks/react-uswds';
@@ -51,6 +51,24 @@ const defaultArgs = {
   ],
 };
 
+const updateLabel = () => {
+  const container = document.querySelector<HTMLDivElement>('.usa-nav-container');
+  const label = container?.querySelector<HTMLLabelElement>('label[data-testid="label"][for="search-field"]');
+
+  if (container && label) {
+    label.classList.replace('usa-sr-only', 'usa-label-big');
+    const input = container.querySelector<HTMLInputElement>('input[data-testid="textInput"]');
+    const button = container.querySelector<HTMLButtonElement>('button[data-testid="button"]');
+
+    if (input && button) {
+      const inputContainer: HTMLDivElement = document.createElement('div');
+      inputContainer.appendChild(input);
+      inputContainer.appendChild(button);
+      label.insertAdjacentElement('afterend', inputContainer);
+    }
+  }
+};
+
 export const Header = ({
   logoSrc,
   logoUrl = defaultArgs.logoUrl,
@@ -59,6 +77,9 @@ export const Header = ({
   environment,
 }: HeaderProps) => {
   const [menuExpanded, setMenuExpanded] = useState(false);
+  useEffect(() => {
+    updateLabel();
+  }, []);
 
   const toggleRightSideNav = () => {
     if (!menuExpanded) {
@@ -67,11 +88,6 @@ export const Header = ({
       const rightSideNav = document.querySelector('#navRightSide') as Node;
       rightSideNav.insertBefore(
         document.querySelector('#navRightSide form') as Node,
-        // @ts-ignore
-        document.querySelector('#navRightSide').childNodes[0] as Node,
-      );
-      rightSideNav.insertBefore(
-        document.querySelector('#inputDescription') as Node,
         // @ts-ignore
         document.querySelector('#navRightSide').childNodes[0] as Node,
       );
@@ -169,10 +185,7 @@ export const Header = ({
             key="primaryNav"
             id="navRightSide"
           >
-            <h3 id="inputDescription" className="width-full text-left margin-y-1">
-              Search EPA.gov
-            </h3>
-            <Search key="search-epa" label="Search EPA.gov" size="small" onSubmit={(event) => searchHandler(event)} />
+            <Search key="search-epa" size="small" label="Search EPA.gov" onSubmit={(event) => searchHandler(event)} />
           </PrimaryNav>
         </div>
       </USWDSHeader>
