@@ -1,3 +1,10 @@
+## [1.34.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.1...v1.34.2) (2023-02-27)
+
+
+### Bug Fixes
+
+* **header:** use label to describe input ([bbadc63](https://github.com/US-EPA-CAMD/easey-design-system/commit/bbadc634a3daab883ac0d81cb9f914fc980e6dc7))
+
 ## [1.34.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.0...v1.34.1) (2023-02-23)
 
 
