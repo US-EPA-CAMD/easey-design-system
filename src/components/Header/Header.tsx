@@ -56,7 +56,8 @@ const updateLabel = () => {
   const label = container? container.querySelector<HTMLLabelElement>('label[data-testid="label"][for="search-field"]') : null;
 
   if (container && label) {
-    label.classList.replace('usa-sr-only', 'usa-label-big');
+    label.classList.replace('usa-sr-only', 'usa-label');
+    label.classList.add('text-bold');
     const input = container.querySelector<HTMLInputElement>('input[data-testid="textInput"]');
     const button = container.querySelector<HTMLButtonElement>('button[data-testid="button"]');
 
