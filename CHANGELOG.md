@@ -1,3 +1,10 @@
+## [1.34.5](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.4...v1.34.5) (2023-02-28)
+
+
+### Bug Fixes
+
+* **header:** update style for label ([5fcd7a3](https://github.com/US-EPA-CAMD/easey-design-system/commit/5fcd7a313983d37eeb4169d4b633205641de2c51))
+
 ## [1.34.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.3...v1.34.4) (2023-02-27)
 
 
