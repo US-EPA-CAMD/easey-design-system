@@ -5667,7 +5667,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classlist-polyfill@^1.0.3:
+classlist-polyfill@1.2.0, classlist-polyfill@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
   integrity sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4=
@@ -7085,7 +7085,7 @@ domhandler@^4.0.0, domhandler@^4.2.0:
   dependencies:
     domelementtype "^2.2.0"
 
-domready@^1.0.8:
+domready@1.0.8, domready@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/domready/-/domready-1.0.8.tgz#91f252e597b65af77e745ae24dd0185d5e26d58c"
   integrity sha1-kfJS5Ze2Wvd+dFriTdAYXV4m1Yw=
@@ -12496,7 +12496,7 @@ nwsapi@^2.2.0:
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.0.tgz#204879a9e3d068ff2a55139c2c772780681a38b7"
   integrity sha512-h2AatdwYH+JHiZpv7pt/gSX1XoRGb7L/qSIeuqA6GwYoF9w1vP1cw42TO0aI2pNyshRK5893hNSl+1//vHK7hQ==
 
-object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
+object-assign@4.1.1, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
@@ -14689,7 +14689,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-receptor@^1.0.0:
+receptor@1.0.0, receptor@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/receptor/-/receptor-1.0.0.tgz#bf54477e0387e44bebf3855120bbda5adea08f8b"
   integrity sha1-v1RHfgOH5Evr84VRILvaWt6gj4s=
@@ -14979,7 +14979,7 @@ resolve-global@^1.0.0:
   dependencies:
     global-dirs "^0.1.1"
 
-resolve-id-refs@^0.1.0:
+resolve-id-refs@0.1.0, resolve-id-refs@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/resolve-id-refs/-/resolve-id-refs-0.1.0.tgz#3126624b887489da8fc0ae889632f8413ac6c3ec"
   integrity sha1-MSZiS4h0idqPwK6IljL4QTrGw+w=
@@ -17097,16 +17097,16 @@ uswds@2.13.0:
     receptor "^1.0.0"
     resolve-id-refs "^0.1.0"
 
-uswds@^2.10.3:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/uswds/-/uswds-2.12.2.tgz#810555721b4ee0cd28d08ceed003e33006e5a17e"
-  integrity sha512-Y9YeILoe4xiH26JpyznSbIsC8osHY88QjTFM3K5r7GcSuryauu7CpPnQdBUCw5R7myc24N5X8S/nxnXvOEtudg==
+uswds@^2.13.3:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/uswds/-/uswds-2.14.0.tgz#f7861aec6512b38d8c6ec70f1e01b3590cdbd914"
+  integrity sha512-r5ebL3av9jOPcbXTxKnGiT5k5NVIAWmtYcO8LeJkA5Svh2qc90YRhzCUWbz9TbGdXJriMCPb7whiULPDxmRhxg==
   dependencies:
-    classlist-polyfill "^1.0.3"
-    domready "^1.0.8"
-    object-assign "^4.1.1"
-    receptor "^1.0.0"
-    resolve-id-refs "^0.1.0"
+    classlist-polyfill "1.2.0"
+    domready "1.0.8"
+    object-assign "4.1.1"
+    receptor "1.0.0"
+    resolve-id-refs "0.1.0"
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"

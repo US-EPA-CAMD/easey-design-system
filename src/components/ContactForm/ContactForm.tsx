@@ -90,11 +90,11 @@ export const ContactForm = ({
       {submitted ? (
         <div className="margin-top-2">
           {submitStatus ? (
-            <Alert type="success" heading="Success" aria-live="assertive">
+            <Alert type="success" heading="Success" aria-live="assertive" headingLevel="h2">
               {submitStatusText}
             </Alert>
           ) : (
-            <Alert type="error" heading="Error" aria-live="assertive">
+            <Alert type="error" heading="Error" aria-live="assertive" headingLevel="h2">
               {submitStatusText}
             </Alert>
           )}
