@@ -1,3 +1,11 @@
+## [1.34.6](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.5...v1.34.6) (2023-07-28)
+
+
+### Bug Fixes
+
+* modify uswds package version ([e16e889](https://github.com/US-EPA-CAMD/easey-design-system/commit/e16e88923020568fab6bc5f4c4962c49a700539c))
+* patched security scan packages ([3f45c92](https://github.com/US-EPA-CAMD/easey-design-system/commit/3f45c92998c55324c1094ebee1262a40692b668c))
+
 ## [1.34.5](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.4...v1.34.5) (2023-02-28)
 
 
