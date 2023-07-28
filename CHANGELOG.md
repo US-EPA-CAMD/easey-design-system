@@ -1,3 +1,10 @@
+## [1.34.7](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.6...v1.34.7) (2023-07-28)
+
+
+### Bug Fixes
+
+* resolved dependapot security alert for json5 version ([ed42316](https://github.com/US-EPA-CAMD/easey-design-system/commit/ed423168c719178520fb7142596442166c8abfb0))
+
 ## [1.34.6](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.5...v1.34.6) (2023-07-28)
 
 
