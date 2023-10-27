@@ -1,54 +1,67 @@
-# Getting Started with Create React App
+# easey-design-system package
+[![GitHub](https://img.shields.io/github/license/US-EPA-CAMD/easey-design-system)](https://github.com/US-EPA-CAMD/easey-design-system/blob/develop/LICENSE.md)
+[![GitHub version](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system.svg)](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system)
+[![Release Workflow](https://github.com/US-EPA-CAMD/easey-design-system/workflows/Release%20Workflow/badge.svg)](https://github.com/US-EPA-CAMD/easey-design-system/actions)<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The easey-design-system package contains shared code from across the US-EPA-CAMD project. 
+ 
+# Downloading and using easey-design-system
 
-## Available Scripts
+## Getting Started
+These instructions will get you a copy of the project package up and running and downloaded.
 
-In the project directory, you can run:
+### Prerequisites
+- Project running node
+- A ```.yarnrc``` file existing in the root directory, with the contents of: ``` @us-epa-camd:registry=https://npm.pkg.github.com ```
+- [Authenticate to github package registry on local machine](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
 
-### `npm start`
+### Installing
+- Select desired version of package. The most up to date package version is [![GitHub version](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system.svg)](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system) . <br>
+- In terminal execute ```yarn add @us-epa-camd/easey-design-system``` for latest current version or ```yarn add @us-epa-camd/easey-design-system@VERSION``` to install a specific version
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Using
+- Import desired files from folder within package.
+- For example, to insert the Header: ``` import { Header } from '@us-epa-camd/easey-design-system/Header'; ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Adding and publishing to easey-common
 
-### `npm test`
+## Getting Started 
+These instructions will show you how to edit the existing package, and publish a new version.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Clone easey-design-system github master branch on your local machine
 
-### `npm run build`
+### Adding directories
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Adding files
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Publishing new package version
+- On the current branch in terminal, add all file changes with ```git add .```
+- Commit files using ``` yarn commit ``` which executes the [commitizen](https://commitizen-tools.github.io/commitizen/) plugin, a commit formatter that is digestible by [semantic-release](https://semantic-release.gitbook.io/semantic-release/)
+- Follow the prompts and create your commit
+- Push the commit to your current branch
+``` git push origin CURRENT_BRANCH```
+- Github workflows for this package are set up to create new package versions whenever a push or merge to the ```N.B.x, N.x (N is a number), master, next, next-major, beta, or alpha``` branches is executed
+- Semantic-Release will version all code automatically, based on the input received from the commitizen commit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Maintenance Releases
+[semantic-release](https://semantic-release.gitbook.io/semantic-release/) supports releasing patches for previously released versions where it is not possible to fully upgrade to the more recent versions. This is accomplished using the `N.N.x and N.x` branch names where N is the version you want to release a patch. If it is required to release a patch to a previously released version then the following steps must be followed to properly release a new patch version.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
+1. Determine the version to be patched
+2. Clone or pull latest from easey-common
+3. Create `N.N.x` or `N.x` branch
+   - If the version has subsequent versions after it
+     - Create `N.N.x` branch with N being the major and minor version of the version being patched
+     - Example using v1.0.0 to be patched and the v1.0.0 release tag
+       - `git checkout -b 1.0.x v1.0.0`
+   - If the version does NOT have subsequent versions after it
+     - Create `N.x` branch with N being the major version of the version being patched
+     - Example using v1.1.0 to be patched and the v1.1.0 release tag
+       - `git checkout -b 1.x v1.1.0`
+4. Implement changes in `N.N.x` or `N.x` branch and then follow the same steps above to commit changes using `yarn commit`
+5. Release workflow will release a new patch version for the version you choose to be patched
 
 ## License & Contributing
-
-​
 This project is licensed under the MIT License. We encourage you to read this project’s [License](https://github.com/US-EPA-CAMD/devops/blob/master/LICENSE), [Contributing Guidelines](https://github.com/US-EPA-CAMD/devops/blob/master/CONTRIBUTING.md), and [Code of Conduct](https://github.com/US-EPA-CAMD/devops/blob/master/CODE_OF_CONDUCT.md).
 
 ## Disclaimer
