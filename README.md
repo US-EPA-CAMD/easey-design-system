@@ -23,7 +23,7 @@ These instructions will get you a copy of the project package up and running and
 - Import desired files from folder within package.
 - For example, to insert the Header: ``` import { Header } from '@us-epa-camd/easey-design-system/Header'; ```
 
-# Adding and publishing to easey-common
+# Adding and publishing to easey-design-system
 
 ## Getting Started 
 These instructions will show you how to edit the existing package, and publish a new version.
@@ -31,9 +31,13 @@ These instructions will show you how to edit the existing package, and publish a
 ### Prerequisites
 - Clone easey-design-system github master branch on your local machine
 
-### Adding directories
+### Viewing the storybook locally
+- After invoking the ```yarn``` command to download the projects packages, invoke ```yarn storybook```
 
-### Adding files
+### Adding Components
+- Add a new directory to the Components folder within the src of the easey-design-system
+- Populate directory with the .scss styling file for your component, the base .tsx React component, and a .stories.tsx file for the [storybook](https://storybook.js.org/docs/writing-stories)
+- Finally, export * from the component within the src/index.ts
 
 ## Publishing new package version
 - On the current branch in terminal, add all file changes with ```git add .```
