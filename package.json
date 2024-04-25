@@ -12,7 +12,7 @@
     "url": "https://github.com/US-EPA-CAMD/easey-design-system"
   },
   "engines": {
-    "node": "16.x"
+    "node": "20.x"
   },
   "scripts": {
     "commit": "cz",
@@ -193,6 +193,15 @@
     }
   },
   "dependencies": {
-    "@ramonak/react-progress-bar": "^4.2.0"
+    "@ramonak/react-progress-bar": "^4.2.0",
+    "browserslist": "^4.16.5",
+    "ejs": "^3.1.7",
+    "immer": "^9.0.6",
+    "minimist": "^1.2.6",
+    "moment": "^2.29.4",
+    "nth-check": "^2.0.1",
+    "prismjs": "^1.27.0",
+    "semver": "^7.5.2",
+    "shell-quote": "^1.7.3"
   }
 }
