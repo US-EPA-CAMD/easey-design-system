@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.7...v1.35.0) (2024-06-25)
+
+
+### Features
+
+* upgrade Node.js to 20.8.0 and bump version to 1.35.0 ([7cb3b8e](https://github.com/US-EPA-CAMD/easey-design-system/commit/7cb3b8ea7f4de6151ad16cdbc6e86b5c382f9454))
+
 ## [1.34.7](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.6...v1.34.7) (2023-07-28)
 
 
