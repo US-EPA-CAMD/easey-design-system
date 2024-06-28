@@ -7,9 +7,15 @@ export interface PreloaderProps {
   initialAnimationOn?: boolean;
   displayWarning?: boolean;
   returnFocus?: boolean;
+  showStopButton?: boolean;
 }
 
-export const Preloader = ({ initialAnimationOn = true, displayWarning = false , returnFocus = true}: PreloaderProps) => {
+export const Preloader = ({
+  initialAnimationOn = true,
+  displayWarning = false,
+  returnFocus = true,
+  showStopButton = true,
+}: PreloaderProps) => {
   const [animationOn, setAnimationOn] = useState(initialAnimationOn);
   const prevFocusedElementRef = useRef<HTMLElement | null>(null);
 
@@ -19,14 +25,12 @@ export const Preloader = ({ initialAnimationOn = true, displayWarning = false , 
 
   useEffect(() => {
     prevFocusedElementRef.current = document.activeElement as HTMLElement;
-    if (document.querySelectorAll('#btnStopAnimation')) {
-      (document.querySelector('#btnStopAnimation') as HTMLElement).focus();
-    }
+    (document.querySelector('#btnStopAnimation') as HTMLElement)?.focus();
     return () => {
-      if (returnFocus && prevFocusedElementRef.current) {
-          prevFocusedElementRef.current.focus();
+      if (returnFocus) {
+        prevFocusedElementRef.current?.focus();
       }
-  }
+    };
   }, [returnFocus]);
 
   return (
@@ -38,7 +42,7 @@ export const Preloader = ({ initialAnimationOn = true, displayWarning = false , 
           <img alt="Content still loading" title="Content still loading" src={staticLoadingSpinner} />
         )}
       </p>
-      {animationOn ? (
+      {showStopButton && animationOn ? (
         <div className="text-center">
           <Button
             id="btnStopAnimation"
