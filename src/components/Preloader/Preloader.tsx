@@ -35,7 +35,7 @@ export const Preloader = ({
 
   return (
     <div className="text-center" aria-live="polite">
-      <p>
+      <p className="margin-0 display-flex flex-align-center">
         {animationOn ? (
           <img alt="Content loading" title="Content loading" src={loadingSpinner} />
         ) : (
