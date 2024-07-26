@@ -4,6 +4,7 @@ import { loadingSpinner } from '../../base64/loading-spinner';
 import { staticLoadingSpinner } from '../../base64/static-loading-spinner';
 
 export interface PreloaderProps {
+  className?: string;
   initialAnimationOn?: boolean;
   displayWarning?: boolean;
   returnFocus?: boolean;
@@ -11,6 +12,7 @@ export interface PreloaderProps {
 }
 
 export const Preloader = ({
+  className = '',
   initialAnimationOn = true,
   displayWarning = false,
   returnFocus = true,
@@ -34,7 +36,7 @@ export const Preloader = ({
   }, [returnFocus]);
 
   return (
-    <div className="text-center" aria-live="polite">
+    <div className={`text-center ${className}`} aria-live="polite">
       <p className="margin-0 display-flex flex-align-center flex-justify-center">
         {animationOn ? (
           <img alt="Content loading" title="Content loading" src={loadingSpinner} />
