@@ -1,3 +1,16 @@
+# [1.36.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.35.0...v1.36.0) (2024-08-02)
+
+
+### Bug Fixes
+
+* **5995:** addressed Preloader style issues ([e418ce9](https://github.com/US-EPA-CAMD/easey-design-system/commit/e418ce970cf658b17c455311537771f0b8d38f35))
+* **5995:** fixed style issue ([6fdc171](https://github.com/US-EPA-CAMD/easey-design-system/commit/6fdc1712bc411b733fa07801b07150eafb11b58b))
+
+
+### Features
+
+* added prop to Preloader ([ba325c6](https://github.com/US-EPA-CAMD/easey-design-system/commit/ba325c6db2f28fac14e80df98514fa47f16eb7a1))
+
 # [1.35.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.34.7...v1.35.0) (2024-06-25)
 
 
