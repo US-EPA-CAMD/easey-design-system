@@ -4,12 +4,20 @@ import { loadingSpinner } from '../../base64/loading-spinner';
 import { staticLoadingSpinner } from '../../base64/static-loading-spinner';
 
 export interface PreloaderProps {
+  className?: string;
   initialAnimationOn?: boolean;
   displayWarning?: boolean;
   returnFocus?: boolean;
+  showStopButton?: boolean;
 }
 
-export const Preloader = ({ initialAnimationOn = true, displayWarning = false , returnFocus = true}: PreloaderProps) => {
+export const Preloader = ({
+  className = '',
+  initialAnimationOn = true,
+  displayWarning = false,
+  returnFocus = true,
+  showStopButton = true,
+}: PreloaderProps) => {
   const [animationOn, setAnimationOn] = useState(initialAnimationOn);
   const prevFocusedElementRef = useRef<HTMLElement | null>(null);
 
@@ -19,26 +27,24 @@ export const Preloader = ({ initialAnimationOn = true, displayWarning = false , 
 
   useEffect(() => {
     prevFocusedElementRef.current = document.activeElement as HTMLElement;
-    if (document.querySelectorAll('#btnStopAnimation')) {
-      (document.querySelector('#btnStopAnimation') as HTMLElement).focus();
-    }
+    (document.querySelector('#btnStopAnimation') as HTMLElement)?.focus();
     return () => {
-      if (returnFocus && prevFocusedElementRef.current) {
-          prevFocusedElementRef.current.focus();
+      if (returnFocus) {
+        prevFocusedElementRef.current?.focus();
       }
-  }
+    };
   }, [returnFocus]);
 
   return (
-    <div className="text-center" aria-live="polite">
-      <p>
+    <div className={`text-center ${className}`} aria-live="polite">
+      <p className="margin-0 display-flex flex-align-center flex-justify-center">
         {animationOn ? (
           <img alt="Content loading" title="Content loading" src={loadingSpinner} />
         ) : (
           <img alt="Content still loading" title="Content still loading" src={staticLoadingSpinner} />
         )}
       </p>
-      {animationOn ? (
+      {showStopButton && animationOn ? (
         <div className="text-center">
           <Button
             id="btnStopAnimation"
