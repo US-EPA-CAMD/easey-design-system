@@ -1,3 +1,10 @@
+## [1.36.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.36.0...v1.36.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* added export and split css and js ([79398b4](https://github.com/US-EPA-CAMD/easey-design-system/commit/79398b4611c8db36552fb2bf5805b832a2172c2b))
+
 # [1.36.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.35.0...v1.36.0) (2024-08-02)
 
 
