@@ -6,6 +6,12 @@
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.js"
+    }
+  },
   "license": "MIT",
   "repository": {
     "type": "git",

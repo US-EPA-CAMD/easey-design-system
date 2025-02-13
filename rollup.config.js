@@ -41,7 +41,7 @@ const rollupConfig = [
         tsconfig: './tsconfig.json',
       }),
       postcss({
-        extract: false,
+        extract: true,
         modules: false,
         use: ['sass'],
       }),
@@ -74,7 +74,7 @@ const rollupConfig = [
         tsconfig: './tsconfig.json',
       }),
       postcss({
-        extract: false,
+        extract: true,
         modules: false,
         use: ['sass'],
       }),
