@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import { Header, HeaderProps } from './Header';
-import { config } from '../../config';
+import type { Meta, StoryObj } from '@storybook/react';
+import { Header } from './Header';
 
-export default {
-  title: `${config.appName} / Header`,
+const meta = {
+  title: "Easey Design System / Header",
   component: Header,
   parameters: {
     docs: {
@@ -13,45 +12,31 @@ export default {
       },
     },
   },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof Header>;
 
-const Template: Story<HeaderProps> = (args) => <Header {...args} />;
+export default meta;
+type Story = StoryObj<typeof Header>;
 
-export const Default = Template.bind({});
-Default.args = {
-  logoSrc: '',
-  logoUrl: 'https://www.epa.gov',
-  searchUrl: 'https://search.epa.gov/epasearch',
-  menuItems: [
-    {
-      name: 'Environmental Topics',
-      href: 'https://www.epa.gov/environmental-topics',
-    },
-    {
-      name: 'Laws and Regulations',
-      href: 'https://www.epa.gov/laws-regulations',
-    },
-    {
-      name: 'About EPA',
-      href: 'https://www.epa.gov/aboutepa',
-    },
-    {
-      name: 'Accessibility',
-      href: 'https://www.epa.gov/accessibility',
-    },
-    {
-      name: 'Privacy',
-      href: 'https://www.epa.gov/privacy',
-    },
-    {
-      name: 'Privacy and Security Notice',
-      href: 'https://www.epa.gov/privacy/privacy-and-security-notice',
-    },
-  ],
+export const Default: Story = {
+  args: {
+    logoSrc: '',
+    logoUrl: 'https://www.epa.gov',
+    searchUrl: 'https://search.epa.gov/epasearch',
+    menuItems: [
+      { name: 'Environmental Topics', href: 'https://www.epa.gov/environmental-topics' },
+      { name: 'Laws and Regulations', href: 'https://www.epa.gov/laws-regulations' },
+      { name: 'About EPA', href: 'https://www.epa.gov/aboutepa' },
+      { name: 'Accessibility', href: 'https://www.epa.gov/accessibility' },
+      { name: 'Privacy', href: 'https://www.epa.gov/privacy' },
+      { name: 'Privacy and Security Notice', href: 'https://www.epa.gov/privacy/privacy-and-security-notice' }
+    ]
+  }
 };
 
-export const WithEnvironmentBanner = Template.bind({});
-WithEnvironmentBanner.args = {
-  environment: 'development',
-  ...Default.args,
+export const WithEnvironmentBanner: Story = {
+  args: {
+    ...Default.args,
+    environment: 'development'
+  }
 };

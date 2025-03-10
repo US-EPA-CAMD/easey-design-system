@@ -1,4 +1,4 @@
-import './preview.scss';
+import '../public/uswds/css/styles.css';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

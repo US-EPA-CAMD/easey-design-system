@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import { config } from '../../config';
-import { WhatIsNewBox, WhatIsNewBoxProps } from './WhatIsNewBox';
+import type { Meta, StoryObj } from '@storybook/react';
+import { WhatIsNewBox } from './WhatIsNewBox';
 
-export default {
-  title: `${config.appName} / What's New Box`,
+const meta = {
+  title: "Easey Design System / What's New Box",
   component: WhatIsNewBox,
   parameters: {
     docs: {
@@ -13,12 +12,15 @@ export default {
       },
     },
   },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof WhatIsNewBox>;
 
-const Template: Story<WhatIsNewBoxProps> = (args) => <WhatIsNewBox {...args} />;
+export default meta;
+type Story = StoryObj<typeof WhatIsNewBox>;
 
-export const Default = Template.bind({});
-Default.args = {
-  title: `What's New?`,
-  text: 'View the Tutorials for data & quick start guides on using CAMPDs new features',
+export const Default: Story = {
+  args: {
+    title: `What's New?`,
+    text: 'View the Tutorials for data & quick start guides on using CAMPDs new features'
+  }
 };

@@ -1,4 +1,4 @@
-@import '../../additional-scss/easey-design-styles';
+@use '../../../public/scss/variables' as *;
 
 .whatIsNewBox {
   .title {
@@ -9,3 +9,4 @@
     border-bottom-width: thick;
   }
 }
+

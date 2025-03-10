@@ -1,3 +1,6 @@
+@use './variables' as * ;
+@use "uswds" as *;
+
 .header-container {
   .usa-nav {
     right: 0 !important;
