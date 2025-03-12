@@ -1,3 +1,17 @@
+# [1.37.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.36.1...v1.37.0) (2025-03-12)
+
+
+### Bug Fixes
+
+* "string-width": "4.2.3" added ([a8da43d](https://github.com/US-EPA-CAMD/easey-design-system/commit/a8da43da407dd0e528981542a3682fe72b3ba367))
+* "wrap-ansi": "7.0.0", added ([cffaa1c](https://github.com/US-EPA-CAMD/easey-design-system/commit/cffaa1cefe016c853d8fbbef8015cc331bb1dd28))
+* jest implemented ([55e0753](https://github.com/US-EPA-CAMD/easey-design-system/commit/55e075340506f8c79c09cc9540451a99112e112b))
+
+
+### Features
+
+* react-script to vite ([8b87b61](https://github.com/US-EPA-CAMD/easey-design-system/commit/8b87b61e7d1c690afb4425c745d86e25b0fd2c89))
+
 ## [1.36.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.36.0...v1.36.1) (2025-02-13)
 
 
