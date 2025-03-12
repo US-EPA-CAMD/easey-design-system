@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import { AppVersion, AppVersionProps } from './AppVersion';
-import { config } from '../../config';
+import type { Meta, StoryObj } from '@storybook/react';
+import { AppVersion } from './AppVersion';
 
-export default {
-  title: `${config.appName} / App Version Banner`,
+const meta: Meta<typeof AppVersion> = {
+  title: "Easey Design System / App Version Banner",
   component: AppVersion,
   parameters: {
     docs: {
@@ -13,12 +12,15 @@ export default {
       },
     },
   },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof AppVersion>;
 
-const Template: Story<AppVersionProps> = (args) => <AppVersion {...args} />;
+export default meta;
+type Story = StoryObj<typeof AppVersion>;
 
-export const Default = Template.bind({});
-Default.args = {
-  version: 'v0.0.98',
-  publishDate: 'Tues 13 2021',
+export const Default: Story = {
+  args: {
+    version: 'v0.0.98',
+    publishDate: 'Tues 13 2021',
+  },
 };

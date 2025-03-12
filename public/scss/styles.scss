@@ -1,0 +1,12 @@
+// 1. Load USWDS settings
+@forward 'uswds-settings';
+
+// 2. Load USWDS source code
+@forward "uswds";
+
+@use 'uswds-core' as *;
+
+/***** GLOBAL VARIABLES (scss values used througout the app) *****/
+@use 'variables';
+@use 'uswds-global-overrides';
+@use 'global-styles';

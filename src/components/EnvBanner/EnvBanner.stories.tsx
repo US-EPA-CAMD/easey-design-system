@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import { EnvBanner, EnvBannerProps } from './EnvBanner';
-import { config } from '../../config';
+import type { Meta, StoryObj } from '@storybook/react';
+import { EnvBanner } from './EnvBanner';
 
-export default {
-  title: `${config.appName} / Environment Banner`,
+const meta = {
+  title: "Easey Design System / Environment Banner",
   component: EnvBanner,
   parameters: {
     docs: {
@@ -13,21 +12,20 @@ export default {
       },
     },
   },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof EnvBanner>;
 
-const Template: Story<EnvBannerProps> = (args) => <EnvBanner {...args} />;
+export default meta;
+type Story = StoryObj<typeof EnvBanner>;
 
-export const DevEnvironment = Template.bind({});
-DevEnvironment.args = {
-  label: 'development',
+export const DevEnvironment: Story = {
+  args: { label: 'development' }
 };
 
-export const TestEnvironment = Template.bind({});
-TestEnvironment.args = {
-  label: 'testing',
+export const TestEnvironment: Story = {
+  args: { label: 'testing' }
 };
 
-export const StageEnvironment = Template.bind({});
-StageEnvironment.args = {
-  label: 'staging',
+export const StageEnvironment: Story = {
+  args: { label: 'staging' }
 };

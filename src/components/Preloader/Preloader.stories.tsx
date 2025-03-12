@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
+import type { Meta, StoryObj } from '@storybook/react';
 import Preloader from './Preloader';
-import { config } from '../../config';
 
-export default {
-  title: `${config.appName} / Preloader`,
+const meta = {
+  title: "Easey Design System / Preloader",
   component: Preloader,
   parameters: {
     docs: {
@@ -13,9 +12,10 @@ export default {
       },
     },
   },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof Preloader>;
 
-const Template: Story = (args) => <Preloader {...args} />;
+export default meta;
+type Story = StoryObj<typeof Preloader>;
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Default: Story = {};

@@ -6,7 +6,7 @@
  *      callback - (optional), potential extra functions to call
  *                             [only one implemented so far is 'Escape' press for modal]
  *****/
-export const focusTrap = (selector: string, callback = () => {}) => {
+const focusTrap = (selector: string, callback = () => {}) => {
   // *** identify focusable component elements
   const componentFocusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
@@ -66,3 +66,5 @@ export const focusTrap = (selector: string, callback = () => {}) => {
     handleKeyPress,
   };
 };
+
+export { focusTrap };

@@ -1,11 +1,15 @@
 module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+  staticDirs: ['../public'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-links'
   ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/preset-create-react-app"
-  ]
+  framework: {
+    name: '@storybook/react-vite',
+    options: {}
+  },
+  core: {
+    builder: '@storybook/builder-vite',
+  }
 }

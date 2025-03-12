@@ -1,46 +1,31 @@
 import * as React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-import { TitledProgressBar, TitledProgressBarProps } from './TitledProgressBar';
-import { config } from '../../config';
+import type { Meta, StoryObj } from '@storybook/react';
+import { TitledProgressBar } from './TitledProgressBar';
 
-export default {
-  title: `${config.appName} / Progress Bar`,
+const meta = {
+  title: "Easey Design System / Progress Bar",
   component: TitledProgressBar,
   parameters: {
     docs: {
       description: {
-        component: `### EASEY Design System Environment Progress Bar component`,
+        component: `### EASEY Design System Progress Bar component`,
       },
     },
   },
-} as Meta;
+  tags: ['autodocs'],
+} satisfies Meta<typeof TitledProgressBar>;
 
-const Template: Story<TitledProgressBarProps> = (args) => <TitledProgressBar {...args} />;
+export default meta;
+type Story = StoryObj<typeof TitledProgressBar>;
 
-export const Zero = Template.bind({});
-Zero.args = {
-  title: 'Emission Submission Progress',
-  lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 0,
+export const Zero: Story = {
+  args: {
+    title: 'Emission Submission Progress',
+    lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
+    percentage: 0
+  }
 };
 
-export const Twenty = Template.bind({});
-Twenty.args = {
-  title: 'Emission Submission Progress',
-  lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 20,
-};
-
-export const Fifty = Template.bind({});
-Fifty.args = {
-  title: 'Emission Submission Progress',
-  lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 50,
-};
-
-export const OneHundred = Template.bind({});
-OneHundred.args = {
-  title: 'Emission Submission Progress',
-  lastUpdated: 'Last Updated September 20, 2021 at 6:30 EST',
-  percentage: 100,
-};
+export const Twenty: Story = { args: { ...Zero.args, percentage: 20 } };
+export const Fifty: Story = { args: { ...Zero.args, percentage: 50 } };
+export const OneHundred: Story = { args: { ...Zero.args, percentage: 100 } };
