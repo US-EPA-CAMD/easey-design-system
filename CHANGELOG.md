@@ -1,3 +1,10 @@
+## [1.37.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.0...v1.37.1) (2025-03-13)
+
+
+### Bug Fixes
+
+* remove package.json files array ([25029e6](https://github.com/US-EPA-CAMD/easey-design-system/commit/25029e6af3a3f61d247ae05e6b49a15012e11f38))
+
 # [1.37.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.36.1...v1.37.0) (2025-03-12)
 
 
