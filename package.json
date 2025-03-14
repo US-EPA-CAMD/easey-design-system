@@ -4,11 +4,11 @@
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
   "main": "lib/index.js",
-  "module": "lib/index.umd.cjs",
+  "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "exports": {
     ".": {
-      "import": "./index.umd.cjs",
+      "import": "./index.esm.js",
       "require": "./index.js"
     }
   },
