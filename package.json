@@ -85,7 +85,7 @@
     "@storybook/addon-links": "^8.6.4",
     "@storybook/builder-vite": "^8.6.4",
     "@storybook/cli": "^8.6.4",
-    "@storybook/node-logger": "^8.6.4",
+    "@storybook/node-logger": "^8.6.14",
     "@storybook/react-vite": "^8.6.4",
     "@storybook/test": "^8.6.14",
     "@svgr/rollup": "^5.5.0",
