@@ -2112,10 +2112,10 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@ramonak/react-progress-bar@^4.2.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@ramonak/react-progress-bar/-/react-progress-bar-4.4.0.tgz#094ce2275599cc43349ca11f21fb6efa25a84bc0"
-  integrity sha512-/djk0ZzQZXd2x6uMJ1YL5EeFBN1uJQVFcV5NrP1B29m31LL6xb5ahbpz255m3bFY3ZHpI7awE6L4SlfBW4mDWw==
+"@ramonak/react-progress-bar@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@ramonak/react-progress-bar/-/react-progress-bar-5.4.0.tgz#b366c75af79eaff9d143841d796717d21d9af23b"
+  integrity sha512-3MJ0TKPw7xhearDuO6egIRQrvuERoLn6CVc2hKnw89iEegUL6DzMY7Rptmz2KaHjK0zbev+PGyyvDW+IK4FJBg==
 
 "@rollup/plugin-url@^6.1.0":
   version "6.1.0"
