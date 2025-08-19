@@ -124,7 +124,7 @@
     "typescript": "^5.8.2",
     "vite": "^6.2.7",
     "vite-plugin-dts": "^4.5.4",
-    "vitest": "^3.0.7"
+    "vitest": "^3.2.4"
   },
   "eslintConfig": {
     "extends": [
