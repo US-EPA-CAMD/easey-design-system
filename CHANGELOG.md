@@ -1,3 +1,11 @@
+## [1.37.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.2...v1.37.3) (2025-08-21)
+
+
+### Bug Fixes
+
+* update yarn.lock ([6d20179](https://github.com/US-EPA-CAMD/easey-design-system/commit/6d201790c2c0abe8ee100c8aa95d8b1f33733fca))
+* upgrade jest Dependency from v29 to v30 ([49c4e1c](https://github.com/US-EPA-CAMD/easey-design-system/commit/49c4e1c0681d606d9e4c39f56435ca0681864732))
+
 ## [1.37.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.1...v1.37.2) (2025-03-14)
 
 
