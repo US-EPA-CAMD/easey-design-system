@@ -210,6 +210,6 @@
     }
   },
   "dependencies": {
-    "@ramonak/react-progress-bar": "^4.2.0"
+    "@ramonak/react-progress-bar": "^5.4.0"
   }
 }
