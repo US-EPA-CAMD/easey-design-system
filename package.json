@@ -76,7 +76,7 @@
     "@babel/core": "^7.28.4",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@rollup/plugin-url": "^6.1.0",
+    "@rollup/plugin-url": "^8.0.2",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
     "@storybook/addon-actions": "^8.6.4",
