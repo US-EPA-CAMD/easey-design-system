@@ -105,7 +105,7 @@
     "classnames": "^2.3.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "esbuild": "^0.25.9",
+    "esbuild": "^0.25.10",
     "gh-pages": "^5.0.0",
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^29.7.0",
