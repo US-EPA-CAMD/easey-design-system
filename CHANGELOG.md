@@ -1,3 +1,10 @@
+## [1.37.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.3...v1.37.4) (2025-12-11)
+
+
+### Bug Fixes
+
+* [#7011](https://github.com/US-EPA-CAMD/easey-design-system/issues/7011) Updated vitest Dependency to version 4.0.15 ([607098e](https://github.com/US-EPA-CAMD/easey-design-system/commit/607098ed391e161037e97a33c29c185695b79e96))
+
 ## [1.37.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.2...v1.37.3) (2025-08-21)
 
 
