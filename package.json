@@ -1,6 +1,6 @@
 {
   "name": "@us-epa-camd/easey-design-system",
-  "version": "1.37.4",
+  "version": "1.37.5",
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
   "main": "lib/index.js",
@@ -82,9 +82,6 @@
     "@storybook/addon-actions": "^8.6.15",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
-    "@storybook/addon-links": "^8.6.4",
-    "@storybook/builder-vite": "^8.6.15",
-    "@storybook/cli": "^8.6.4",
     "@storybook/addon-links": "^8.6.15",
     "@storybook/builder-vite": "^8.6.4",
     "@storybook/cli": "^8.6.15",

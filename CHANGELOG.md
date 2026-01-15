@@ -1,3 +1,10 @@
+## [1.37.5](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.4...v1.37.5) (2026-01-15)
+
+
+### Bug Fixes
+
+* release new version ([81b5e2d](https://github.com/US-EPA-CAMD/easey-design-system/commit/81b5e2d208638d4a05799b094a08c95dc84bd2f8))
+
 ## [1.37.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.3...v1.37.4) (2025-12-11)
 
 
