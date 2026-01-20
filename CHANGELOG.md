@@ -1,3 +1,11 @@
+# [1.38.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.5...v1.38.0) (2026-01-20)
+
+
+### Features
+
+* **7093:** update node version in workflows ([ea1be03](https://github.com/US-EPA-CAMD/easey-design-system/commit/ea1be0371066a32ec16cf440348e27d68c153d2a))
+* **7093:** upgrade to Node v22 ([7773c1c](https://github.com/US-EPA-CAMD/easey-design-system/commit/7773c1c870b04d29fd9eee7f1d002e312dca35ed))
+
 ## [1.37.5](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.4...v1.37.5) (2026-01-15)
 
 
