@@ -13,22 +13,3 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 25
-    ignore:
-      - dependency-name: "@storybook/addon-actions"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/addon-essentials"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/addon-interactions"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/addon-links"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/builder-vite"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/cli"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/node-logger"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/react-vite"
-        versions: [">=9.0.0"]
-      - dependency-name: "@storybook/test"
-        versions: [">=9.0.0"]
