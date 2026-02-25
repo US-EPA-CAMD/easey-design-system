@@ -2808,12 +2808,20 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/builder-vite@10.2.10", "@storybook/builder-vite@^10.2.8":
+"@storybook/builder-vite@10.2.10":
   version "10.2.10"
   resolved "https://registry.npmjs.org/@storybook/builder-vite/-/builder-vite-10.2.10.tgz#0f9889873291a7b88857c45224d4063e204d3a62"
   integrity sha512-Wd6CYL7LvRRNiXMz977x9u/qMm7nmMw/7Dow2BybQo+Xbfy1KhVjIoZ/gOiG515zpojSozctNrJUbM0+jH1jwg==
   dependencies:
     "@storybook/csf-plugin" "10.2.10"
+    ts-dedent "^2.0.0"
+
+"@storybook/builder-vite@^10.2.12":
+  version "10.2.12"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.2.12.tgz#6c9edf21201d4d5ed988fd2eb6172cc2dd9fd67c"
+  integrity sha512-QaOwhNpoBs4Af8xYG1NOoyOvbapcN7EpwYq53ERpMz2uU+yOeApqy4XeJ5xM7doCvkJKZqidwLMXZQeN/j/mUw==
+  dependencies:
+    "@storybook/csf-plugin" "10.2.12"
     ts-dedent "^2.0.0"
 
 "@storybook/cli@^10.2.12":
@@ -2847,6 +2855,13 @@
   version "10.2.10"
   resolved "https://registry.npmjs.org/@storybook/csf-plugin/-/csf-plugin-10.2.10.tgz#038cd8e41884f2f437502504d02b8c0a24ed0b39"
   integrity sha512-aFvgaNDAnKMjuyhPK5ialT22pPqMN0XfPBNPeeNVPYztngkdKBa8WFqF/umDd47HxAjebq+vn6uId1xHyOHH3g==
+  dependencies:
+    unplugin "^2.3.5"
+
+"@storybook/csf-plugin@10.2.12":
+  version "10.2.12"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-plugin/-/csf-plugin-10.2.12.tgz#eb73335ff229a9d52c88231b1c65927b1bc6cc4a"
+  integrity sha512-+6nv7oX21K+BRmMUCfeaFeS3UFgDu5/2M4YsLYzXnx/YmAP3yg0bb09falzvCKTCncHCJUWaO8GDvavj32anaA==
   dependencies:
     unplugin "^2.3.5"
 
