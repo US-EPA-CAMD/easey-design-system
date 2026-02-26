@@ -56,6 +56,9 @@ const updateLabel = () => {
   const label = container? container.querySelector<HTMLLabelElement>('label[data-testid="label"][for="search-field"]') : null;
 
   if (container && label) {
+    // Skip if already processed (for React 18 Strict Mode double-mount)
+    if (container.querySelector('[data-search-wrapper]')) return;
+
     label.classList.replace('usa-sr-only', 'usa-label');
     label.classList.add('text-bold');
     const input = container.querySelector<HTMLInputElement>('input[data-testid="textInput"]');
@@ -63,6 +66,7 @@ const updateLabel = () => {
 
     if (input && button) {
       const inputContainer: HTMLDivElement = document.createElement('div');
+      inputContainer.setAttribute('data-search-wrapper', 'true');
       inputContainer.appendChild(input);
       inputContainer.appendChild(button);
       label.insertAdjacentElement('afterend', inputContainer);
@@ -137,18 +141,16 @@ export const Header = ({
 
   const links = menuItems.map((item) => {
     return (
-      <>
-        <Link
-          className="font-alt-md text-bold"
-          href={item.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          key={'header-menu-item-' + item.name}
-          onClick={(event) => menuTitleClickHandler(event)}
-        >
-          {item.name}
-        </Link>
-      </>
+      <Link
+        className="font-alt-md text-bold"
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        key={'header-menu-item-' + item.name}
+        onClick={(event) => menuTitleClickHandler(event)}
+      >
+        {item.name}
+      </Link>
     );
   });
 
