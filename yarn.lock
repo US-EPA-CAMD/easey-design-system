@@ -12045,10 +12045,28 @@ std-env@^3.10.0:
   resolved "https://registry.npmjs.org/std-env/-/std-env-3.10.0.tgz#d810b27e3a073047b2b5e40034881f5ea6f9c83b"
   integrity sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==
 
-storybook@10.2.12, storybook@^10.2.12:
+storybook@10.2.12:
   version "10.2.12"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.2.12.tgz#973aa4a07aedda2eca67ad868df0ba0f5630c1d5"
   integrity sha512-eT4266OqLdRE3J/pxl2dk36Rnj9vv17Y6rNMpzxohOMjRVONyKkozUd6gaZ2C4WUcwYdIw6VE+ft4LwrJXt/4Q==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+    "@storybook/icons" "^2.0.1"
+    "@testing-library/jest-dom" "^6.6.3"
+    "@testing-library/user-event" "^14.6.1"
+    "@vitest/expect" "3.2.4"
+    "@vitest/spy" "3.2.4"
+    esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0"
+    open "^10.2.0"
+    recast "^0.23.5"
+    semver "^7.7.3"
+    use-sync-external-store "^1.5.0"
+    ws "^8.18.0"
+
+storybook@^10.2.13:
+  version "10.2.13"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.2.13.tgz#b646f8908867d9a0da778c79e3738e9fcae599eb"
+  integrity sha512-heMfJjOfbHvL+wlCAwFZlSxcakyJ5yQDam6e9k2RRArB1veJhRnsjO6lO1hOXjJYrqxfHA/ldIugbBVlCDqfvQ==
   dependencies:
     "@storybook/global" "^5.0.0"
     "@storybook/icons" "^2.0.1"
