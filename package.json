@@ -79,7 +79,7 @@
     "@semantic-release/git": "^10.0.0",
     "@storybook/addon-links": "^10.2.12",
     "@storybook/builder-vite": "^10.2.8",
-    "@storybook/cli": "^10.2.12",
+    "@storybook/cli": "^10.2.13",
     "@storybook/react-vite": "^10.2.12",
     "@svgr/rollup": "^5.5.0",
     "@testing-library/jest-dom": "^6.9.1",
@@ -87,7 +87,7 @@
     "@testing-library/user-event": "^14.0.0",
     "@trussworks/react-uswds": "^4.1.1",
     "@types/jest": "^30.0.0",
-    "@types/node": "^22.19.11",
+    "@types/node": "^22.19.13",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@uswds/compile": "^1.3.1",
@@ -119,7 +119,7 @@
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.18",
     "@storybook/addon-docs": "10.2.12",
-    "storybook": "^10.2.12"
+    "storybook": "^10.2.13"
   },
   "eslintConfig": {
     "extends": [
