@@ -1,9 +1,19 @@
-//import { useState } from 'react';
 import classnames from 'classnames';
-import { KeyboardArrowDownSharp, KeyboardArrowUpSharp } from '@material-ui/icons';
+import { useState } from 'react';
 
 import './AccordionMenu.scss';
-import { useState } from 'react';
+
+const KeyboardArrowDownSharp = ({ className }: { className?: string }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
+  </svg>
+);
+
+const KeyboardArrowUpSharp = ({ className }: { className?: string }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+  </svg>
+);
 
 export interface AccordionMenuItem {
   id: string;
