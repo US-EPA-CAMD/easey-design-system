@@ -2733,12 +2733,20 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/builder-vite@10.2.12", "@storybook/builder-vite@^10.2.8":
+"@storybook/builder-vite@10.2.12":
   version "10.2.12"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.2.12.tgz#6c9edf21201d4d5ed988fd2eb6172cc2dd9fd67c"
   integrity sha512-QaOwhNpoBs4Af8xYG1NOoyOvbapcN7EpwYq53ERpMz2uU+yOeApqy4XeJ5xM7doCvkJKZqidwLMXZQeN/j/mUw==
   dependencies:
     "@storybook/csf-plugin" "10.2.12"
+    ts-dedent "^2.0.0"
+
+"@storybook/builder-vite@^10.2.13":
+  version "10.2.13"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.2.13.tgz#2560deee72589ab115dadd6630afbb112d2c7e8a"
+  integrity sha512-UMlPPPBa5ZbcaCXSKrFIi4tTEb0W72JTByqlJ5cGtDXGkN2uX69aL5n2JLIP0F4NzRRl6rNTeu9tGPPcD4r/CA==
+  dependencies:
+    "@storybook/csf-plugin" "10.2.13"
     ts-dedent "^2.0.0"
 
 "@storybook/cli@^10.2.13":
