@@ -2764,30 +2764,30 @@
     "@storybook/csf-plugin" "10.3.3"
     ts-dedent "^2.0.0"
 
-"@storybook/cli@^10.3.3":
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-10.3.3.tgz#d494cf0f7c0a51e7fd50aa4895fab08d2bd5041f"
-  integrity sha512-+LdYw0XH8eN3rrYNIt2JEpfigNvs0HQ7+2z7aN3MSujt9pawgpnIeTyqFgjIiYqD5cVZ6vE+aCUMo3xvmptyuQ==
+"@storybook/cli@^10.3.4":
+  version "10.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-10.3.4.tgz#35eac5cbbc40a869ac8752092ca1dbe85ddba50e"
+  integrity sha512-25tJAM6s3JsEokMujdQGHOoQSmj0BpeMe7S4jMcLL4TpdWXagawHPKZEN5cDiOBwaJj4DZLMZpWkGlyl3b988A==
   dependencies:
-    "@storybook/codemod" "10.3.3"
+    "@storybook/codemod" "10.3.4"
     "@types/semver" "^7.7.1"
     commander "^14.0.2"
-    create-storybook "10.3.3"
+    create-storybook "10.3.4"
     jscodeshift "^0.15.1"
-    storybook "10.3.3"
+    storybook "10.3.4"
     ts-dedent "^2.0.0"
 
-"@storybook/codemod@10.3.3":
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-10.3.3.tgz#2291377306a930ccabb5add9255903e09eb4b62c"
-  integrity sha512-MStm1AspBe8wyt29bvyHccwvpeJV0zqUrIB/7w+WkPpQfVL+RnI//aJmwdcML1W1nz02WQXRMCOBcp0LR50ZAA==
+"@storybook/codemod@10.3.4":
+  version "10.3.4"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-10.3.4.tgz#cfba3eaab4019a5b80532463d659ccef11ddd71c"
+  integrity sha512-iz1QVLC3bed5j1tF0xiCTkaAMaalPeAIgJmN67jsrSrEDfEtP5bksF9cbg6y2/VlhJZloOULbUwi+Kdcvv5MyA==
   dependencies:
     "@types/cross-spawn" "^6.0.6"
     cross-spawn "^7.0.6"
     es-toolkit "^1.43.0"
     jscodeshift "^0.15.1"
     prettier "^3.7.1"
-    storybook "10.3.3"
+    storybook "10.3.4"
     tiny-invariant "^1.3.1"
     tinyglobby "^0.2.13"
 
@@ -3606,6 +3606,11 @@
   version "3.5.13"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.5.13.tgz#87b309a6379c22b926e696893237826f64339b6f"
   integrity sha512-/hnE/qP5ZoGpol0a5mDi45bOd7t3tjYJBjsgCsivow7D48cJeV5l05RD82lPqi7gRiphZM37rnhW1l6ZoCNNnQ==
+
+"@webcontainer/env@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@webcontainer/env/-/env-1.1.1.tgz#23021b2bb24befeeef53dba8996d1886b7016515"
+  integrity sha512-6aN99yL695Hi9SuIk1oC88l9o0gmxL1nGWWQ/kNy81HigJ0FoaoTXpytCj6ItzgyCEwA9kF1wixsTuv5cjsgng==
 
 abbrev@^4.0.0:
   version "4.0.0"
@@ -4928,13 +4933,13 @@ cosmiconfig@^9.0.0:
     js-yaml "^4.1.0"
     parse-json "^5.2.0"
 
-create-storybook@10.3.3:
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/create-storybook/-/create-storybook-10.3.3.tgz#16ff413f704efc6dd896feb7f841a60218d9cc30"
-  integrity sha512-vwOQQaayn0Tyl9wvA0s958dhehK11kRvmDavkRM7zQslnlv1X0D/OBV1J3tjr7KGSJ/0WRZGeekqXWmRFIFCYQ==
+create-storybook@10.3.4:
+  version "10.3.4"
+  resolved "https://registry.yarnpkg.com/create-storybook/-/create-storybook-10.3.4.tgz#0f72e47c8ea504a63b2fe0c44ce6e80049219838"
+  integrity sha512-0JrEQNJbZvNmiDZzEe9WKhxYAAMqgplSndBx8tP9nAxk5LPc6BywfFnaZjHMLJawEbESGZWK2r9HJw/psHQxLQ==
   dependencies:
     semver "^7.7.3"
-    storybook "10.3.3"
+    storybook "10.3.4"
 
 cross-spawn@7.0.3:
   version "7.0.3"
@@ -11940,10 +11945,10 @@ stop-iteration-iterator@^1.0.0:
     es-errors "^1.3.0"
     internal-slot "^1.1.0"
 
-storybook@10.3.3, storybook@^10.3.3:
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.3.3.tgz#3e692a3264fdb423daf6e98afda758b14a72136b"
-  integrity sha512-tMoRAts9EVqf+mEMPLC6z1DPyHbcPe+CV1MhLN55IKsl0HxNjvVGK44rVPSePbltPE6vIsn4bdRj6CCUt8SJwQ==
+storybook@10.3.4, storybook@^10.3.3:
+  version "10.3.4"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.3.4.tgz#9efa013affd6411b4ae1ba3a0d18613e0ff289a2"
+  integrity sha512-866YXZy9k59tLPl9SN3KZZOFeBC/swxkuBVtW8iQjJIzfCrvk7zXQd8RSQ4ignmCdArVvY4lGMCAT4yNaZSt1g==
   dependencies:
     "@storybook/global" "^5.0.0"
     "@storybook/icons" "^2.0.1"
@@ -11951,6 +11956,7 @@ storybook@10.3.3, storybook@^10.3.3:
     "@testing-library/user-event" "^14.6.1"
     "@vitest/expect" "3.2.4"
     "@vitest/spy" "3.2.4"
+    "@webcontainer/env" "^1.1.1"
     esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0"
     open "^10.2.0"
     recast "^0.23.5"
