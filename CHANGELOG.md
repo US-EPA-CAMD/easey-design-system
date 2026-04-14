@@ -1,3 +1,10 @@
+## [1.38.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.0...v1.38.1) (2026-04-14)
+
+
+### Bug Fixes
+
+* **deps:** upgrade vite from v6 to v7 Updates vite to ^7.3.2 to align with easey-ecmps-ui and easey-campd-ui, resolving Dependabot alerts [#193](https://github.com/US-EPA-CAMD/easey-design-system/issues/193), [#194](https://github.com/US-EPA-CAMD/easey-design-system/issues/194), and [#195](https://github.com/US-EPA-CAMD/easey-design-system/issues/195). ([a1537d6](https://github.com/US-EPA-CAMD/easey-design-system/commit/a1537d6c8357eabab61a0f1be251b27f6b4f86f0))
+
 # [1.38.0](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.37.5...v1.38.0) (2026-01-20)
 
 
