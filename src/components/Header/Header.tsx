@@ -158,7 +158,7 @@ export const Header = ({
     <div className="header-container">
       <GovBanner className="padding-y-2px bg-base-lighter width-full" />
       <div className={`usa-overlay ${menuExpanded ? 'is-visible' : ''}`} />
-      {environment && environment !== 'prod' ? <EnvBanner label={environment} /> : null}
+      {environment && !['prod', 'production'].includes(environment) ? <EnvBanner label={environment} /> : null}
       <USWDSHeader basic={true} className="margin-bottom-neg-1">
         <a href={logoUrl} target="_blank" rel="noopener noreferrer" title="EPA Home page">
           {_.isNil(logoSrc) || logoSrc === '' ? (
