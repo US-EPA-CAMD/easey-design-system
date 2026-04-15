@@ -1,3 +1,10 @@
+## [1.38.2](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.1...v1.38.2) (2026-04-15)
+
+
+### Bug Fixes
+
+* **deps:** upgrade vite from v6 to v7 Updates vite to ^7.3.2 to align with easey-ecmps-ui and easey-campd-ui, resolving Dependabot alerts [#193](https://github.com/US-EPA-CAMD/easey-design-system/issues/193), [#194](https://github.com/US-EPA-CAMD/easey-design-system/issues/194), and [#195](https://github.com/US-EPA-CAMD/easey-design-system/issues/195). Header handles both 'prod' or 'production' values for *_ENV value. ([85e3182](https://github.com/US-EPA-CAMD/easey-design-system/commit/85e31827e7c611fd0080e28b959ce14bd88f983e))
+
 ## [1.38.1](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.0...v1.38.1) (2026-04-14)
 
 
