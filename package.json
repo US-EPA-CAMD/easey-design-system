@@ -119,7 +119,7 @@
     "vite-plugin-dts": "^5.0.2",
     "vitest": "^4.0.18",
     "@storybook/addon-docs": "10.4.1",
-    "storybook": "^10.4.1"
+    "storybook": "^10.4.2"
   },
   "eslintConfig": {
     "extends": [
