@@ -41,8 +41,9 @@ export default defineConfig({
           'react-dom': 'ReactDOM'
         },
         // Ensure that the output is not in ES module format for CommonJS
-        exports: 'named',
-        interop: 'auto'
+        exports: 'named'
+        // `interop` is not a valid Rolldown option in Vite 8 (it warned and was ignored).
+        // 'auto' was already the default behavior, so dropping it does not change output.
       }
     },
     cssCodeSplit: true
