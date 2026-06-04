@@ -77,10 +77,10 @@
     "@rollup/plugin-url": "^6.1.0",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
-    "@storybook/addon-links": "^10.4.1",
-    "@storybook/builder-vite": "^10.3.5",
-    "@storybook/cli": "^10.4.1",
-    "@storybook/react-vite": "^10.4.1",
+    "@storybook/addon-links": "^10.4.2",
+    "@storybook/builder-vite": "^10.4.2",
+    "@storybook/cli": "^10.4.2",
+    "@storybook/react-vite": "^10.4.2",
     "@svgr/rollup": "^5.5.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^15.0.7",
@@ -118,8 +118,8 @@
     "vite": "^8.0.16",
     "vite-plugin-dts": "^5.0.2",
     "vitest": "^4.1.8",
-    "@storybook/addon-docs": "10.4.1",
-    "storybook": "^10.4.1"
+    "@storybook/addon-docs": "10.4.2",
+    "storybook": "^10.4.2"
   },
   "eslintConfig": {
     "extends": [
