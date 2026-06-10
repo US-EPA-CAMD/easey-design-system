@@ -2916,15 +2916,7 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/builder-vite@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.4.2.tgz#9d3065f3cfd4da204c3e8e5e1ff3bbb611080da8"
-  integrity sha512-d3+i9vbbUfV6hvT90qabmy1WmC4bEJ7iAYDm0217doeA+S6awF25GF0qOy9gN9waU4NMntHoVpdB1YQO2wUj/w==
-  dependencies:
-    "@storybook/csf-plugin" "10.4.2"
-    ts-dedent "^2.0.0"
-
-"@storybook/builder-vite@^10.4.3":
+"@storybook/builder-vite@10.4.3", "@storybook/builder-vite@^10.4.3":
   version "10.4.3"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.4.3.tgz#5dd4c5e660b79de9e245a624a7f580d3d7e23432"
   integrity sha512-gvXVJvcsqFuSO5PLhS5+BdoYbQDxbkVVrW2cHrf4g089bXVTImZrOSzTO7SEOTs4I9acJqv4nK22WEeJpY+VZw==
@@ -2988,28 +2980,33 @@
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.4.2.tgz#ff5559dc72d1958e176e1426389e7e5131e3bb3a"
   integrity sha512-Eng3Yt2NCjPX94QcfyLeUFhrMj0hec2yU9J/qafBVbfj9XrFI8o+0ZwYJ7uXb9ECbvPN4y06dgt/2W/LiR417w==
 
-"@storybook/react-vite@^10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/react-vite/-/react-vite-10.4.2.tgz#90bafa5bce80b48220437ea1fae23a0ef2386a1e"
-  integrity sha512-nGrS74p0ujPSQ7qD5jKLLlao2igfTTb6Kf/uRhVV8XM0uM7WvxR9K20ddCM8jFmx1jY9fRm0UBGaeaXHDIh5SA==
+"@storybook/react-dom-shim@10.4.3":
+  version "10.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.4.3.tgz#98019fe45b5ec654efad077406937b6a6e3864c2"
+  integrity sha512-aPZ+Afd+zdoSygISOVCJIYdiqWJM6uRZFw0zhsONwNcn3kU1TNce6iAoBCY8cpEhDAu61M1QjeIHM3LPy/ieog==
+
+"@storybook/react-vite@^10.4.3":
+  version "10.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/react-vite/-/react-vite-10.4.3.tgz#d81818e63b2a5f32073161297aecf0b57d4abef7"
+  integrity sha512-Pk/hi10JFuwJ5sj/HAapWrgaa9Z83oT4MJPbHqeKzMt3A3jkIru4L9ibnt82bzV3crOaiErprvOlAFDsjxhrrQ==
   dependencies:
     "@joshwooding/vite-plugin-react-docgen-typescript" "^0.7.0"
     "@rollup/pluginutils" "^5.0.2"
-    "@storybook/builder-vite" "10.4.2"
-    "@storybook/react" "10.4.2"
+    "@storybook/builder-vite" "10.4.3"
+    "@storybook/react" "10.4.3"
     empathic "^2.0.0"
     magic-string "^0.30.0"
     react-docgen "^8.0.0"
     resolve "^1.22.8"
     tsconfig-paths "^4.2.0"
 
-"@storybook/react@10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-10.4.2.tgz#928c0c3c6abd22aa43ee23c9658b76166c99a2f2"
-  integrity sha512-NfEH3CrdCAgUV4Z7SPN3Iw6nofcueqtRj8iHuo77GNjz0qSfuVi9iS7a8o7x7QFSeIBZwS0Jv3CgmhN8qvoLjg==
+"@storybook/react@10.4.3":
+  version "10.4.3"
+  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-10.4.3.tgz#0b799ae6625bacf0fc8722e57724ea7a11808054"
+  integrity sha512-Td+Zoi8ylJTPC1jg5vHw8OK7U2kJgqc5kuAn92UvD4IbAkcpMTBRPHDziK1piv6q7r8yNLVah+ku6IKHpTLeXA==
   dependencies:
     "@storybook/global" "^5.0.0"
-    "@storybook/react-dom-shim" "10.4.2"
+    "@storybook/react-dom-shim" "10.4.3"
     react-docgen "^8.0.2"
     react-docgen-typescript "^2.2.2"
 
