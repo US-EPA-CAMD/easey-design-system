@@ -16,7 +16,7 @@ These instructions will get you a copy of the project package up and running and
 - [Authenticate to github package registry on local machine](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry)
 
 ### Installing
-- Select desired version of the package. The most up to date package version is [![GitHub version](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system.svg)](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system) . <br>
+- Select desired version of package. The most up to date package version is [![GitHub version](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system.svg)](https://badge.fury.io/gh/US-EPA-CAMD%2Feasey-design-system) . <br>
 - In terminal execute ```yarn add @us-epa-camd/easey-design-system``` for latest current version or ```yarn add @us-epa-camd/easey-design-system@VERSION``` to install a specific version
 
 ### Using
