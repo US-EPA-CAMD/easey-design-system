@@ -85,7 +85,6 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.0.0",
-    "@trussworks/react-uswds": "^4.1.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.19.21",
     "@types/react": "^18.2.0",
@@ -205,6 +204,7 @@
     }
   },
   "dependencies": {
-    "@ramonak/react-progress-bar": "^5.0.0"
+    "@ramonak/react-progress-bar": "^5.0.0",
+    "@trussworks/react-uswds": "^4.1.1"
   }
 }

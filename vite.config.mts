@@ -32,9 +32,19 @@ export default defineConfig({
       },
       formats: ['es', 'cjs'] // Specify the formats you want to generate
     },
-    rollupOptions: {
+    rolldownOptions: {
       input: resolve(__dirname, 'src/index.ts'),
-      external: ['react', 'react-dom'],
+      // Externalize React AND react-uswds. react-uswds is CJS-only and does `require("react")`;
+      // Rolldown intentionally keeps an external `require()` as-is, so bundling react-uswds here
+      // leaks that call into consumers' browser bundles (crash). Externalizing it means the
+      // consuming app bundles react-uswds itself (where React is in-graph, not external), which
+      // resolves the require cleanly. react-uswds must therefore be declared as a runtime
+      // dependency/peerDependency of this package (see package.json).
+      external: [
+        /^react(\/|$)/,
+        /^react-dom(\/|$)/,
+        /^@trussworks\/react-uswds(\/|$)/,
+      ],
       output: {
         globals: {
           react: 'React',
