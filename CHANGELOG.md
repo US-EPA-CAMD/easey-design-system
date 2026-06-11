@@ -1,3 +1,10 @@
+## [1.38.4](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.3...v1.38.4) (2026-06-11)
+
+
+### Bug Fixes
+
+* **build:** externalize react-uswds so Vite 8 bundle is browser-safe ([5d13033](https://github.com/US-EPA-CAMD/easey-design-system/commit/5d13033b2fa5989bfd4b1de314fe6167fd6eafff))
+
 ## [1.38.3](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.2...v1.38.3) (2026-06-04)
 
 
