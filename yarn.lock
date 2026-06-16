@@ -5797,7 +5797,7 @@ es-toolkit@^1.43.0:
     "@esbuild/win32-ia32" "0.27.7"
     "@esbuild/win32-x64" "0.27.7"
 
-esbuild@^0.28.1:
+"esbuild@^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0 || ^0.28.0", esbuild@^0.28.1:
   version "0.28.1"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.28.1.tgz#ef45b4634c9c9d97a296aea4114a5f9840f95578"
   integrity sha512-HrJrvZv5ayxBzPfwphOoNzkzOIIlifzk0KJrGK2c8R4+LKpMtpYLQeUdjnwjWv/LZlkH2laZk+4w78pi99D4Vw==
@@ -11813,7 +11813,7 @@ std-env@^3.10.0:
   resolved "https://registry.npmjs.org/std-env/-/std-env-3.10.0.tgz#d810b27e3a073047b2b5e40034881f5ea6f9c83b"
   integrity sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==
 
-storybook@10.4.5, storybook@^10.4.5:
+storybook@10.4.5:
   version "10.4.5"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.4.5.tgz#020108c21a0e76795f0f95c58afa3981c1ebe723"
   integrity sha512-QZuv1gS9Tf9RMCjDw5JOfv1XSB5IhU0uhSKQNS7l/N9zDpmSydirCspkCNT9e0zkFfPkZ9vmQUTzHY/BA07saA==
@@ -11826,6 +11826,27 @@ storybook@10.4.5, storybook@^10.4.5:
     "@vitest/spy" "3.2.4"
     "@webcontainer/env" "^1.1.1"
     esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0"
+    open "^10.2.0"
+    oxc-parser "^0.127.0"
+    oxc-resolver "^11.19.1"
+    recast "^0.23.5"
+    semver "^7.7.3"
+    use-sync-external-store "^1.5.0"
+    ws "^8.18.0"
+
+storybook@^10.4.6:
+  version "10.4.6"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.4.6.tgz#c28a2edb9bd01388d567f0c48f56c0386811016b"
+  integrity sha512-6wkA6LxfDSSilloITsrFOJfsnw0mDUP2h8Ls+lRt8oRsudtz2RWFhLv+Toiwg6NW7hUpdTDc2hzR7DztJid6+A==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+    "@storybook/icons" "^2.0.2"
+    "@testing-library/jest-dom" "^6.9.1"
+    "@testing-library/user-event" "^14.6.1"
+    "@vitest/expect" "3.2.4"
+    "@vitest/spy" "3.2.4"
+    "@webcontainer/env" "^1.1.1"
+    esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0 || ^0.28.0"
     open "^10.2.0"
     oxc-parser "^0.127.0"
     oxc-resolver "^11.19.1"
