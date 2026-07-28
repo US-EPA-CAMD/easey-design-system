@@ -10659,10 +10659,10 @@ react-refresh@^0.14.2:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.2.tgz#3833da01ce32da470f1f936b9d477da5c7028bf9"
   integrity sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA==
 
-react-svg@^17.2.4:
-  version "17.2.4"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-17.2.4.tgz#0683a7c25e72e1c5754d776cd532488fe47eaeef"
-  integrity sha512-sqhO7OljLNmP6xgOQUxl1w0MWukcruKQygvKO5k+66ak/wRzDubYBOazq6p/HyYowCXsSirEMflosQ+bpCt/5Q==
+react-svg@^17.2.5:
+  version "17.2.5"
+  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-17.2.5.tgz#34c9fc3dd50493bc48e0c9013e05ba0b7a8971f7"
+  integrity sha512-+kjNCqO+7PWmNI3kqHoPIEGLym8ZbKXaJwvIb35BkmbVxAqDdd5VCXPvMzHVtcAflqk7ka5DqabZNo+S3SA21Q==
   dependencies:
     "@babel/runtime" "^7.28.6"
     "@tanem/svg-injector" "^11.3.1"
