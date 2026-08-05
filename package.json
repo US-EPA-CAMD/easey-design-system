@@ -1,17 +1,17 @@
 {
   "name": "@us-epa-camd/easey-design-system",
-  "version": "1.38.5",
+  "version": "1.38.6",
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
-  "main": "lib/index.cjs",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
+  "main": "./index.cjs",
+  "module": "./index.esm.js",
+  "types": "./index.d.ts",
   "exports": {
     ".": {
-      "types": "./lib/index.d.ts",
-      "import": "./lib/index.esm.js",
-      "require": "./lib/index.cjs",
-      "default": "./lib/index.esm.js"
+      "types": "./index.d.ts",
+      "import": "./index.esm.js",
+      "require": "./index.cjs",
+      "default": "./index.esm.js"
     }
   },
   "license": "MIT",
