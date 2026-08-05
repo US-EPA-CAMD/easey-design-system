@@ -3,15 +3,15 @@
   "version": "1.38.6",
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
-  "main": "./index.cjs",
-  "module": "./index.esm.js",
-  "types": "./index.d.ts",
+  "main": "lib/index.cjs",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.esm.js",
-      "require": "./index.cjs",
-      "default": "./index.esm.js"
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.esm.js",
+      "require": "./lib/index.cjs",
+      "default": "./lib/index.esm.js"
     }
   },
   "license": "MIT",
@@ -33,7 +33,7 @@
     "deploy-storybook": "gh-pages -d storybook-static",
     "semantic-release": "semantic-release",
     "postbuild": "node scripts/copy-package-manifest.mjs && node scripts/verify-vite-build.mjs",
-    "postversion": "cp -r package.json .."
+    "postversion": "node ../scripts/sync-package-version.mjs"
   },
   "resolutions": {
     "ansi-html": "^0.0.8",
