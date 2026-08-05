@@ -1,6 +1,6 @@
 {
   "name": "@us-epa-camd/easey-design-system",
-  "version": "1.38.5",
+  "version": "1.38.6",
   "description": "design system & component library",
   "homepage": "https://us-epa-camd.github.io/easey-design-system",
   "main": "lib/index.cjs",
@@ -33,7 +33,7 @@
     "deploy-storybook": "gh-pages -d storybook-static",
     "semantic-release": "semantic-release",
     "postbuild": "node scripts/copy-package-manifest.mjs && node scripts/verify-vite-build.mjs",
-    "postversion": "cp -r package.json .."
+    "postversion": "node ../scripts/sync-package-version.mjs"
   },
   "resolutions": {
     "ansi-html": "^0.0.8",

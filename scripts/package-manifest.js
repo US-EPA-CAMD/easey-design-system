@@ -21,3 +21,17 @@ export const createPublishManifest = (sourceManifest) => {
 
   return manifest;
 };
+
+export const syncSourceManifestVersion = (
+  sourceManifest,
+  publishManifest
+) => {
+  if (typeof publishManifest.version !== 'string') {
+    throw new Error('The publish manifest must define a version.');
+  }
+
+  return {
+    ...sourceManifest,
+    version: publishManifest.version,
+  };
+};
