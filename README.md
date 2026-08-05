@@ -5,7 +5,7 @@
 
 The easey-design-system package contains shared code from across the US-EPA-CAMD project. 
  
-# Downloading and using easey-design-system
+# Downloading and using easey-design-system package
 
 ## Getting Started
 These instructions will get you a copy of the project package up and running and downloaded.
