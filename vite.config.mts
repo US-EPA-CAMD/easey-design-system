@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, esmExternalRequirePlugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 
@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const reactExternals = [/^react(?:-dom)?(?:\/.*)?$/];
 
 export default defineConfig({
   plugins: [
@@ -26,23 +27,26 @@ export default defineConfig({
         if (format === 'es') {
           return 'index.esm.js';
         } else if (format === 'cjs') {
-          return 'index.js';
+          return 'index.cjs';
         }
         return `index.${format}.js`;
       },
       formats: ['es', 'cjs'] // Specify the formats you want to generate
     },
-    rollupOptions: {
+    rolldownOptions: {
       input: resolve(__dirname, 'src/index.ts'),
-      external: ['react', 'react-dom'],
+      plugins: [
+        esmExternalRequirePlugin({
+          external: reactExternals
+        })
+      ],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM'
         },
         // Ensure that the output is not in ES module format for CommonJS
-        exports: 'named',
-        interop: 'auto'
+        exports: 'named'
       }
     },
     cssCodeSplit: true

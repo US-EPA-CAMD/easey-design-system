@@ -9,6 +9,7 @@ export default {
     },
     transformIgnorePatterns: [
     ],
+    modulePathIgnorePatterns: ['<rootDir>/lib/'],
     testMatch: ['**/?(*.)+(test).[jt]s?(x)'],
     collectCoverageFrom: [
       'src/**/*.{js,jsx}',
