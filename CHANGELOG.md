@@ -1,3 +1,10 @@
+## [1.38.7](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.6...v1.38.7) (2026-08-05)
+
+
+### Bug Fixes
+
+* **build:** release Vite 8 package ([#7208](https://github.com/US-EPA-CAMD/easey-design-system/issues/7208)) ([915be01](https://github.com/US-EPA-CAMD/easey-design-system/commit/915be01913f732beff7ad456ae83f1a0a1c1ce9a))
+
 ## [1.38.6](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.5...v1.38.6) (2026-08-05)
 
 
