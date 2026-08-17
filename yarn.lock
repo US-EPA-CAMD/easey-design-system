@@ -2783,12 +2783,20 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/builder-vite@10.5.7", "@storybook/builder-vite@^10.5.7":
+"@storybook/builder-vite@10.5.7":
   version "10.5.7"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.5.7.tgz#7e2c195b83490cf6def65b097f9313dbd989aa9e"
   integrity sha512-fShF/aQaITqcJuMCLr42BGNUAbhDi4IboqvlbZqXAwgrrTslnZEUnY8GcEcvpZmjl11VwlmazhMJdH50fIgBPg==
   dependencies:
     "@storybook/csf-plugin" "10.5.7"
+    ts-dedent "^2.0.0"
+
+"@storybook/builder-vite@^10.5.8":
+  version "10.5.8"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.5.8.tgz#dfc0ac7181256302dae6c84a9aead2b2a94f3034"
+  integrity sha512-UeRnn7yT55WmBlHNOQzLrvN7vsHEvVgIukhKDO+4cMbGXN87wZkbxhx6NstpuXRH8OxGqwKS0SZNVp+SC1ftLQ==
+  dependencies:
+    "@storybook/csf-plugin" "10.5.8"
     ts-dedent "^2.0.0"
 
 "@storybook/cli@^10.5.8":
