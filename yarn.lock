@@ -11703,10 +11703,33 @@ std-env@^4.0.0-rc.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-4.2.0.tgz#8ebe0ec60485668ab47227b312f4254cdf80c9d3"
   integrity sha512-oCUKSupKTHX53EyjDtuZQ64pjLJ6yYCtpmEw0goYxtjG9KpbRe8KAsl2tBUGU9DyMcJ0RwJ8GqJAFzMXcXW1Rw==
 
-storybook@10.5.7, storybook@^10.5.7:
+storybook@10.5.7:
   version "10.5.7"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.5.7.tgz#adfc465e51f337291c095278c23f1b8024ef2da7"
   integrity sha512-oiKvWIwIoOhFP1i6dASYyMXwPHKEtVZMshqSB7EvIVYjWRh0l9H7gHEt1z4Gh2rLGFMekWdsm4s94rvwpR7gkg==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+    "@storybook/icons" "^2.0.2"
+    "@testing-library/dom" "^10.4.1"
+    "@testing-library/jest-dom" "6.9.1"
+    "@testing-library/user-event" "^14.6.1"
+    "@vitest/expect" "3.2.4"
+    "@vitest/spy" "3.2.4"
+    "@webcontainer/env" "^1.1.1"
+    esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0 || ^0.28.0"
+    jsonc-parser "^3.3.1"
+    open "^10.2.0"
+    oxc-parser "^0.127.0"
+    oxc-resolver "^11.19.1"
+    recast "^0.23.5"
+    semver "^7.7.3"
+    use-sync-external-store "^1.5.0"
+    ws "^8.21.1"
+
+storybook@^10.5.8:
+  version "10.5.8"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.5.8.tgz#d5f051983e6232c0a73ea02149a72c7bafb43275"
+  integrity sha512-rR4oFMSiWBSqI0lvsJPtcQUPj8+hzj3TkLu+Mw61Wo6YxPSb5FsLSHai0jZnuaIdKIlmu25KCfwlSQl4e1uvnA==
   dependencies:
     "@storybook/global" "^5.0.0"
     "@storybook/icons" "^2.0.2"
