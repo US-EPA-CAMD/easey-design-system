@@ -87,7 +87,7 @@
     "@svgr/rollup": "^5.5.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^15.0.7",
-    "@testing-library/user-event": "^14.6.6",
+    "@testing-library/user-event": "^14.6.7",
     "@trussworks/react-uswds": "^4.1.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.20.1",
