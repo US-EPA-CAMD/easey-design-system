@@ -1,3 +1,11 @@
+## [1.38.8](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.7...v1.38.8) (2026-09-08)
+
+
+### Bug Fixes
+
+* [#7211](https://github.com/US-EPA-CAMD/easey-design-system/issues/7211) Upgrade to Node 24.x ([edf42e7](https://github.com/US-EPA-CAMD/easey-design-system/commit/edf42e7ae72c7ce81abda971a26220006f77f6db))
+* [#7211](https://github.com/US-EPA-CAMD/easey-design-system/issues/7211) Upgrade to Node 24.x ([ae98742](https://github.com/US-EPA-CAMD/easey-design-system/commit/ae9874271eb431e10ee04cfa78efdc83455e4b5d))
+
 ## [1.38.7](https://github.com/US-EPA-CAMD/easey-design-system/compare/v1.38.6...v1.38.7) (2026-08-05)
 
 
