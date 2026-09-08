@@ -3133,10 +3133,10 @@
   resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.6.7.tgz#c453ccfcaffed110cc79048ed18fccb0f4224f3b"
   integrity sha512-MPCpX8bxe8zS+JmmTwLp8jd0dy1rAm60Te/SL8JrQM3qvQJcBOs1d7IefJMyZzqM3EWBrDn/LWDt1BCGu4ASfg==
 
-"@trussworks/react-uswds@^4.1.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@trussworks/react-uswds/-/react-uswds-4.2.1.tgz#827378157cad3fa3f53ff8b92e67799e9682fa32"
-  integrity sha512-fp+0dNQkmEHlNyaKDKAPb7RbQKRuAEY8IWZc+mEpXcwwlEFK1TLjpxEaw1yyC3xOsP2KZmjiKN6n3k1DbW5TSw==
+"@trussworks/react-uswds@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@trussworks/react-uswds/-/react-uswds-8.0.0.tgz#a681d4c86d985a9b619f197fff34aa83561e0fc5"
+  integrity sha512-VxllH/CbqKKnHgjPGJltdssPRxo/km6uNfRAC0MvYTqHcLoeg+0/5omdG6gh94KAil1ZxEqiCadbEzPIn9jg/w==
 
 "@tufjs/canonical-json@2.0.0":
   version "2.0.0"
