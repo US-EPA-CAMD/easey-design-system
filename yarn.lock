@@ -2899,10 +2899,17 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/builder-vite@10.6.0", "@storybook/builder-vite@^10.6.0":
+"@storybook/builder-vite@10.6.0":
   version "10.6.0"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.6.0.tgz#c027124840b4078d55f59d86feb172430404a91a"
   integrity sha512-7zt8tYB6dnSO8fbjUz91MHexGDpf9HrLlA3FAmlVb+2ZL3eWUs499L3I6BDUymcWu7oW5WCBJlB8ERj8ZLLzig==
+  dependencies:
+    ts-dedent "^2.0.0"
+
+"@storybook/builder-vite@^10.6.1":
+  version "10.6.1"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.6.1.tgz#ea69e6332c1f8f6eeebaee70040189805d597d55"
+  integrity sha512-kUMRRRS4MpJdxOLhrlQX3cpMYi2vVB3tIIRXyqWmAjVM6xT7OZ1SCQEMFPP+S3ToRqaYWZQb8aBqrJucbbYufA==
   dependencies:
     ts-dedent "^2.0.0"
 
