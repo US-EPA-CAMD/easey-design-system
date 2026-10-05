@@ -2906,30 +2906,30 @@
   dependencies:
     ts-dedent "^2.0.0"
 
-"@storybook/cli@^10.6.0":
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-10.6.0.tgz#1feda8de9944710f56739d5e050748e5c696ecf2"
-  integrity sha512-EbbwiCRr75upJ4gMuj4koA98ZDtycuIjXYMSAQ+UUfeeVBhKM5jV7BRLO/hmc7K9k0MO6VybEo2xPed3jmPc4Q==
+"@storybook/cli@^10.6.1":
+  version "10.6.1"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-10.6.1.tgz#51a4dac2fa61c999cbd065ecf531c7da2002b326"
+  integrity sha512-dms05tEV7LKGwM9+D4OV1pBolv0dL7j1R63qF6oqMzD9fWP0tSbc6bAytA4qteu1xqWqBdptHDXjYIAzES4MQg==
   dependencies:
-    "@storybook/codemod" "10.6.0"
+    "@storybook/codemod" "10.6.1"
     "@types/semver" "^7.7.1"
     commander "^14.0.2"
-    create-storybook "10.6.0"
+    create-storybook "10.6.1"
     jscodeshift "^0.15.1"
-    storybook "10.6.0"
+    storybook "10.6.1"
     ts-dedent "^2.0.0"
 
-"@storybook/codemod@10.6.0":
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-10.6.0.tgz#224bfea33982f8dc62ed7355d9e0e71ba8a7a639"
-  integrity sha512-T0yrAkDE2cazDjeHtzJFyxm90GjXnkjnBpFqTuYeeFG9GVoZtJV6nkAJ4dlsUAVFms8OuamKOILKe/zekYrx+A==
+"@storybook/codemod@10.6.1":
+  version "10.6.1"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-10.6.1.tgz#327251b282b9e1b9d7f8bcc457118eb88089fd39"
+  integrity sha512-w/JzO6m95Mu+w9HZOXCUGxc3wLBQOmte/o0zbTZ3AuNHF/yblD4tvJKGZ+0F+dHljy/r/axUNc2FwjlVVEO+yg==
   dependencies:
     "@types/cross-spawn" "^6.0.6"
     cross-spawn "^7.0.6"
     es-toolkit "^1.43.0"
     jscodeshift "^0.15.1"
     prettier "^3.7.1"
-    storybook "10.6.0"
+    storybook "10.6.1"
     tiny-invariant "^1.3.1"
     tinyglobby "^0.2.13"
 
@@ -4965,13 +4965,13 @@ cosmiconfig@^9.0.0:
     js-yaml "^4.1.0"
     parse-json "^5.2.0"
 
-create-storybook@10.6.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/create-storybook/-/create-storybook-10.6.0.tgz#ac98ee70940692f34971323d8a9a67fe49f160a8"
-  integrity sha512-41FO8FxrdDGsFTYntXi6OsrfgRnrTI2pRq/oYzAc2Fyz/MVOH/HLkfBAXoKo4JfjXTmcaloBNy3sx19A/7ra3w==
+create-storybook@10.6.1:
+  version "10.6.1"
+  resolved "https://registry.yarnpkg.com/create-storybook/-/create-storybook-10.6.1.tgz#f53acfbf1f9ee8f263c1f8080278ac4849a4989e"
+  integrity sha512-I3T9fJtqTo13p/VczkFLf/XQn/OF/J8EvKMs+7kAEB31haLrg0ZlqCRUlpQ9EUONuUI8yKSR+QteWriMKMzrVQ==
   dependencies:
     semver "^7.7.3"
-    storybook "10.6.0"
+    storybook "10.6.1"
 
 cross-spawn@7.0.3:
   version "7.0.3"
@@ -11816,30 +11816,7 @@ std-env@^4.0.0-rc.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-4.2.0.tgz#8ebe0ec60485668ab47227b312f4254cdf80c9d3"
   integrity sha512-oCUKSupKTHX53EyjDtuZQ64pjLJ6yYCtpmEw0goYxtjG9KpbRe8KAsl2tBUGU9DyMcJ0RwJ8GqJAFzMXcXW1Rw==
 
-storybook@10.6.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.6.0.tgz#095ec809a6ff7e24ceb8766a9db86dfeb000a94f"
-  integrity sha512-H48X6AURAFTpfN2zEux6vNesee5Oq8Gxj1IanYmblPZ218sfKSeyyerF1NC7GD7BrruoC8L4/cU0zII4y+d6zw==
-  dependencies:
-    "@storybook/global" "^5.0.0"
-    "@storybook/icons" "^2.0.2"
-    "@testing-library/dom" "^10.4.1"
-    "@testing-library/jest-dom" "6.9.1"
-    "@testing-library/user-event" "^14.6.3"
-    "@vitest/expect" "3.2.4"
-    "@vitest/spy" "3.2.4"
-    "@webcontainer/env" "^1.1.1"
-    esbuild "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0 || ^0.28.0"
-    jsonc-parser "^3.3.1"
-    open "^10.2.0"
-    oxc-parser "^0.127.0"
-    oxc-resolver "11.21.2"
-    recast "^0.23.5"
-    semver "^7.7.3"
-    use-sync-external-store "^1.5.0"
-    ws "^8.21.1"
-
-storybook@^10.6.1:
+storybook@10.6.1, storybook@^10.6.1:
   version "10.6.1"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-10.6.1.tgz#57bb8fb2dbe549743db7d9ab672006633cac6971"
   integrity sha512-NeEmukMWPA5OqHizUkQtxCIhGt7MUZLPY4FFgpC0LNiipjrac/oKpH0TxI+9Zc+vI5+IoN+NiskOmBP7gtYfmA==
