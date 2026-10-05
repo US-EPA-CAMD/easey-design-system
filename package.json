@@ -81,7 +81,7 @@
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
     "@storybook/addon-links": "^10.6.0",
-    "@storybook/builder-vite": "^10.6.0",
+    "@storybook/builder-vite": "^10.6.1",
     "@storybook/cli": "^10.6.1",
     "@storybook/react-vite": "^10.6.0",
     "@svgr/rollup": "^5.5.0",
