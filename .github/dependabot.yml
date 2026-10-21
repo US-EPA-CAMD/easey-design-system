@@ -22,6 +22,6 @@ updates:
       - dependency-name: "react-dom"
         versions: [">=19.0.0"]
       - dependency-name: "vite"
-        versions: [">=8.0.0"]
+        versions: [">=9.0.0"]
       - dependency-name: "undici"
         versions: [">=7.0.0"]
