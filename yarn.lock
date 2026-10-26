@@ -2897,10 +2897,10 @@
     ts-dedent "^2.0.0"
     unplugin "^2.3.5"
 
-"@storybook/addon-links@^10.6.2":
-  version "10.6.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-10.6.2.tgz#94cb1fef550acad564836cd86abe4b8fad525d38"
-  integrity sha512-pWwWp+KAcqdX9Cg5i3yGaKcD3+7OEDhHkaiYv8GHv1JIOl7Ao/CaoY07or8BdM785akOqxk5Z+UrY7zNKZJ6Gw==
+"@storybook/addon-links@^10.6.3":
+  version "10.6.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-10.6.3.tgz#5e51f89ab90733de3dcde65b8ca6a9deb4f39e07"
+  integrity sha512-tPtUUbAq8zEE5gh8/NJdZbdN1yR6VoOuOG+68xiVWEdccjOLfTD+KefilpqH8qtKPmDS5KVtH/14vI/pL0ES1w==
   dependencies:
     "@storybook/global" "^5.0.0"
 
