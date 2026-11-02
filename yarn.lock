@@ -2884,14 +2884,14 @@
   resolved "https://registry.yarnpkg.com/@standard-schema/spec/-/spec-1.1.0.tgz#a79b55dbaf8604812f52d140b2c9ab41bc150bb8"
   integrity sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==
 
-"@storybook/addon-docs@10.6.4":
-  version "10.6.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-10.6.4.tgz#2a82e98029423bad6b0f8cdceb2cbc7ebf7039f6"
-  integrity sha512-rRgf5evcDPo4A0i9IBNkhkubfo4BG0YsqanDdpNDODiYYWDzM8xEgLHtGZf/xs4sLbyMITUhhQJr/c3JmAPZ1A==
+"@storybook/addon-docs@10.6.5":
+  version "10.6.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-10.6.5.tgz#456c8727652e2d280f823e881539baddc5b36f0f"
+  integrity sha512-Kt0pGLA+nwdu2g80p8jbdoiiKXxwQbhrY6uzMzq/0G1lytxpJUzrOQAM+GDcEbqyvpKr0u5d1q05/LPem/uooQ==
   dependencies:
     "@mdx-js/react" "^3.0.0"
     "@storybook/icons" "^2.0.2"
-    "@storybook/react-dom-shim" "10.6.4"
+    "@storybook/react-dom-shim" "10.6.5"
     react "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
     react-dom "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
     ts-dedent "^2.0.0"
@@ -2947,11 +2947,6 @@
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@storybook/icons/-/icons-2.0.2.tgz#765b49b902a2bdf6f3a5a1aa8dc0cdcd3c55c5b5"
   integrity sha512-KZBCpXsshAIjczYNXR/rlxEtCUX/eAbpFNwKi8bcOomrLA4t/SyPz5RF+lVPO2oZBUE4sAkt43mfJUevQDSEEw==
-
-"@storybook/react-dom-shim@10.6.4":
-  version "10.6.4"
-  resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-10.6.4.tgz#5a3c0c2d587da2f2a4e0f49e51fcac27cb336714"
-  integrity sha512-5nSuUmDM6qU11Gsugrm/WcQRMMx8ZG1i5ZZPpy9Q3kU40IDCRiEA8MwsYPa7QuqwCuyJEyIwm5I0sgvVxWVCcg==
 
 "@storybook/react-dom-shim@10.6.5":
   version "10.6.5"
