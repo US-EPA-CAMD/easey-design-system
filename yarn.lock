@@ -2904,10 +2904,17 @@
   dependencies:
     "@storybook/global" "^5.0.0"
 
-"@storybook/builder-vite@10.6.5", "@storybook/builder-vite@^10.6.5":
+"@storybook/builder-vite@10.6.5":
   version "10.6.5"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.6.5.tgz#a225b4292bba4430138f3191c72e67f14d86db15"
   integrity sha512-udrGjg3yt38pz4FxplypXxw1creIGS7N6QS8xfvTFM8MQNtPyojT/gZdd4fhX0dFrQx5MMuJEYJA5gUBiPsLtg==
+  dependencies:
+    ts-dedent "^2.0.0"
+
+"@storybook/builder-vite@^10.6.6":
+  version "10.6.6"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-10.6.6.tgz#3dd36810c17213f186076fc9f302944bd31e9b82"
+  integrity sha512-DIA992qGuPZpTZqupWuhw3upWc6Qphm0tQFfSnCpgr5Nlvhe0C5Mth9eYz7CUpy49szJ6eOgQ2V8ktKtKaXyNA==
   dependencies:
     ts-dedent "^2.0.0"
 
