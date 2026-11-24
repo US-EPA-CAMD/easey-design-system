@@ -2935,10 +2935,10 @@
     ts-dedent "^2.0.0"
     unplugin "^2.3.5"
 
-"@storybook/addon-links@^10.6.7":
-  version "10.6.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-10.6.7.tgz#2a31c59031f423d1da25b556591046bf8b38e6fb"
-  integrity sha512-0tnawKRBVHxroCHMk8wua/viNy2UJxSNwNIN7GMs6hAAFJzSjUs82rkUTMJjw8st7icjZuVQUoVWvK4Dr4L/eQ==
+"@storybook/addon-links@^10.6.8":
+  version "10.6.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-10.6.8.tgz#ec17282869728e6481f9914e80f251c8af06ff1d"
+  integrity sha512-xQkRHjG9ScuqI6RGbOF4I/qVTWb6ughK3A1I5ubWfUgrdallhgc1rf2XwJQRgFnEY7WaH2UozhKNrDony86NFw==
   dependencies:
     "@storybook/global" "^5.0.0"
 
